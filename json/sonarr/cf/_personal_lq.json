@@ -1,7 +1,7 @@
 {
   "trash_id": "c9888bdff39945779315da5a55406810",
   "trash_score": "-10000",
-  "name": "[Personal] LQ",
+  "name": "[P] Mislabeled WEBDL",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
@@ -11,6 +11,15 @@
       "required": false,
       "fields": {
         "value": "\\bTrollHD\\b"
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 3
       }
     }
   ]
