@@ -1,0 +1,25 @@
+{
+  "trash_id": "fe75fb582a1a4dfb93b4298027ff813c",
+  "name": "x264 (1080p)",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "x|h264",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "[xh][ ._-]?264|\\bAVC(\\b|\\d)"
+      }
+    },
+    {
+      "name": "1080p",
+      "implementation": "ResolutionSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 1080
+      }
+    }
+  ]
+}
