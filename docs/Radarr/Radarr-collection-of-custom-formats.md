@@ -59,6 +59,7 @@ I also made 3 guides related to this one.
 | [IMAX](#imax)                                 |                       | [WEB Tier 01](#web-tier-01)               | [Paramount+](#pmtp)    |
 | [IMAX Enhanced](#imax-enhanced)               |                       | [WEB Tier 02](#web-tier-02)               | [Movies Anywhere](#ma) |
 | [Open Matte](#open-matte)                     |                       | [WEB Tier 03](#web-tier-03)               | [Pathe Thuis](#pathe)  |
+|                                               |                       |                                           | [Bravia Core](#bcore)  |
 
 ------
 
@@ -987,9 +988,11 @@ I also made 3 guides related to this one.
 ??? faq "DV (WEBDL) - [CLICK TO EXPAND]"
     This is a special Custom Format that block WEBDLs **with** Dolby Vision but **without** HDR10 fallback.
 
+    You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-1000` or even `-10000`
+
     This Custom Format works together with the normal [DV](#dv) Custom Format that you can use to prefer Dolby Vision.
 
-    Most WEBDL from Streaming Services don't have the fallback to HDR10, What can results in playback issues like weird colors if you want to play it on a not Dolby Vision compatible setup.
+    Most WEBDL from Streaming Services don't have the fallback to HDR10, What can results in playback issues like weird colors (typically a green hue) if you want to play it on a not Dolby Vision compatible setup.
 
     Remuxes and Bluray have a fallback to HDR10.
 
@@ -1660,6 +1663,24 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/pathe.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### BCORE
+
+<sub>Bravia Core</sub>
+
+??? faq "Bravia Core - [CLICK TO EXPAND]"
+
+    [From Sony, no wiki link available](https://electronics.sony.com/bravia-core){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/bcore.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
