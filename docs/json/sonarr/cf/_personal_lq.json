@@ -1,34 +1,16 @@
 {
-  "trash_id": "c9888bdff39945779315da5a55406810",
+  "trash_id": "8df5ba3f361843b6a4634e49c0926348",
   "trash_score": "-10000",
-  "name": "[P] Mislabeled WEBDL",
+  "name": "[P] LQ",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "TrollHD",
+      "name": "HETeam",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\bTrollHD\\b"
-      }
-    },
-    {
-      "name": "EDHD",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\bEDHD\\b"
-      }
-    },
-    {
-      "name": "WEBDL",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 3
+        "value": "\\b(HETeam)\\b"
       }
     }
   ]
