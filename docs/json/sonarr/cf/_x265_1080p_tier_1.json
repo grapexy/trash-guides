@@ -1,0 +1,79 @@
+{
+  "trash_id": "88bab48eb30145219e9b8f4ba68ba854",
+  "name": "_HEVC Tier 1 (FHD)",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "x|h265",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "[xh][ ._-]?265|\\bHEVC(\\b|\\d)"
+      }
+    },
+    {
+      "name": "1080p",
+      "implementation": "ResolutionSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 1080
+      }
+    },
+    {
+      "name": "QxR",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(ImE|Ghost|Silence|RZeroX)\\b(.QxR)*(\\))"
+      }
+    },
+    {
+      "name": "TAoE",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(TAoE)\\b"
+      }
+    },
+    {
+      "name": "Yoyo",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Yoyo)\\b"
+      }
+    },
+    {
+      "name": "Vyndros",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Vyndros)\\b"
+      }
+    },
+    {
+      "name": "LSt",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(LSt)\\b"
+      }
+    },
+    {
+      "name": "SEV",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(SEV)\\b"
+      }
+    }
+  ]
+}

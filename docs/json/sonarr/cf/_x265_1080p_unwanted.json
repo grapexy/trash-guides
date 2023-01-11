@@ -1,6 +1,7 @@
 {
   "trash_id": "b45384f07b564869adc1e3ed1d429842",
-  "name": "_HQ HEVC",
+  "trash_score": "-10000",
+  "name": "_Unwanted x265 (FHD)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
@@ -13,12 +14,12 @@
       }
     },
     {
-      "name": "Not Remux",
-      "implementation": "SourceSpecification",
-      "negate": true,
+      "name": "1080p",
+      "implementation": "ResolutionSpecification",
+      "negate": false,
       "required": true,
       "fields": {
-        "value": 7
+        "value": 1080
       }
     },
     {
