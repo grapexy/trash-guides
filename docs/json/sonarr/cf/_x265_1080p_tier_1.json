@@ -27,7 +27,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(Yoyo|Vyndros|LSt|SEV|ImE|Ghost|Silence|RZeroX|Kappa|WEM)\\b(\\)|$)"
+        "value": "\\b(JBENT|Species180|xtrem3x|TheSickle|DNU|bccornfo|Ainz|DrainedDay|Goki|Yoyo|Vyndros|LSt|SEV|ImE|Ghost|Silence|RZeroX|WEM)\\b\\s?(?:\\bTAoE|QxR\\b)*(?:\\)|$)"
       }
     }
   ]
