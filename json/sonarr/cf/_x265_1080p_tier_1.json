@@ -27,7 +27,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "(\\b(TAoE|Yoyo|Vyndros|LSt|SEV)\\b|\\b(ImE|Ghost|Silence|RZeroX|Kappa)\\b(.QxR)*(\\)))"
+        "value": "\\b(Yoyo|Vyndros|LSt|SEV|ImE|Ghost|Silence|RZeroX|Kappa|WEM)\\b(\\)|$)"
       }
     }
   ]
