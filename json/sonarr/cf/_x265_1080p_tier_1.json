@@ -22,57 +22,12 @@
       }
     },
     {
-      "name": "QxR",
+      "name": "Title Groups",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
-      "required": false,
+      "required": true,
       "fields": {
-        "value": "\\b(ImE|Ghost|Silence|RZeroX)\\b(.QxR)*(\\))"
-      }
-    },
-    {
-      "name": "TAoE",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(TAoE)\\b"
-      }
-    },
-    {
-      "name": "Yoyo",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(Yoyo)\\b"
-      }
-    },
-    {
-      "name": "Vyndros",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(Vyndros)\\b"
-      }
-    },
-    {
-      "name": "LSt",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(LSt)\\b"
-      }
-    },
-    {
-      "name": "SEV",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(SEV)\\b"
+        "value": "(\\b(TAoE|Yoyo|Vyndros|LSt|SEV)\\b|\\b(ImE|Ghost|Silence|RZeroX)\\b(.QxR)*(\\)))"
       }
     }
   ]
