@@ -23,10 +23,10 @@
       }
     },
     {
-      "name": "SiGMA",
+      "name": "Unwanted Groups",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
-      "required": false,
+      "required": true,
       "fields": {
         "value": "\\b(SiGMA)\\b$"
       }
