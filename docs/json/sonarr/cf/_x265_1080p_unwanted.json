@@ -23,12 +23,12 @@
       }
     },
     {
-      "name": "SIGMA",
-      "implementation": "ReleaseGroupSpecification",
+      "name": "SiGMA",
+      "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(SIGMA)\\b"
+        "value": "\\b(SiGMA)\\b$"
       }
     }
   ]
