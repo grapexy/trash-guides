@@ -6,7 +6,7 @@
   "specifications": [
     {
       "name": "HETeam",
-      "implementation": "ReleaseGroupSpecification",
+      "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
@@ -15,7 +15,7 @@
     },
     {
       "name": "d3g",
-      "implementation": "ReleaseGroupSpecification",
+      "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
