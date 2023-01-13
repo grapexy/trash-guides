@@ -27,7 +27,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(Edge2020|PHOCiS|SiGLA|YAWNiX|HiQVE|JBENT|Species180|xtrem3x|TheSickle|DNU|bccornfo|Ainz|DrainedDay|Goki|Yoyo|Vyndros|LSt|ImE|Ghost|Silence|RZeroX|WEM|afm72|RCVR|YOGI|MONOLITH)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b)*(?:\\)|\\]|$)"
+        "value": "\\b(Edge2020|PHOCiS|SiGLA|ShieldBearer|YAWNiX|HiQVE|JBENT|Species180|xtrem3x|TheSickle|DNU|bccornfo|Ainz|DrainedDay|Goki|Yoyo|Vyndros|LSt|ImE|Ghost|Silence|RZeroX|WEM|afm72|RCVR|YOGI|MONOLITH)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b)*(?:\\)|\\]|$)"
       }
     }
   ]
