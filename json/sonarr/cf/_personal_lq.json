@@ -23,6 +23,15 @@
       }
     },
     {
+      "name": "NVenc",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(NVenc)\\b"
+      }
+    },
+    {
       "name": "Title Groups",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
