@@ -28,7 +28,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\b(SiGMA)\\b$"
+        "value": "\\b(SiGMA|TrollHD)\\b$"
       }
     }
   ]
