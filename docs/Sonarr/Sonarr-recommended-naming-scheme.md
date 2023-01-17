@@ -25,7 +25,7 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
     {{ sonarr['naming']['sonarr-naming']['episodes']['standard']['default:4'] }}
     ```
 
-??? summary "RESULTS: - [CLICK TO EXPAND]"
+??? abstract "RESULTS: - [CLICK TO EXPAND]"
 
     Single Episode:
 
@@ -49,7 +49,7 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
     {{ sonarr['naming']['sonarr-naming']['episodes']['daily']['default:4'] }}
     ```
 
-??? summary "RESULTS: - [CLICK TO EXPAND]"
+??? abstract "RESULTS: - [CLICK TO EXPAND]"
 
     `The Series Title! (2010) - 2013-10-30 - Episode Title 1 [AMZN WEBDL-1080p Proper][DV HDR10][DTS 5.1][x264]-RlsGrp`
 
@@ -67,7 +67,7 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
     {{ sonarr['naming']['sonarr-naming']['episodes']['anime']['default:4'] }}
     ```
 
-??? summary "RESULTS: - [CLICK TO EXPAND]"
+??? abstract "RESULTS: - [CLICK TO EXPAND]"
 
     Single Episode:
 
@@ -146,7 +146,7 @@ RESULTS:
 
 ## Original Title vs  Original Filename
 
-Another option is to use `{Original Title}` rather than the recommeneded naming scheme outlined aboove. `{Original Title}` will use the title of the release which will contain all of the information included in the release itself. The benefit of this naming scheme is to prevent download loops which can occur on import when there is a discrepancy in the release title compared to the contents of the file itself (for example, if the release title says DTS-ES but the contents are actually DTS). The downside is less flexibility with how the files are named.
+Another option is to use `{Original Title}` rather than the recommeneded naming scheme outlined above. `{Original Title}` will use the title of the release which will contain all of the information included in the release itself. The benefit of this naming scheme is to prevent download loops which can occur on import when there is a discrepancy in the release title compared to the contents of the file itself (for example, if the release title says DTS-ES but the contents are actually DTS). The downside is less flexibility with how the files are named.
 
 If using this alternate naming scheme I suggest using `{Original Title}` over `{Original Filename}`
 
