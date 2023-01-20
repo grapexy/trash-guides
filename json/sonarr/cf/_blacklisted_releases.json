@@ -1,0 +1,17 @@
+{
+  "trash_id": "2c421e0816704544b01111465d86d580",
+  "trash_score": "-10000",
+  "name": "Blacklisted Releases",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "1883 - S01 Goki",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^1883.*?S01.+1080p.*?Goki"
+      }
+    }
+  ]
+}
