@@ -21,6 +21,15 @@
       "fields": {
         "value": "\\b(HONE|Stelks|Edge2020|PHOCiS|SiGLA|ShieldBearer|YAWNiX|HiQVE|JBENT|Species180|xtrem3x|TheSickle|DNU|bccornfo|Ainz|DrainedDay|Goki|Yoyo|Vyndros|LSt|ImE|Ghost|Silence|t3nzin|Bandi|RZeroX|WEM|afm72|RCVR|YOGI|MONOLITH|Kappa)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b|\\bUTR\\b)*(?:\\)|\\]|$)"
       }
+    },
+    {
+      "name": "Not HUNO style naming",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "-\\s?(\\b\\w+\\b)\\s?(\\b\\w+\\b)?\\)$"
+      }
     }
   ]
 }
