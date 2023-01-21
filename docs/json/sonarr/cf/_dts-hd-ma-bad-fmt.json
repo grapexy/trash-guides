@@ -1,0 +1,16 @@
+{
+  "trash_id": "cf54e7ca1c3443a6b712138232fbe26a",
+  "name": "_DTS-HD MA (bad fmt)",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "DTS-HD MA (bad fmt)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "\\b(Dts-HDMa\\d)\\b"
+      }
+    }
+  ]
+}
