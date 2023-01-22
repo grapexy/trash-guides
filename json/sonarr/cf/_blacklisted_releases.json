@@ -12,6 +12,15 @@
       "fields": {
         "value": "^1883.*?S01.+1080p.*?Goki"
       }
+    },
+    {
+      "name": "The Blacklist - S01-S08 d3g (wrong audio label)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^The.*?Blacklist.*?S01-S08.*?d3g$"
+      }
     }
   ]
 }
