@@ -30,6 +30,15 @@
       "fields": {
         "value": "^House\\s\\(2004\\).*?1080p.*?DrainedDay"
       }
+    },
+    {
+      "name": "Prison Break - DrainedDay (huge releases)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^Prison\\sBreak.*?1080p.*?DrainedDay"
+      }
     }
   ]
 }
