@@ -21,6 +21,15 @@
       "fields": {
         "value": "^The.*?Blacklist.*?S01-S08.*?d3g$"
       }
+    },
+    {
+      "name": "House DrainedDay (huge releases)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^House\\s\\(2004\\).*?1080p.*?DrainedDay"
+      }
     }
   ]
 }
