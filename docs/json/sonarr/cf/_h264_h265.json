@@ -1,0 +1,17 @@
+{
+  "trash_id": "00a3268ba8c64a66b8a1935cd69b9f41",
+  "trash_score": "20",
+  "name": "_h264|h265",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "h264|h265",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "[h][ ._-]?(264|265)"
+      }
+    }
+  ]
+}
