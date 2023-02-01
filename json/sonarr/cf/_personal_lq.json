@@ -37,7 +37,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Joy)\\b(?:[\\s.-])?(?:\\bUTR\\b)*(?:\\)|$)"
+        "value": "\\b(Joy|MeGusta|d3g|rarbg)\\b(?:[\\s.-])?(?:\\bUTR\\b)*(?:\\)|$)"
       }
     }
   ]
