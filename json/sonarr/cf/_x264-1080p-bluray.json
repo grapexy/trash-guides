@@ -1,0 +1,34 @@
+{
+  "name": "Bluray (FHD x264)",
+  "trash_id": "b5c3051f3f514752a14b0d8e4ef675a0",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "1080p",
+      "implementation": "ResolutionSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 1080
+      }
+    },
+    {
+      "name": "x|h264",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "[xh][ ._-]?264|\\bAVC(\\b|\\d)"
+      }
+    },
+    {
+      "name": "Bluray",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 6
+      }
+    }
+  ]
+}
