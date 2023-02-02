@@ -1,0 +1,35 @@
+{
+  "name": "HD Oversized Groups",
+  "trash_id": "32440c425c574f8fab0b7c9cf0b12332",
+  "trash_score": -10000,
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "CasStudio x264 Encodes",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "[x][ ._-]?(264).*CasStudio"
+      }
+    },
+    {
+      "name": "1080p",
+      "implementation": "ResolutionSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 1080
+      }
+    },
+    {
+      "name": "720p",
+      "implementation": "ResolutionSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 720
+      }
+    }
+  ]
+}
