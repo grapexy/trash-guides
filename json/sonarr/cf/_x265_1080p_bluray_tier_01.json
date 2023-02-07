@@ -22,21 +22,21 @@
       }
     },
     {
-      "name": "WEBDL",
+      "name": "BLURAY",
       "implementation": "SourceSpecification",
       "negate": false,
-      "required": false,
+      "required": true,
       "fields": {
-        "value": 3
+        "value": 6
       }
     },
     {
-      "name": "WEBRIP",
+      "name": "Not REMUX",
       "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
+      "negate": true,
+      "required": true,
       "fields": {
-        "value": 4
+        "value": 7
       }
     },
     {
