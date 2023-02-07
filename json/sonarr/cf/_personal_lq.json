@@ -32,6 +32,15 @@
       }
     },
     {
+      "name": "Pahe",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Pahe.(ph|in))\\b"
+      }
+    },
+    {
       "name": "Title Groups",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
