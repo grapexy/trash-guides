@@ -37,7 +37,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "-\\s?(\\b\\w+\\b)\\s?(\\b\\w+\\b)?\\)$"
+        "value": "-\\s?(?!(?:NOGRP|NOGROUP))(\\b\\w+\\b)\\s?(\\b\\w+\\b)?\\)$"
       }
     }
   ]
