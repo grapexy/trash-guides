@@ -11,7 +11,7 @@
 <link href="../radarr-setup-quality-profiles-french-en/" rel="prev"/>
 <link href="../Radarr-remote-path-mapping/" rel="next"/>
 <link href="../../img/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.4.2, mkdocs-material-9.0.8" name="generator"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-9.0.11" name="generator"/>
 <title>Collection of Custom Formats - TRaSH Guides</title>
 <link href="../../assets/stylesheets/main.0d440cfe.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
@@ -645,6 +645,11 @@
     DV FEL
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#linemic-dubbed">
+    Line/Mic Dubbed
+  </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -775,6 +780,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#dsnp">
     DSNP
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#hbo">
+    HBO
   </a>
 </li>
 <li class="md-nav__item">
@@ -2097,6 +2107,11 @@
     DV FEL
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#linemic-dubbed">
+    Line/Mic Dubbed
+  </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -2227,6 +2242,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#dsnp">
     DSNP
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#hbo">
+    HBO
   </a>
 </li>
 <li class="md-nav__item">
@@ -2680,42 +2700,48 @@ Special thanks to <a href="https://github.com/rg9400">rg9400</a>, <a href="https
 <td><a href="#special-edition">Special Edition</a></td>
 <td><a href="#x265-hd">x265 (HD)</a></td>
 <td><a href="#uhd-bluray-tier-02">UHD Bluray Tier 02</a></td>
-<td><a href="#hmax">HBO Max</a></td>
+<td><a href="#hbo">HBO</a></td>
 </tr>
 <tr>
 <td><a href="#criterion-collection">Criterion Collection</a></td>
 <td></td>
 <td><a href="#uhd-bluray-tier-03">UHD Bluray Tier 03</a></td>
-<td><a href="#hulu">Hulu</a></td>
+<td><a href="#hmax">HBO Max</a></td>
 </tr>
 <tr>
 <td><a href="#masters-of-cinema">Masters of Cinema</a></td>
 <td></td>
 <td><a href="#hd-bluray-tier-01">HD Bluray Tier 01</a></td>
-<td><a href="#nf">Netflix</a></td>
+<td><a href="#hulu">Hulu</a></td>
 </tr>
 <tr>
 <td><a href="#theatrical-cut">Theatrical Cut</a></td>
 <td></td>
 <td><a href="#hd-bluray-tier-02">HD Bluray Tier 02</a></td>
-<td><a href="#pcok">Peacock TV</a></td>
+<td><a href="#nf">Netflix</a></td>
 </tr>
 <tr>
 <td><a href="#imax">IMAX</a></td>
 <td></td>
 <td><a href="#web-tier-01">WEB Tier 01</a></td>
-<td><a href="#pmtp">Paramount+</a></td>
+<td><a href="#pcok">Peacock TV</a></td>
 </tr>
 <tr>
 <td><a href="#imax-enhanced">IMAX Enhanced</a></td>
 <td></td>
 <td><a href="#web-tier-02">WEB Tier 02</a></td>
-<td><a href="#ma">Movies Anywhere</a></td>
+<td><a href="#pmtp">Paramount+</a></td>
 </tr>
 <tr>
 <td><a href="#open-matte">Open Matte</a></td>
 <td></td>
 <td><a href="#web-tier-03">WEB Tier 03</a></td>
+<td><a href="#ma">Movies Anywhere</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
 <td><a href="#pathe">Pathe Thuis</a></td>
 </tr>
 <tr>
@@ -2812,6 +2838,12 @@ Special thanks to <a href="https://github.com/rg9400">rg9400</a>, <a href="https
 <tr>
 <td></td>
 <td><a href="#dv-fel">DV (FEL)</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#linemic-dubbed">Line/Mic Dubbed</a></td>
 <td></td>
 <td></td>
 </tr>
@@ -6133,7 +6165,7 @@ Several reasons why this is happening:</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(MTeam)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(MTeam|MT)\\b"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -7410,6 +7442,48 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-HYBRID"</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+</details>
+<p><sub><sup><a href="#index">TOP</a></sup></sub></p>
+<hr/>
+<h3 id="linemic-dubbed">Line/Mic Dubbed<a class="headerlink" href="#linemic-dubbed" title="Permanent link"></a></h3>
+<details class="question">
+<summary>Line/Mic Dubbed - [CLICK TO EXPAND]</summary>
+<ul>
+<li>This seems to be often used with German releases, and this will block the low quality audio.</li>
+<li>Line Dubbed = Sound extracted in the cinema by cable.</li>
+<li>Mic Dubbed = Sound extracted in the cinema by a microphone.</li>
+</ul>
+</details>
+<details class="example">
+<summary>JSON - [CLICK TO EXPAND]</summary>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">"trash_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"c465ccc73923871b3eb1802042331306"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"trash_score"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-10000"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"trash_regex"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://regex101.com/r/6vHBAD/1"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Line/Mic Dubbed"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"includeCustomFormatWhenRenaming"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"specifications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Line Dubbed"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseTitleSpecification"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(LD|AC3LD|Line[ .-]?Dubbed)\\b"</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mic Dubbed"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseTitleSpecification"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(MD|AC3MD|Mic[ .-]?Dubbed)\\b"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">]</span>
@@ -9094,6 +9168,52 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 </details>
 <p><sub><sup><a href="#index">TOP</a></sup></sub></p>
 <hr/>
+<h3 id="hbo">HBO<a class="headerlink" href="#hbo" title="Permanent link"></a></h3>
+<p><sub>HBO</sub></p>
+<details class="question">
+<summary>HBO - [CLICK TO EXPAND]</summary>
+<p><a href="https://en.wikipedia.org/wiki/HBO" rel="noopener noreferrer" target="_blank">From Wikipedia, the free encyclopedia</a></p>
+</details>
+<details class="example">
+<summary>JSON - [CLICK TO EXPAND]</summary>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">"trash_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"509e5f41146e278f9eab1ddaceb34515"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HBO"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"includeCustomFormatWhenRenaming"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"specifications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HBO"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseTitleSpecification"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(hbo)(?![ ._-]max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)"</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"WEBDL"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SourceSpecification"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"WEBRIP"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SourceSpecification"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+</details>
+<p><sub><sup><a href="#index">TOP</a></sup></sub></p>
+<hr/>
 <h3 id="hmax">HMAX<a class="headerlink" href="#hmax" title="Permanent link"></a></h3>
 <p><sub>HBO Max</sub></p>
 <details class="question">
@@ -9113,7 +9233,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(hmax|hbom|HBO Max)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(hmax|hbom|hbo[ ._-]max)\\b(?=[ ._-]web[ ._-]?(dl|rip)\\b)"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -14352,7 +14472,9 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <details class="question">
 <summary>Remux Tier 01 - [CLICK TO EXPAND]</summary>
 <ul>
+<li>WiP</li>
 <li>Groups doing remuxes with multiple sources (discs) mixing what's best.</li>
+<li>Groups doing remuxes with a groups from Remux Tier 01 or 02 and adding the best French Audio available.</li>
 </ul>
 </details>
 <details class="example">
@@ -14418,15 +14540,6 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Obi"</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseGroupSpecification"</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(Obi)\\b"</span>
-<span class="w">      </span><span class="p">}</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span>
 <span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ONLY"</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseGroupSpecification"</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
@@ -14452,6 +14565,24 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(Psaro)\\b"</span>
 <span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Tezcat74"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseGroupSpecification"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(Tezcat74)\\b"</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Zapax"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseGroupSpecification"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(Zapax)\\b"</span>
+<span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">]</span>
 <span class="p">}</span>
@@ -14463,6 +14594,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <details class="question">
 <summary>Remux Tier 02 - [CLICK TO EXPAND]</summary>
 <ul>
+<li>WiP</li>
 <li>Groups that use an automated way.</li>
 <li>Groups active doing remuxes from a single sources (discs).</li>
 <li>Groups that haven't released much or are not well recognized. (yet)</li>
@@ -14523,6 +14655,15 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Obi"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseGroupSpecification"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(Obi)\\b"</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
 <span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PATOMiEL"</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseGroupSpecification"</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
@@ -14557,15 +14698,6 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(Sicario)\\b"</span>
 <span class="w">      </span><span class="p">}</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Zapax"</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseGroupSpecification"</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(Zapax)\\b"</span>
-<span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">]</span>
 <span class="p">}</span>
@@ -14576,10 +14708,12 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <h3 id="fr-uhd-bluray-tier-01">FR UHD Bluray Tier 01<a class="headerlink" href="#fr-uhd-bluray-tier-01" title="Permanent link"></a></h3>
 <details class="question">
 <summary>FR UHD Bluray Tier 01 - [CLICK TO EXPAND]</summary>
-<p>(WiP - This Custom Formats should be considered in alpha stage)
-- Groups that created encodes from the remuxes without micro-sizing them.
-- HDR/DoVi (Depending what's offered and often both).
-- HD Audio (Atmos, TrueHD etc...).</p>
+<ul>
+<li>WiP</li>
+<li>Groups that created encodes from the remuxes without micro-sizing them.</li>
+<li>HDR/DoVi (Depending what's offered and often both).</li>
+<li>HD Audio (Atmos, TrueHD etc...).</li>
+</ul>
 </details>
 <details class="example">
 <summary>JSON - [CLICK TO EXPAND]</summary>
@@ -14688,12 +14822,14 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <h3 id="fr-uhd-bluray-tier-02">FR UHD Bluray Tier 02<a class="headerlink" href="#fr-uhd-bluray-tier-02" title="Permanent link"></a></h3>
 <details class="question">
 <summary>FR UHD Bluray Tier 02 - [CLICK TO EXPAND]</summary>
-<p>(WiP - This Custom Formats should be considered in alpha stage)
-- Groups that created encodes from the remuxes without micro-sizing them.
-- HDR/DoVi (Depending what's offered and often both).
-- HD Audio (Atmos, TrueHD etc...).
-- Groups that haven't released much or are not well recognized. (yet)
-- Groups that retired and don't have the best quality by todays standards.</p>
+<ul>
+<li>WiP</li>
+<li>Groups that created encodes from the remuxes without micro-sizing them.</li>
+<li>HDR/DoVi (Depending what's offered and often both).</li>
+<li>HD Audio (Atmos, TrueHD etc...).</li>
+<li>Groups that haven't released much or are not well recognized. (yet)</li>
+<li>Groups that retired and don't have the best quality by todays standards.</li>
+</ul>
 </details>
 <details class="example">
 <summary>JSON - [CLICK TO EXPAND]</summary>
@@ -14803,6 +14939,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <details class="question">
 <summary>FR HD Bluray Tier 01 - [CLICK TO EXPAND]</summary>
 <ul>
+<li>WiP</li>
 <li>Groups that created encodes from the remuxes without micro-sizing them.</li>
 <li>Groups that have a minimum of great releases (best encode in it's class 1080p and lower).</li>
 </ul>
@@ -14933,6 +15070,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <details class="question">
 <summary>FR HD Bluray Tier 02 - [CLICK TO EXPAND]</summary>
 <ul>
+<li>WiP</li>
 <li>Groups that created encodes from the remuxes without micro-sizing them.</li>
 <li>Groups that haven't released much or are not well recognized. (yet)</li>
 <li>Groups that retired and don't have the best quality by todays standards.</li>
@@ -15064,7 +15202,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <details class="question">
 <summary>FR WEB Tier 01 - [CLICK TO EXPAND]</summary>
 <ul>
-<li>placeholder</li>
+<li>WiP</li>
 <li>Groups that source directly from the streaming service</li>
 </ul>
 </details>
@@ -15203,7 +15341,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <details class="question">
 <summary>FR WEB Tier 02 - [CLICK TO EXPAND]</summary>
 <ul>
-<li>placeholder</li>
+<li>WiP</li>
 <li>Groups that haven't released much or are not well recognized. (yet)</li>
 <li>Groups that retired and don't have the best quality by todays standards.</li>
 </ul>
@@ -15616,7 +15754,7 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">January 29, 2023 17:01:09</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 7, 2023 18:33:49</span>
 </small>
 </div>
 <footer class="sponsorship">
@@ -15663,6 +15801,6 @@ This applies to all releases that are x265/HEVC that are not Remux.</p>
 <div class="md-dialog__inner md-typeset"></div>
 </div>
 <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "content.code.copy", "content.action.edit", "content.action.view"], "search": "../../assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
-<script src="../../assets/javascripts/bundle.a00a7c5e.min.js"></script>
+<script src="../../assets/javascripts/bundle.6df46069.min.js"></script>
 <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>
