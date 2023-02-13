@@ -1,3 +1,53 @@
+# 2023-02-07 20:45
+**[New]**
+- None
+
+**[Updated]**
+- [SQP 2-5] Added extra info for the HD/UHD merge/split.
+
+**[Fixed]**
+- Fix HBO/HMAX inconsistencies across Sonarr V3/V4 and Radarr.
+- Fix HBO rlsgrp matching HBO/HMAX Streaming CF.
+
+# 2023-02-06 20:15
+**[New]**
+- [Radarr] CF `Line/Mic Dubbed`.
+
+**[Updated]**
+- [SQP 2-5] Added optional to also accept 1080p WEBDL without DV/HDR, if you're only running 1 Radarr so you will also get the HD release if there is no UHD version.
+
+**[Fixed]**
+- None
+
+# 2023-02-05 20:30
+**[New]**
+- None
+
+**[Updated]**
+- [Sonarr v3] Updated several regex and scoring to match Sonarr v4.
+- [Starr] Updated HDR info for AppleTV Profile 5 - It has been confirmed that with the latest beta build of Plex, Profile 5 MKV files now play correctly.
+
+**[Fixed]**
+- None
+
+# 2023-02-04 21:15
+**[New]**
+- [Guide- and Sonarr-FR] Added `ADN` and `Wakanim` streaming services to the French Anime section.
+- [Sonarr-FR] Added Recyclarr French configs for both Web and Anime shows (both MULTi and VOSTFR configs).
+
+**[Updated]**
+- [Guide-FR] Added Seiya to the Anime Acknowledgements as he is the one behind the most recents changes.
+- [Guide-FR] Updated the French Anime section to include the streaming services.
+- [Radarr-FR] Added `Tezcat74` to `FR Remux Tier 01`.
+- [Radarr-FR] Moved `Zapax` to `FR Remux Tier 01`.
+- [Radarr-FR] Moved `Obi` to `FR Remux Tier 02`.
+- [Sonarr-FR] Updated `Good Job! Alexis` to include its other names.
+- [Radarr] Added `MT` to the `LQ` CF because it is just a shortened name of `MTeam`.
+- [Radarr - Naming Scheme] Make people aware of consequences when using the new edition naming format (`{edition-{Edition Tags}}`).
+
+**[Fixed]**
+- [Guide-Anime] Fixed the double ")" for BiliBili.
+
 # 2023-01-30 18:30
 **[New]**
 - None
