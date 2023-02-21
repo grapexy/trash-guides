@@ -11,7 +11,7 @@
 <link href="../Sonarr-recommended-naming-scheme/" rel="prev"/>
 <link href="../Sonarr-Release-Profile-RegEx-Anime/" rel="next"/>
 <link href="../../img/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.4.2, mkdocs-material-9.0.11" name="generator"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-9.0.12" name="generator"/>
 <title>Release Profile RegEx (WEB-DL) - TRaSH Guides</title>
 <link href="../../assets/stylesheets/main.0d440cfe.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
@@ -160,6 +160,11 @@
 <li class="md-tabs__item">
 <a class="md-tabs__link" href="../../Plex/">
         Plex
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../Guide-Sync/">
+        Guide Sync
       </a>
 </li>
 <li class="md-tabs__item">
@@ -920,11 +925,31 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_8" type="checkbox"/>
 <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
-          Misc
+          Guide Sync
           <span class="md-nav__icon md-icon"></span>
 </label>
 <nav aria-expanded="false" aria-labelledby="__nav_8_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_8">
+<span class="md-nav__icon md-icon"></span>
+          Guide Sync
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Guide-Sync/">
+        Home
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          Misc
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_9_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_9">
 <span class="md-nav__icon md-icon"></span>
           Misc
         </label>
@@ -949,22 +974,17 @@
         x265-4k and Golden Rule
       </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../Misc/trash-sync/">
-        TRaSH Sync
-      </a>
-</li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_9" type="checkbox"/>
-<label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+<input class="md-nav__toggle md-toggle" id="__nav_10" type="checkbox"/>
+<label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
           Hardlinks
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_9_label" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_9">
+<nav aria-expanded="false" aria-labelledby="__nav_10_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_10">
 <span class="md-nav__icon md-icon"></span>
           Hardlinks
         </label>
@@ -975,13 +995,13 @@
       </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_9_2" type="checkbox"/>
-<label class="md-nav__link" for="__nav_9_2" id="__nav_9_2_label" tabindex="0">
+<input class="md-nav__toggle md-toggle" id="__nav_10_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_10_2" id="__nav_10_2_label" tabindex="0">
           How to setup for
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_9_2_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_9_2">
+<nav aria-expanded="false" aria-labelledby="__nav_10_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_10_2">
 <span class="md-nav__icon md-icon"></span>
           How to setup for
         </label>
@@ -1009,6 +1029,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../Hardlinks/How-to-setup-for/Synology/">
         Synology
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Hardlinks/How-to-setup-for/TrueNAS-Core/">
+        TrueNAS Core
       </a>
 </li>
 <li class="md-nav__item">
@@ -1365,6 +1390,8 @@ Probably doesn’t happen if cutoff is met, but for anything that is unmet or an
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>nlz<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span><span class="w"> </span>._-<span class="o">]</span>web<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
 </code></pre></div>
+<div class="highlight"><pre><span></span><code>/<span class="se">\b</span><span class="o">(</span>cc<span class="o">)</span><span class="se">\b</span><span class="o">(</span>?<span class="o">=[</span><span class="w"> </span>._-<span class="o">]</span>web<span class="o">[</span><span class="w"> </span>._-<span class="o">]</span>?<span class="o">(</span>dl<span class="p">|</span>rip<span class="o">)</span><span class="se">\b</span><span class="o">)</span>/i
+</code></pre></div>
 <div class="admonition danger">
 <p class="admonition-title">Caution</p>
 <p>Don't forget to click on <code>SAVE</code> after you've added everything you want to the release profile <img alt="‼" class="twemoji" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/203c.svg" title=":bangbang:"/></p>
@@ -1699,7 +1726,7 @@ Also they often even rename the release name in to Portuguese.</p>
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 7, 2023 18:34:58</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 15, 2023 18:36:42</span>
 </small>
 </div>
 <footer class="sponsorship">
@@ -1746,6 +1773,6 @@ Also they often even rename the release name in to Portuguese.</p>
 <div class="md-dialog__inner md-typeset"></div>
 </div>
 <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "content.code.copy", "content.action.edit", "content.action.view"], "search": "../../assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
-<script src="../../assets/javascripts/bundle.6df46069.min.js"></script>
+<script src="../../assets/javascripts/bundle.4b2c34cd.min.js"></script>
 <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>
