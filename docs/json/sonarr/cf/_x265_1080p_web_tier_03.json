@@ -1,6 +1,6 @@
 {
-  "trash_id": "88bab48eb30145219e9b8f4ba68ba854",
-  "name": "_HEVC WEB Tier 01 (FHD)",
+  "trash_id": "508ee8d567794772b2b4c78e8b6055d4",
+  "name": "_HEVC WEB Tier 03 (FHD)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
@@ -31,21 +31,21 @@
       }
     },
     {
-      "name": "HONE Group",
+      "name": "QxR Group",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(?:[xh][ ._-]?265|\\bHEVC(\\b|\\d)).+?\\b(YOGI|Weasley|HONE)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b|\\bUTR\\b)*(?:\\)|\\]|$)"
+        "value": "(?:[xh][ ._-]?265|\\bHEVC(\\b|\\d)).+?\\b(Tigole|FreetheFish|MONOLITH|ImE|afm72|Silence|RZeroX|Ghost|Panda|RCVR|t3nzin|Kappa|Bandi)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b|\\bUTR\\b)*(?:\\)|\\]|$)"
       }
     },
     {
-      "name": "TAoE Group",
+      "name": "Other HEVC Groups",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(?:[xh][ ._-]?265|\\bHEVC(\\b|\\d)).+?\\b(Goki|JBENT|DNU|DrainedDay|WEM|xtrem3x|Frys|Ainz|Species180|TheSickle|ArcX|bccornfo)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b|\\bUTR\\b)*(?:\\)|\\]|$)"
+        "value": "(?:[xh][ ._-]?265|\\bHEVC(\\b|\\d)).+?\\b(SiGMA|SiGLA|NAN0|Edge2020)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b|\\bUTR\\b)*(?:\\)|\\]|$)"
       }
     }
   ]
