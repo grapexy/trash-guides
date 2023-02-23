@@ -40,7 +40,7 @@
       }
     },
     {
-      "name": "HEVC Bluray Title Groups",
+      "name": "HEVC Bluray Tier 01 Groups",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": true,
