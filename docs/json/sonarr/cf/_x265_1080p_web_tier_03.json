@@ -40,7 +40,7 @@
       }
     },
     {
-      "name": "Other HEVC Groups",
+      "name": "Other HEVC Tier 03 Groups",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
