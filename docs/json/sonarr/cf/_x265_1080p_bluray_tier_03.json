@@ -56,6 +56,15 @@
       "fields": {
         "value": "(?:[xh][ ._-]?265|\\bHEVC(\\b|\\d)).+?\\b(YAWNiX|HiQVE)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b|\\bUTR\\b)*(?:\\)|\\]|$)"
       }
+    },
+    {
+      "name": "TAoE DrainedDay - Bluray",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(?:[xh][ ._-]?265|\\bHEVC(\\b|\\d)).+?\\b(DrainedDay)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b|\\bUTR\\b)*(?:\\)|\\]|$)"
+      }
     }
   ]
 }
