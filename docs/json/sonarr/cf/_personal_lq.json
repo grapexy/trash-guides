@@ -55,7 +55,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "([xh][ ._-]?265|\\bHEVC(\\b|\\d)).*\\b(Bearfish|BONE|D3FiL3R|d3g|DTR|ELiTE|EVO|eztv|EzzRips|HashMiner|HETeam|HEVCBay|HR-DR|iFT|ION265|JATT|Joy|m3th|MeGusta|MRN|Musafirboy|PHOCiS|PSA|RARBG|RMTeam|ShieldBearer|SiQ|TBD|TSP|VXT|YIFY|YTS)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b|\\bUTR\\b)*(?:\\)|\\]|$)"
+        "value": "(?:[xh][ ._-]?265|\\bHEVC(?:\\b|\\d)).*\\b(Bearfish|BONE|D3FiL3R|d3g|DTR|ELiTE|EVO|eztv|EzzRips|HashMiner|HETeam|HEVCBay|HR-DR|iFT|ION265|JATT|Joy|m3th|MeGusta|MRN|Musafirboy|PHOCiS|PSA|RARBG|RMTeam|ShieldBearer|SiQ|TBD|TSP|VXT|YIFY|YTS)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b|\\bUTR\\b)*(?:\\)|\\]|$)"
       }
     }
   ]
