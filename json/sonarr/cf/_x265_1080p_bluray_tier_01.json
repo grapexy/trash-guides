@@ -31,15 +31,6 @@
       }
     },
     {
-      "name": "NOT DrainedDay",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": "(?:[xh][ ._-]?265|\\bHEVC(\\b|\\d)).+?\\b(DrainedDay)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b|\\bUTR\\b)*(?:\\)|\\]|$)"
-      }
-    },
-    {
       "name": "HONE Group",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -49,12 +40,12 @@
       }
     },
     {
-      "name": "TAoE Group",
+      "name": "TAoE Group (Sans DrainedDay)",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(?:[xh][ ._-]?265|\\bHEVC(\\b|\\d)).+?\\b(Goki|JBENT|DNU|DrainedDay|WEM|xtrem3x|Frys|Ainz|Species180|TheSickle|ArcX|bccornfo)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b|\\bUTR\\b)*(?:\\)|\\]|$)"
+        "value": "(?:[xh][ ._-]?265|\\bHEVC(\\b|\\d)).+?\\b(Goki|JBENT|DNU|WEM|xtrem3x|Frys|Ainz|Species180|TheSickle|ArcX|bccornfo)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b|\\bUTR\\b)*(?:\\)|\\]|$)"
       }
     }
   ]
