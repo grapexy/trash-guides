@@ -1,0 +1,43 @@
+{
+  "trash_id": "0f1a5cff938f418e864a1ff4ec303562",
+  "name": "_HEVC Bluray Tier 02 (FHD)",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "1080p",
+      "implementation": "ResolutionSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 1080
+      }
+    },
+    {
+      "name": "BLURAY",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 6
+      }
+    },
+    {
+      "name": "Not REMUX",
+      "implementation": "SourceSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "HEVC Tier 02",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(?:[xh][ ._-]?265|\\bHEVC(\\b|\\d)).+?\\b(Stelks|Yoyo|Vyndros|LSt)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b|\\bUTR\\b)*(?:\\)|\\]|$)"
+      }
+    }
+  ]
+}

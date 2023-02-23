@@ -1,6 +1,6 @@
 {
-  "trash_id": "92c02ef4a8284c4c84d395dd16d63a38",
-  "name": "_HEVC Bluray Tier 01 (FHD)",
+  "trash_id": "25d156060e9b47e1bbe5dbf5df3b3527",
+  "name": "_HEVC Bluray Tier 03 (FHD)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
@@ -31,30 +31,21 @@
       }
     },
     {
-      "name": "NOT DrainedDay",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": "(?:[xh][ ._-]?265|\\bHEVC(\\b|\\d)).+?\\b(DrainedDay)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b|\\bUTR\\b)*(?:\\)|\\]|$)"
-      }
-    },
-    {
-      "name": "HONE Group",
+      "name": "Other HEVC Tier 03 Groups",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(?:[xh][ ._-]?265|\\bHEVC(\\b|\\d)).+?\\b(YOGI|Weasley|HONE)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b|\\bUTR\\b)*(?:\\)|\\]|$)"
+        "value": "(?:[xh][ ._-]?265|\\bHEVC(\\b|\\d)).+?\\b(SiGMA|SiGLA|NAN0|Edge2020)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b|\\bUTR\\b)*(?:\\)|\\]|$)"
       }
     },
     {
-      "name": "TAoE Group",
+      "name": "YAWNiX / HiQVE",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(?:[xh][ ._-]?265|\\bHEVC(\\b|\\d)).+?\\b(Goki|JBENT|DNU|DrainedDay|WEM|xtrem3x|Frys|Ainz|Species180|TheSickle|ArcX|bccornfo)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b|\\bUTR\\b)*(?:\\)|\\]|$)"
+        "value": "(?:[xh][ ._-]?265|\\bHEVC(\\b|\\d)).+?\\b(YAWNiX|HiQVE)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b|\\bUTR\\b)*(?:\\)|\\]|$)"
       }
     }
   ]
