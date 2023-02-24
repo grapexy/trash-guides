@@ -32,12 +32,12 @@
       }
     },
     {
-      "name": "Simpsons - AJP69 (prefer DSNP)",
+      "name": "Simpsons - AMZN x264 (Prefer DNSP or x265)",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "The.Simpsons.+?\\bS\\d+\\b(?!E\\d+\\b).+?AJP69"
+        "value": "The.Simpsons.+?\\bS\\d+\\b(?!E\\d+\\b).+?(?=AMZN).+?(?=[xh][ ._-]?264|\\bAVC(\\b|\\d))"
       }
     }
   ]
