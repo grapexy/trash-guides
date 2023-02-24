@@ -1,7 +1,7 @@
 {
   "trash_id": "2c421e0816704544b01111465d86d580",
   "trash_score": "-10000",
-  "name": "Blacklisted Releases",
+  "name": "_Blacklisted Releases",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
@@ -29,6 +29,15 @@
       "required": false,
       "fields": {
         "value": "^Prison\\sBreak.*?1080p.*?DrainedDay"
+      }
+    },
+    {
+      "name": "Simpsons - AJP69 (prefer DSNP)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "The.Simpsons.+?\\bS\\d+\\b(?!E\\d+\\b).+?AJP69"
       }
     }
   ]
