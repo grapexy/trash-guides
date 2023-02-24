@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^The.*?Blacklist.*?S01-S08.*?d3g$"
+        "value": "^The.*?Blacklist.*?S01-S08.*?d3g"
       }
     },
     {
