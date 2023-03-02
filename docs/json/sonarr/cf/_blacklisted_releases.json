@@ -39,6 +39,15 @@
       "fields": {
         "value": "The.Simpsons.+?\\bS\\d+\\b(?!E\\d+\\b).+?(?=AMZN).+?(?=[xh][ ._-]?264|\\bAVC(\\b|\\d))"
       }
+    },
+    {
+      "name": "Nova S49 GNOME - Incomplete",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^Nova.*?S49.*?1080p.*?GNOME"
+      }
     }
   ]
 }
