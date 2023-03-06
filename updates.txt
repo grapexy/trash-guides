@@ -1,3 +1,26 @@
+# 2023-03-04 17:15
+**[New]**
+- None
+
+**[Updated]**
+- [Radarr] Moved RlsGrp `SPHD` to the lowest UHD tier, because they often use Lower Quality sources for their releases.
+- [Radarr] Added RlsGrp `LAMA` to the `LQ` CF, uploading 480p cam shit as 1080p bluray and just in general low quality.
+- [Radarr] CF `Special Edition`, Special Edition matches `IMAX Edition`, so adding unnecessary extra scoring to releases that already match `IMAX`.
+
+**[Fixed]**
+- [Guide] Fix broken links.
+
+# 2023-02-26 19:45
+**[New]**
+- None
+
+**[Updated]**
+- [Guide - unRaid qBit Mover script] Added If you have authentication enabled. Add `'` either side of your User/Password.
+- [Guide - Guide Sync] Move features to a table instead of the footnotes.
+
+**[Fixed]**
+- [Radarr] CF `Upscaled` in wrong quality profile.
+
 # 2023-02-19 20:30
 **[New]**
 - [Hardlinks Guide] NEW Guide for Truenas Core.
