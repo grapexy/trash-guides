@@ -72,7 +72,7 @@ plugins:
   - redirects:
       redirect_maps:
         updates.txt: updates.txt
-        discord.md: https://discord.gg/Vau8dZ3
+        discord.md: https://discord.gg/4K2kdvwzFh
         syno-script.md: https://github.com/TRaSH-/Guides-Synology-Templates/blob/main/script/trash_syno_installer.sh
         # Radarr redirects
         Radarr/Radarr-setup-custom-formats.md: Radarr/radarr-setup-quality-profiles.md
@@ -89,7 +89,7 @@ plugins:
         How-to-setup-for/Synology.md: Hardlinks/How-to-setup-for/Synology.md
         How-to-setup-for/Unraid.md: Hardlinks/How-to-setup-for/Unraid.md
         # Random redirects
-        Misc/trash-sync.md: Guide-Sync/guide-sync.md
+        Misc/trash-sync.md: Guide-Sync/index.md
         # Shortcuts redirects
         hardlinks.md: Hardlinks/Hardlinks-and-Instant-Moves.md
         hardlink.md: Hardlinks/Hardlinks-and-Instant-Moves.md
