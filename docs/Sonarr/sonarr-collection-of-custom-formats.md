@@ -85,6 +85,7 @@ I also made 3 guides related to this one.
 |                                | [AV1](#av1)                         | [VOSTFR](#vostfr)             | [FR LQ](#fr-lq)                               |
 |                                | [SDR](#sdr)                         | [FanSUB](#fansub)             |                                               |
 |                                | [DV (FEL)](#dv-fel)                 | [FastSUB](#fastsub)           |                                               |
+|                                | [HFR](#hfr)                         |                               |                                               |
 
 ------
 
@@ -1138,6 +1139,22 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/dv-fel.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### HFR
+
+??? question "HFR - [CLICK TO EXPAND]"
+
+    - This will boost the score for HFR releases. HFR stands for High Frame Rate and refers to a video format that uses a higher number of frames per second than traditional video, resulting in smoother and more detailed motion.
+
+??? example "JSON - [CLICK TO EXPAND]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/hfr.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -2398,6 +2415,7 @@ I also made 3 guides related to this one.
 
     - WIP
     - Groups that created encodes from the remuxes without micro-sizing them.
+    - Groups that source and add the best French audio track from the source to an English release from Tier 01 or 02.
     - Groups that have a minimum of great releases (best encode in it's class 1080p and lower).
 
 ??? example "JSON - [CLICK TO EXPAND]"
@@ -2415,7 +2433,8 @@ I also made 3 guides related to this one.
 ??? question "FR WEB Tier 01 - [CLICK TO EXPAND]"
 
     - WIP
-    - Groups that source directly from the streaming service.
+    - Groups that get their releases directly from the source.
+    - Groups that source and add the French audio track from the source to an English release from Tier 01 or 02.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -2432,8 +2451,8 @@ I also made 3 guides related to this one.
 ??? question "FR WEB Tier 02 - [CLICK TO EXPAND]"
 
     - WIP
-    - Groups that source directly from the streaming service but are not so active.
-    - Groups that add French audio tracks to an English release.
+    - Groups that get their releases directly from the source but are not so active.
+    - Groups that source and add the French audio track from the source to an English release.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
@@ -2468,7 +2487,8 @@ I also made 3 guides related to this one.
 ??? question "FR Anime Tier 01 - [CLICK TO EXPAND]"
 
     - WIP
-    - Groups that are know to be still active and doing only Anime and which releases are comparable to SeaDex recommended.
+    - Groups that are know to be still active and doing only Anime
+    - Groups which releases are at least comparable to SeaDex recommended.
 
 ??? example "JSON - [CLICK TO EXPAND]"
 
