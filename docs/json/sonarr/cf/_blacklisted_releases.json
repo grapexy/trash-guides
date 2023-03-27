@@ -48,6 +48,15 @@
       "fields": {
         "value": "^Nova.*?S49.*?1080p.*?GNOME"
       }
+    },
+    {
+      "name": "Supernatural - DrainedDay BDRip (Huge releases)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^Supernatural.*?1080p.*?BDRip.*?DrainedDay"
+      }
     }
   ]
 }
