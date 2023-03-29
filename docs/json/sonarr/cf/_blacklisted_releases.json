@@ -84,6 +84,15 @@
       "fields": {
         "value": "^NCIS.?S[0-9].*?\\b(AMZN|PMTP)\\b.*?264"
       }
+    },
+    {
+      "name": "Mythbusters - AMZN (Huge releases)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^Mythbusters.?S[0-9].*?\\b(AMZN)\\b.*?264"
+      }
     }
   ]
 }
