@@ -1,0 +1,17 @@
+{
+  "trash_id": "f9839dcf08b041b19373383b86eea6c6",
+  "trash_score": "-25",
+  "name": "_No Channel Info",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "No Channel Info",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "[^0-9][1-9][ .][0-1]|\\b(Stereo|Mono)"
+      }
+    }
+  ]
+}
