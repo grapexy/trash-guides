@@ -30,24 +30,6 @@
       "fields": {
         "value": "\\b(SiGMA)\\b"
       }
-    },
-    {
-      "name": "WEBDL",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 3
-      }
-    },
-    {
-      "name": "WEBRIP",
-      "implementation": "SourceSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": 4
-      }
     }
   ]
 }
