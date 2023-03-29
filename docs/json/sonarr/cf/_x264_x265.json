@@ -5,12 +5,12 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "x264|x265",
+      "name": "x264|x265 OR BluRay",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": true,
       "fields": {
-        "value": "[x][ ._-]?(264|265)"
+        "value": "([x][ ._-]?(264|265)|BluRay|BDRip)"
       }
     },
     {
