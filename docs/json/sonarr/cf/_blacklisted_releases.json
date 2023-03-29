@@ -59,12 +59,21 @@
       }
     },
     {
-      "name": "CSI Crime Scene Investigation - AMZN (Huge releases)",
+      "name": "CSI Crime Scene Investigation - AMZN & 720p (Huge releases)",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^CSI.{0,2}Crime.*?Scene.*?Investigation.*?\\b(AMZN)\\b"
+        "value": "^CSI.{0,2}Crime.*?Scene.*?Investigation.*?(720p|\\b(AMZN)\\b.*?264)"
+      }
+    },
+    {
+      "name": "RuPaul's Drag Race - AMZN & 720p (Huge releases)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^RuPaul.?s.Drag.*?Race.*?(720p|\\b(AMZN)\\b.*?264)"
       }
     }
   ]
