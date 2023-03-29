@@ -46,7 +46,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(d3g|POIASD|Undead)\\b(?:[\\s.-])?(?:\\bUTR\\b)*(?:\\)|$|\\.\\w+$)"
+        "value": "\\b(d3g|POIASD|Undead|Qman)\\b(?:[\\s.-])?(?:\\bUTR\\b)*(?:\\)|$|\\.\\w+$)"
       }
     },
     {
