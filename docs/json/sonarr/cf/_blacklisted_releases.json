@@ -57,6 +57,15 @@
       "fields": {
         "value": "^Supernatural.*?1080p.*?BDRip.*?DrainedDay"
       }
+    },
+    {
+      "name": "CSI Crime Scene Investigation - AMZN (Huge releases)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^CSI.{0,2}Crime.*?Scene.*?Investigation.*?\\b(AMZN)\\b"
+      }
     }
   ]
 }
