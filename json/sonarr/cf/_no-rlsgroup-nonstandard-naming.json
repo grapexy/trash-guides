@@ -23,12 +23,21 @@
       }
     },
     {
-      "name": "NOT HONE Group",
+      "name": "NOT HONE Group Encodes",
       "implementation": "ReleaseTitleSpecification",
       "negate": true,
       "required": true,
       "fields": {
-        "value": "(?:[xh][ ._-]?265|\\bHEVC(\\b|\\d)).+?\\b(YOGI|Weasley|HONE)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b|\\bUTR\\b)*(?:\\)|\\]|$|\\.\\w+$)"
+        "value": "(?:[x][ ._-]?265).+?\\b(Altezza|cYpHer|DiscoD|YOGI|Weasley|HONE)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b|\\bUTR\\b|\\bHONE\\b)*(?:\\)|\\]|$|\\.\\w+$)"
+      }
+    },
+    {
+      "name": "NOT HONE Group DLs",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "(?:[h][ ._-]?265).+?\\b(Altezza|cYpHer|DiscoD|YOGI|Weasley|HONE)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b|\\bUTR\\b|\\bHONE\\b)*(?:\\)|\\]|$|\\.\\w+$)"
       }
     },
     {

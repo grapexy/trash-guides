@@ -31,12 +31,12 @@
       }
     },
     {
-      "name": "HONE Group",
+      "name": "HONE Group Encodes",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(?:[xh][ ._-]?265|\\bHEVC(\\b|\\d)).+?\\b(YOGI|Weasley|HONE)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b|\\bUTR\\b)*(?:\\)|\\]|$|\\.\\w+$)"
+        "value": "(?:[x][ ._-]?265).+?\\b(Altezza|cYpHer|DiscoD|YOGI|Weasley|HONE)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b|\\bUTR\\b|\\bHONE\\b)*(?:\\)|\\]|$|\\.\\w+$)"
       }
     },
     {
