@@ -5,12 +5,12 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "x265",
+      "name": "x265 OR HEVC Bluray",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": true,
       "fields": {
-        "value": "[x][ ._-]?265"
+        "value": "([x][ ._-]?265|(BluRay|BDRip).*?([xh][ ._-]?265|\\bHEVC(\\b|\\d)))"
       }
     },
     {
