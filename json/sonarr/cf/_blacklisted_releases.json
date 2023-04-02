@@ -14,12 +14,12 @@
       }
     },
     {
-      "name": "The Blacklist - S01-S08 d3g (wrong audio label)",
+      "name": "The Blacklist - S01-S09 x264",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^The.*?Blacklist.*?S01-S08.*?d3g"
+        "value": "^The.*?Blacklist.*?S0[1-9].*?[xh][ ._-]?264|\\bAVC(\\b|\\d)"
       }
     },
     {
