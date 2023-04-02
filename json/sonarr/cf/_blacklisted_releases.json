@@ -100,7 +100,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^Impractical.*?Jokers.*?\\b(AMZN)\\b.*?264"
+        "value": "^Impractical.*?Jokers.*?(720p|\\b(AMZN)\\b.*?264)"
       }
     }
   ]
