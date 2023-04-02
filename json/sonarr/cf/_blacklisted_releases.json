@@ -93,6 +93,15 @@
       "fields": {
         "value": "^Mythbusters.?S[0-9].*?\\b(AMZN)\\b.*?264"
       }
+    },
+    {
+      "name": "Impractical Jokers - AMZN (Huge releases)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^Impractical.*?Jokers.*?\\b(AMZN)\\b.*?264"
+      }
     }
   ]
 }
