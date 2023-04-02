@@ -102,6 +102,15 @@
       "fields": {
         "value": "^Impractical.*?Jokers.*?(720p|\\b(AMZN)\\b.*?264)"
       }
+    },
+    {
+      "name": "Family Guy - S08 FLUX (Incomplete)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^Family.*?Guy.*?S08.*?(\\bFLUX\\b)"
+      }
     }
   ]
 }
