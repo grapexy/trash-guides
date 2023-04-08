@@ -1,0 +1,26 @@
+{
+  "trash_id": "b51e64e7d20241a9afe042771354134b",
+  "trash_score": "-10000",
+  "name": "_No-RlsGroup",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "No Parsed Group",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "."
+      }
+    },
+    {
+      "name": "Not HUNO style naming",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "-\\s?(?!(?:NOGRP|NOGROUP))(\\b\\w+\\b)\\s?(\\b\\w+\\b)?\\)\\s?($|\\[\\b\\w+\\b\\]$)"
+      }
+    }
+  ]
+}
