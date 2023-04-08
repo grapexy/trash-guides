@@ -1,6 +1,6 @@
 {
-  "trash_id": "92ae488987ab4c4eab1cd7df60529d81",
-  "name": "_HEVC Bluray Tier 01 (FHD)",
+  "trash_id": "53621f86f1fe4eb6a83f0d96398ac97f",
+  "name": "_HEVC Bluray Tier 02 (FHD)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
@@ -31,12 +31,21 @@
       }
     },
     {
-      "name": "HONE Group",
+      "name": "TAoE Group",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(?:[xh][ ._-]?265|\\bHEVC(\\b|\\d)).+?\\b(HONE)\\b(?:[\\s\\[.-]){0,2}(?:\\)|\\]|$|\\.\\w+$)"
+        "value": "(?:[xh][ ._-]?265|\\bHEVC(\\b|\\d)).+?\\b(TAoE)\\b(?:[\\s\\[.-]){0,2}(?:\\)|\\]|$|\\.\\w+$)"
+      }
+    },
+    {
+      "name": "Other HEVC Groups",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(?:[xh][ ._-]?265|\\bHEVC(\\b|\\d)).+?\\b(LSt)\\b(?:[\\s\\[.-]){0,2}(?:\\)|\\]|$|\\.\\w+$)"
       }
     }
   ]
