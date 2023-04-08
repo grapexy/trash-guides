@@ -1,0 +1,52 @@
+{
+  "trash_id": "92ae488987ab4c4eab1cd7df60529d81",
+  "name": "_HEVC Bluray Tier 01 (FHD)",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "1080p",
+      "implementation": "ResolutionSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 1080
+      }
+    },
+    {
+      "name": "BLURAY",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 6
+      }
+    },
+    {
+      "name": "Not REMUX",
+      "implementation": "SourceSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "HONE Group",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(?:[xh][ ._-]?265|\\bHEVC(\\b|\\d)).+?\\b(HONE)\\b(?:[\\s\\[.-]){0,2}(?:\\)|\\]|$|\\.\\w+$)"
+      }
+    },
+    {
+      "name": "Other HEVC Groups",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(?:[xh][ ._-]?265|\\bHEVC(\\b|\\d)).+?\\b(LSt)\\b(?:[\\s\\[.-]){0,2}(?:\\)|\\]|$|\\.\\w+$)"
+      }
+    }
+  ]
+}
