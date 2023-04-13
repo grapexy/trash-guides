@@ -118,7 +118,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^Regular.*?Show.*?S08.*?\\b(FLUX|HMAX)\\b"
+        "value": "^Regular.*?Show.*?S08.*?\\b(TrollHD|HMAX)\\b"
       }
     }
   ]
