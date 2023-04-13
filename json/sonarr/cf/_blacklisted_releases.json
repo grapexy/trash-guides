@@ -111,6 +111,15 @@
       "fields": {
         "value": "^Family.*?Guy.*?S08.*?(\\bFLUX\\b)"
       }
+    },
+    {
+      "name": "Regular Show - S08 HMAX & TrollHD (Incomplete)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^Regular.*?Show.*?S08.*?\\b(TrollHD|HMAX)\\b"
+      }
     }
   ]
 }
