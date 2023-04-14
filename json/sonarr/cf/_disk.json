@@ -1,0 +1,17 @@
+{
+  "trash_id": "243c8d66cda247e4995368670252ce77",
+  "trash_score": "100",
+  "name": "_DISK",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Disk Source",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 6
+      }
+    }
+  ]
+}
