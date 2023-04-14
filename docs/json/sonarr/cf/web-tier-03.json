@@ -68,12 +68,12 @@
       }
     },
     {
-      "name": "_NOT x|h265",
+      "name": "_NOT x|h265 (HD)",
       "implementation": "ReleaseTitleSpecification",
       "negate": true,
       "required": true,
       "fields": {
-        "value": "[xh][ ._-]?265|\\bHEVC(\\b|\\d)"
+        "value": "(?=.*\\b720p|1080p\\b).*?[xh][ ._-]?265|\\bHEVC(\\b|\\d)"
       }
     }
   ]
