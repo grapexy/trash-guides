@@ -11,9 +11,9 @@
 <link href="../" rel="prev"/>
 <link href="../recyclarr-configs/" rel="next"/>
 <link href="../../img/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.4.2, mkdocs-material-9.1.4" name="generator"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-9.1.5" name="generator"/>
 <title>Collection of Recyclarr SQP configs - TRaSH Guides</title>
-<link href="../../assets/stylesheets/main.240905d7.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/main.7a7fce14.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.a0c5b2b5.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans:300,300i,400,400i,700,700i%7CEncode+Sans+Expanded:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
@@ -1059,6 +1059,10 @@
 <span class="w">    </span><span class="nt">quality_definition</span><span class="p">:</span>
 <span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sqp-streaming</span>
 
+<span class="w">    </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Bluray|WEB-1080p</span>
+<span class="w">        </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+
 <span class="w">    </span><span class="nt">custom_formats</span><span class="p">:</span>
 <span class="w">      </span><span class="c1"># Scores from TRaSH json</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
@@ -1104,7 +1108,6 @@
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2a6039655313bf5dab1e43523b62c374</span><span class="w">  </span><span class="c1"># MA</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Bluray|WEB-1080p</span>
-<span class="w">            </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 <span class="w">      </span><span class="c1"># Custom Scoring</span>
 <span class="w">      </span><span class="c1"># HQ Release Groups - Optional - Uncomment the next section (10 lines) to enable other Bluray Encodes (less or not streaming optimized)</span>
 <span class="w">      </span><span class="c1"># - trash_ids:</span>
@@ -1178,6 +1181,10 @@
 
 <span class="w">    </span><span class="nt">quality_definition</span><span class="p">:</span>
 <span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sqp-uhd</span>
+
+<span class="w">    </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Remux|Bluray|IMAX-E|2160p</span>
+<span class="w">        </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 
 <span class="w">    </span><span class="nt">custom_formats</span><span class="p">:</span>
 <span class="w">      </span><span class="c1"># Scores from TRaSH json</span>
@@ -1256,7 +1263,6 @@
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2a6039655313bf5dab1e43523b62c374</span><span class="w">  </span><span class="c1"># MA</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Remux|Bluray|IMAX-E|2160p</span>
-<span class="w">            </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 <span class="w">      </span><span class="c1"># Custom Scoring</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="c1"># Resolution</span>
@@ -1317,6 +1323,10 @@
 
 <span class="w">    </span><span class="nt">quality_definition</span><span class="p">:</span>
 <span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sqp-uhd</span>
+
+<span class="w">    </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Remux|IMAX-E|2160p</span>
+<span class="w">        </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 
 <span class="w">    </span><span class="nt">custom_formats</span><span class="p">:</span>
 <span class="w">      </span><span class="c1"># Scores from TRaSH json</span>
@@ -1392,7 +1402,6 @@
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2a6039655313bf5dab1e43523b62c374</span><span class="w">  </span><span class="c1"># MA</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Remux|IMAX-E|2160p</span>
-<span class="w">            </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 <span class="w">      </span><span class="c1"># Custom Scoring</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="c1"># Resolution</span>
@@ -1454,6 +1463,10 @@
 
 <span class="w">    </span><span class="nt">quality_definition</span><span class="p">:</span>
 <span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sqp-uhd</span>
+
+<span class="w">    </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">WEBDL|IMAX-E|2160p</span>
+<span class="w">        </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 
 <span class="w">    </span><span class="nt">custom_formats</span><span class="p">:</span>
 <span class="w">      </span><span class="c1"># Scores from TRaSH json</span>
@@ -1528,7 +1541,6 @@
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2a6039655313bf5dab1e43523b62c374</span><span class="w">  </span><span class="c1"># MA</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">WEBDL|IMAX-E|2160p</span>
-<span class="w">            </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 <span class="w">      </span><span class="c1"># Custom Scoring</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="c1"># Resolution</span>
@@ -1589,6 +1601,10 @@
 
 <span class="w">    </span><span class="nt">quality_definition</span><span class="p">:</span>
 <span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sqp-uhd</span>
+
+<span class="w">    </span><span class="nt">quality_profiles</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Bluray|IMAX-E|2160p</span>
+<span class="w">        </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 
 <span class="w">    </span><span class="nt">custom_formats</span><span class="p">:</span>
 <span class="w">      </span><span class="c1"># Scores from TRaSH json</span>
@@ -1666,7 +1682,6 @@
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2a6039655313bf5dab1e43523b62c374</span><span class="w">  </span><span class="c1"># MA</span>
 <span class="w">        </span><span class="nt">quality_profiles</span><span class="p">:</span>
 <span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Bluray|IMAX-E|2160p</span>
-<span class="w">            </span><span class="nt">reset_unmatched_scores</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 <span class="w">      </span><span class="c1"># Custom Scoring</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">trash_ids</span><span class="p">:</span>
 <span class="w">          </span><span class="c1"># Resolution</span>
@@ -1759,6 +1774,6 @@
 <div class="md-dialog__inner md-typeset"></div>
 </div>
 <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "content.code.copy", "content.action.edit", "content.action.view"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
-<script src="../../assets/javascripts/bundle.19047be9.min.js"></script>
+<script src="../../assets/javascripts/bundle.407015b8.min.js"></script>
 <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>

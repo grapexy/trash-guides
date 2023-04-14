@@ -11,9 +11,9 @@
 <link href="../sonarr-setup-quality-profiles-french-en/" rel="prev"/>
 <link href="../Tips/How-to-setup-language-custom-formats/" rel="next"/>
 <link href="../../img/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.4.2, mkdocs-material-9.1.4" name="generator"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-9.1.5" name="generator"/>
 <title>Collection of Custom Formats - TRaSH Guides</title>
-<link href="../../assets/stylesheets/main.240905d7.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/main.7a7fce14.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.a0c5b2b5.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans:300,300i,400,400i,700,700i%7CEncode+Sans+Expanded:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
@@ -5616,7 +5616,7 @@ Remaster (also digital remastering and digitally remastered) refers to changing 
 <details class="question">
 <summary>BR-DISK - [CLICK TO EXPAND]</summary>
 <p>This is a custom format to help Sonarr recognize &amp; ignore BR-DISK (ISO's and Blu-ray folder structure) in addition to the standard BR-DISK quality.</p>
-<p>You will need to add the following to your new Custom Format when created in your Quality Profile (<code>Setting</code> =&gt; <code>Profiles</code>) and then set the score to <code>-1000</code> or even <code>-10000</code></p>
+<p>You will need to add the following to your new Custom Format when created in your Quality Profile (<code>Setting</code> =&gt; <code>Profiles</code>) and then set the score to <code>-10000</code>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Depending on your renaming scheme it could happen that Sonarr will match renamed files after they are downloaded and imported as <code>BR-DISK</code>,
@@ -6312,7 +6312,7 @@ Also they often even rename the release name in to Portuguese.</p>
 <details class="question">
 <summary>DV (WEBDL) - [CLICK TO EXPAND]</summary>
 <p>This is a special Custom Format that block WEBDLs <strong>with</strong> Dolby Vision but <strong>without</strong> HDR10 fallback.</p>
-<p>You will need to add the following to your new Custom Format when created in your Quality Profile (<code>Setting</code> =&gt; <code>Profiles</code>) and then set the score to <code>-1000</code> or even <code>-10000</code></p>
+<p>You will need to add the following to your new Custom Format when created in your Quality Profile (<code>Setting</code> =&gt; <code>Profiles</code>) and then set the score to <code>-10000</code>.</p>
 <p>This Custom Format works together with the normal <a href="#dv">DV</a> Custom Format that you can use to prefer Dolby Vision.</p>
 <p>Most WEBDL from Streaming Services don't have the fallback to HDR10, What can results in playback issues like weird colors (typically a green hue) if you want to play it on a not Dolby Vision compatible setup.</p>
 <p>Remuxes and Bluray have a fallback to HDR10.</p>
@@ -7938,6 +7938,15 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XEBEC"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReleaseGroupSpecification"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(XEBEC|4KBEC|CEBEX)\\b"</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
 <span class="w">      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"WEBDL"</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"implementation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SourceSpecification"</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
@@ -8688,6 +8697,7 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">"trash_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ae58039e1319178e6be73caab5c42166"</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">"trash_score"</span><span class="p">:</span><span class="w"> </span><span class="s2">"95"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"trash_regex"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://regex101.com/r/kjPPbG/1"</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SHO"</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">"includeCustomFormatWhenRenaming"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">"specifications"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -8697,7 +8707,7 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <span class="w">      </span><span class="nt">"negate"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">      </span><span class="nt">"fields"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(sho|showtime)\\b"</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"\\b(sho|showtime)\\b[ ._-]web[ ._-]?(dl|rip)?\\b"</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">    </span><span class="p">},</span>
 <span class="w">    </span><span class="p">{</span>
@@ -15681,7 +15691,7 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">March 19, 2023 21:24:27</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">April 5, 2023 22:39:39</span>
 </small>
 </div>
 <footer class="sponsorship">
@@ -15728,6 +15738,6 @@ For example a lot of EVO releases end up stripping the group name, so they appea
 <div class="md-dialog__inner md-typeset"></div>
 </div>
 <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "content.code.copy", "content.action.edit", "content.action.view"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
-<script src="../../assets/javascripts/bundle.19047be9.min.js"></script>
+<script src="../../assets/javascripts/bundle.407015b8.min.js"></script>
 <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>
