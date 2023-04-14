@@ -45,7 +45,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(?:[xh][ ._-]?265|\\bHEVC(\\b|\\d)).+?\\b(SiGMA|SiGLA|MZABI|NAN0|Edge2020|Vyndros|iVy|iFelix|NotCrisp|PoF)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b|\\bUTR\\b)*(?:\\)|\\]|$|\\.\\w+$)"
+        "value": "(?:[xh][ ._-]?265|\\bHEVC(\\b|\\d)).+?\\b(SiGMA|SiGLA|MZABI|NAN0|Edge2020|Vyndros|iVy|iFelix|NotCrisp|PoF|FLUX)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b|\\bUTR\\b)*(?:\\)|\\]|$|\\.\\w+$)"
       }
     },
     {
