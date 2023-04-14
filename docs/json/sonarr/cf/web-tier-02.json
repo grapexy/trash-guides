@@ -370,7 +370,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "(?=.*\\b720p|1080p\\b).*?[xh][ ._-]?265|\\bHEVC(\\b|\\d)"
+        "value": "(?=.*\\b720p|1080p\\b).*?(?:[xh][ ._-]?265|\\bHEVC(\\b|\\d))"
       }
     }
   ]
