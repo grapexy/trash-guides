@@ -1,0 +1,52 @@
+{
+  "trash_id": "3d5946b8ff9b46b9b9ec4ecc796fedf0",
+  "name": "_HEVC WEB Tier 04 (FHD)",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "1080p",
+      "implementation": "ResolutionSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 1080
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 4
+      }
+    },
+    {
+      "name": "SiGMA|SiGLA (ANY AMZN)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(?=.*\\bAMZN.*?[xh][ ._-]?265\\b).*?\\b(SiGMA|SiGLA)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b|\\bUTR\\b)*(?:\\)|\\]|$|\\.\\w+$)"
+      }
+    },
+    {
+      "name": "HONE Group (AMZN DL)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(?=.*\\bAMZN.*?[h][ ._-]?265\\b).*?\\b(Altezza|cYpHer|DiscoD|YOGI|Weasley|HONE)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b|\\bUTR\\b)*(?:\\)|\\]|$|\\.\\w+$)"
+      }
+    }
+  ]
+}
