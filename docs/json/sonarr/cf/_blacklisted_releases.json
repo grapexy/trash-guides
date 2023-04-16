@@ -120,6 +120,15 @@
       "fields": {
         "value": "^Regular.*?Show.*?S08.*?\\b(TrollHD|HMAX)\\b"
       }
+    },
+    {
+      "name": "Agents of SHIELD - Goki (Oversized releases)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Agents.of.S.?H.?I.?E.?L.?D.*?\\bGoki\\b"
+      }
     }
   ]
 }
