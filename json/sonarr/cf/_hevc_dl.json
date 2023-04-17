@@ -1,15 +1,15 @@
 {
   "trash_id": "c9d40a9c427843cf97787cd6b1233f4f",
-  "name": "_DL",
+  "name": "_HEVC DL",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "h264|h265",
+      "name": "h265",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": true,
       "fields": {
-        "value": "[h][ ._-]?(264|265)"
+        "value": "[h][ ._-]?(265)"
       }
     },
     {
