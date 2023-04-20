@@ -14,6 +14,15 @@
       }
     },
     {
+      "name": "NOT h265 (sans BluRay)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "^(?!.*?(?:BluRay|BDRip).*?).*?[h][ ._-]?265"
+      }
+    },
+    {
       "name": "NOT Non-Encode Groups",
       "implementation": "ReleaseTitleSpecification",
       "negate": true,
