@@ -138,6 +138,15 @@
       "fields": {
         "value": "^Grey.{0,3}Anatomy.*?(\\bSiGMA\\b)"
       }
+    },
+    {
+      "name": "Designated Survivor - DrainedDay (Oversized releases)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^Designated.?Survivor.*?(\\DrainedDay\\b)"
+      }
     }
   ]
 }
