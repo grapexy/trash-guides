@@ -1,15 +1,24 @@
 {
   "trash_id": "88bab48eb30145219e9b8f4ba68ba854",
-  "name": "_HEVC WEB Tier 01 (FHD)",
+  "name": "_HEVC WEB Tier 01 (HD)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
       "name": "1080p",
       "implementation": "ResolutionSpecification",
       "negate": false,
-      "required": true,
+      "required": false,
       "fields": {
         "value": 1080
+      }
+    },
+    {
+      "name": "720p",
+      "implementation": "ResolutionSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 720
       }
     },
     {

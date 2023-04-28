@@ -1,15 +1,24 @@
 {
   "trash_id": "92c02ef4a8284c4c84d395dd16d63a38",
-  "name": "_HEVC Bluray Tier 01 (FHD)",
+  "name": "_HEVC Bluray Tier 01 (HD)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
       "name": "1080p",
       "implementation": "ResolutionSpecification",
       "negate": false,
-      "required": true,
+      "required": false,
       "fields": {
         "value": 1080
+      }
+    },
+    {
+      "name": "720p",
+      "implementation": "ResolutionSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 720
       }
     },
     {
