@@ -129,6 +129,15 @@
       "fields": {
         "value": "Agents.of.S.?H.?I.?E.?L.?D.*?\\bGoki\\b"
       }
+    },
+    {
+      "name": "Grey's Anatomy - SiGMA (Oversized releases)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^Grey.{0,3}Anatomy.*?(\\bSiGMA\\b)"
+      }
     }
   ]
 }
