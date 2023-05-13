@@ -36,7 +36,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(?:[xh][ ._-]?265|\\bHEVC(\\b|\\d)).+?\\b(FreetheFish|MONOLITH|ImE|afm72|Silence|RZeroX|Ghost|Panda|RCVR|t3nzin|Kappa|Bandi)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b|\\bUTR\\b)*(?:\\)|\\]|$|\\.\\w+$)"
+        "value": "(?:[xh][ ._-]?265|\\bHEVC(\\b|\\d)).+?\\b(FreetheFish|MONOLITH|ImE|afm72|Silence|RZeroX|Ghost|Panda|RCVR|t3nzin|Kappa|Bandi|r00t)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b|\\bUTR\\b)*(?:\\)|\\]|$|\\.\\w+$)"
       }
     },
     {
