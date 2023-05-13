@@ -19,7 +19,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^The.*?Blacklist.*?S0[1-9].*?[xh][ ._-]?264|\\bAVC(\\b|\\d)"
+        "value": "^The.*?Blacklist.*?S0[1-9].*?(?=[xh][ ._-]?264|\\bAVC(\\b|\\d))"
       }
     },
     {
