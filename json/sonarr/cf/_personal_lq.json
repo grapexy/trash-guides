@@ -46,7 +46,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(d3g|POIASD|Undead|Qman|iVy|Tigole|Vyndros)\\b(?:[\\s.-])?(?:\\bUTR\\b)*(?:\\)|$|\\.\\w+$)"
+        "value": "\\b(d3g|POIASD|Undead|Qman|iVy|Tigole|Vyndros|Garshasp)\\b(?:[\\s.-])?(?:\\bUTR\\b)*(?:\\)|$|\\.\\w+$)"
       }
     },
     {
