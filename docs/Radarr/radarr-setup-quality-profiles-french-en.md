@@ -31,7 +31,7 @@ It is quite important that you follow and understand what is envisioned by Trash
 
     The only change that is needed and **mandatory** for French Custom Formats to work is to set the preferred language profile for your releases to `Any`.
 
-    ??? success "Screenshot example - [CLICK TO EXPAND]"
+    ??? success "Screenshot example - [Click to show/hide]"
         ![!cf-quality-profile-cf](images/french-cf-profile-language.png)
 
     !!! info
@@ -50,13 +50,13 @@ There is two options:
 - Set up Radarr using [How to setup Quality Profiles | Which Quality Profile should you choose](/Radarr/radarr-setup-quality-profiles/#which-quality-profile-should-you-choose).
 - Set up [Bazarr](/Bazarr/Setup-Guide). It will do an amazing job for getting your subtitle on every movies.
 - Enjoy your movies with subs.
-- (Optional) Add the [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) Custom Format with a score of `1000`.
+- (Optional) Add the [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) Custom Format with a score of `{{ radarr['cf']['french-vostfr']['trash_scores']['french-vostfr'] }}`.
 
 ### Using the following examples and the VOSTFR Custom Format
 
 - Continue to read this page.
 - Ignore any mention of **MULTi Custom Formats**.
-- Add the [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) Custom Format with a score of `1000`.
+- Add the [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) Custom Format with a score of `{{ radarr['cf']['french-vostfr']['trash_scores']['french-vostfr'] }}`.
 
 ------
 
@@ -82,7 +82,7 @@ To illustrate this, you will see an **"Original mix (optional)"** section in eac
 Those are all optional and only there to rename your release or to avoid a certain type of French Audio. Examples:
 
 - You prefer VFF (including VFI and VF2) audio, in this case you will put them at `101` instead of `0`.
-- You only want VOSTFR, in this case you will ignore any mention of **MULTi Custom Formats** and give the [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) Custom Format a score of `1000`.
+- You only want VOSTFR, in this case you will ignore any mention of **MULTi Custom Formats** and give the [{{ radarr['cf']['french-vostfr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#vostfr) Custom Format a score of `{{ radarr['cf']['french-vostfr']['trash_scores']['french-vostfr'] }}`.
 
 !!! warning "Attention"
     It is not really recommended to put any of the VF Custom Formats (VFF, VFQ, VQ, VFB, VFI, VF2) to a negative score. Instead increase the score of your preferred audio.
@@ -135,7 +135,7 @@ The reason why WEB-DL 720p is not selected is because you will hardly find any r
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? abstract "Workflow Logic - [CLICK TO EXPAND]"
+??? abstract "Workflow Logic - [Click to show/hide]"
 
     - When the WEB-1080p is released it will download the WEB-1080p. (streaming services)
     - When the Bluray-1080p is released it will upgrade to the Bluray-1080p.
@@ -175,7 +175,7 @@ Use the following main settings in your profile.
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? abstract "Workflow Logic - [CLICK TO EXPAND]"
+??? abstract "Workflow Logic - [Click to show/hide]"
 
     **Depending what's released first and available the following Workflow Logic will be used:**
 
@@ -217,7 +217,7 @@ The reason why I didn't select the WEB-DL 720p is because you will hardly find a
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? abstract "Workflow Logic - [CLICK TO EXPAND]"
+??? abstract "Workflow Logic - [Click to show/hide]"
 
     - When the WEB-1080p is released it will download the WEB-1080p. (streaming services)
     - When the REMUX-1080p is released it will upgrade to the REMUX-1080p.
@@ -257,7 +257,7 @@ Use the following main settings in your profile.
 
 {! include-markdown "../../includes/starr/move-quality-to-top.md" !}
 
-??? abstract "Workflow Logic - [CLICK TO EXPAND]"
+??? abstract "Workflow Logic - [Click to show/hide]"
 
     - When the WEB-2160p is released it will download the WEB-2160p. (streaming services)
     - When the REMUX-2160p is released it will upgrade to the REMUX-2160p.

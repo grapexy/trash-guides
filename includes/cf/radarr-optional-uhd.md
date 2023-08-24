@@ -1,10 +1,7 @@
-??? abstract "Optional UHD - [CLICK TO EXPAND]"
-
-    !!! danger "**The `SDR` is a MUST for this Quality Profile** :warning:"
-
-    | Custom Format                                                                                                       | Score                                                | Trash ID                                          |
-    | ------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------- |
-    | [{{ radarr['cf']['sdr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#sdr)                                 | {{ radarr['cf']['sdr']['trash_score'] }}              | {{ radarr['cf']['sdr']['trash_id'] }}              |
+??? abstract "Optional UHD - [Click to show/hide]"
+    | Custom Format                                                                         |                        Score                         | Trash ID                              |
+    | ------------------------------------------------------------------------------------- | :--------------------------------------------------: | ------------------------------------- |
+    | [{{ radarr['cf']['sdr']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#sdr) | {{ radarr['cf']['sdr']['trash_scores']['default'] }} | {{ radarr['cf']['sdr']['trash_id'] }} |
 
     ------
 

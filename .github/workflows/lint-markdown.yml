@@ -1,0 +1,16 @@
+name: Lint - Markdown
+
+on: [push, pull_request]
+
+jobs:
+  markdownlint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3.5.3
+      - name: markdownlint
+        run: |
+          docker run --rm \
+            -v "${GITHUB_WORKSPACE}":/data \
+            markdownlint/markdownlint \
+            -r ~MD013,~MD033,~MD034,~MD046,~MD002,~MD041 \
+            .

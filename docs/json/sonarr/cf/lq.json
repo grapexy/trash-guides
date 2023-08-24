@@ -1,6 +1,9 @@
 {
   "trash_id": "9c11cd3f07101cdba90a2d81cf0e56b4",
-  "trash_score": "-10000",
+  "trash_score": -10000,
+  "trash_scores": {
+    "default": -10000
+  },
   "name": "LQ",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -20,6 +23,15 @@
       "required": false,
       "fields": {
         "value": "^(CHX)$"
+      }
+    },
+    {
+      "name": "CTFOH",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(CTFOH)$"
       }
     },
     {
@@ -56,6 +68,15 @@
       "required": false,
       "fields": {
         "value": "^(HiQVE)$"
+      }
+    },
+    {
+      "name": "iNTENSO",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(iNTENSO)$"
       }
     },
     {
@@ -155,6 +176,15 @@
       "required": false,
       "fields": {
         "value": "^(XLF)$"
+      }
+    },
+    {
+      "name": "Zero00",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Zero00)$"
       }
     }
   ]
