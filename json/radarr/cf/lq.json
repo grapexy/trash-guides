@@ -1,9 +1,21 @@
 {
   "trash_id": "90a6f9a284dff5103f6346090e6280c8",
-  "trash_score": "-10000",
+  "trash_score": -10000,
+  "trash_scores": {
+    "default": -10000
+  },
   "name": "LQ",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
+    {
+      "name": "24xHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(24xHD)\\b"
+      }
+    },
     {
       "name": "4K4U",
       "implementation": "ReleaseGroupSpecification",
@@ -113,6 +125,15 @@
       }
     },
     {
+      "name": "CiNE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(CiNE)$"
+      }
+    },
+    {
       "name": "CREATiVE24",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -128,6 +149,15 @@
       "required": false,
       "fields": {
         "value": "^(CrEwSaDe)$"
+      }
+    },
+    {
+      "name": "CTFOH",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(CTFOH)$"
       }
     },
     {
@@ -220,7 +250,7 @@
         "value": "^(GalaxyRG)$"
       }
     },
-      {
+    {
       "name": "GHD",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -272,6 +302,15 @@
       "required": false,
       "fields": {
         "value": "^(HDWinG)$"
+      }
+    },
+    {
+      "name": "iNTENSO",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(iNTENSO)$"
       }
     },
     {
@@ -446,6 +485,24 @@
       }
     },
     {
+      "name": "OFT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(OFT)$"
+      }
+    },
+    {
+      "name": "Pahe",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "Pahe\\.(ph|in)\\b"
+      }
+    },
+    {
       "name": "PATOMiEL",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -545,6 +602,15 @@
       }
     },
     {
+      "name": "SLOT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SLOT)$"
+      }
+    },
+    {
       "name": "STUTTERSHIT",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -599,6 +665,15 @@
       }
     },
     {
+      "name": "VISIONPLUSHDR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(VISIONPLUSHDR(-X|1000)?)$"
+      }
+    },
+    {
       "name": "WAF",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -640,7 +715,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(YTS)$"
+        "value": "^(YTS(.(MX|LT|AG))?)$"
       }
     },
     {

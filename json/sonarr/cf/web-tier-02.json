@@ -1,6 +1,10 @@
 {
   "trash_id": "58790d4e2fdcd9733aa7ae68ba2bb503",
-  "trash_score": "1650",
+  "trash_score": 1650,
+  "trash_scores": {
+    "default": 1650,
+    "anime-sonarr": 150
+  },
   "name": "WEB Tier 02",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -194,12 +198,30 @@
       }
     },
     {
+      "name": "Kitsune",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Kitsune)$"
+      }
+    },
+    {
       "name": "LAZY",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "^(LAZY)$"
+      }
+    },
+    {
+      "name": "MiU",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MiU)$"
       }
     },
     {
@@ -236,6 +258,15 @@
       "required": false,
       "fields": {
         "value": "^(orbitron)$"
+      }
+    },
+    {
+      "name": "PHOENiX",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(PHOENiX)$"
       }
     },
     {

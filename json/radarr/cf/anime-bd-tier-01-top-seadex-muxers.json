@@ -1,6 +1,9 @@
 {
   "trash_id": "fb3ccc5d5cc8f77c9055d4cb4561dded",
-  "trash_score": "1400",
+  "trash_score": 1400,
+  "trash_scores": {
+    "default": 1400
+  },
   "name": "Anime BD Tier 01 (Top SeaDex Muxers)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -32,21 +35,21 @@
       }
     },
     {
-      "name": "CsS",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(CsS)\\b"
-      }
-    },
-    {
       "name": "Legion",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "\\[Legion\\]|-Legion\\b"
+      }
+    },
+    {
+      "name": "LYS1TH3A",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(LYS1TH3A)\\b"
       }
     },
     {
@@ -77,12 +80,12 @@
       }
     },
     {
-      "name": "Spirale",
+      "name": "smol",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "\\b(Spirale)\\b"
+        "value": "\\[smol\\]|-smol\\b"
       }
     },
     {

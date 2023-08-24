@@ -1,6 +1,9 @@
 {
   "trash_id": "8167cffba4febfb9a6988ef24f274e7e",
-  "trash_score": "600",
+  "trash_score": 600,
+  "trash_scores": {
+    "default": 600
+  },
   "name": "Anime Web Tier 01 (Muxers)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -59,15 +62,6 @@
       }
     },
     {
-      "name": "Reza",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(Reza)\\b"
-      }
-    },
-    {
       "name": "sam",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -92,6 +86,15 @@
       "required": false,
       "fields": {
         "value": "\\b(Setsugen)\\b"
+      }
+    },
+    {
+      "name": "smol",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\[smol\\]|-smol\\b"
       }
     },
     {

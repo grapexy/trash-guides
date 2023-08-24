@@ -1,6 +1,9 @@
 {
   "trash_id": "66926c8fa9312bc74ab71bf69aae4f4a",
-  "trash_score": "1300",
+  "trash_score": 1300,
+  "trash_scores": {
+    "default": 1300
+  },
   "name": "Anime BD Tier 02 (SeaDex Muxers)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
@@ -122,6 +125,15 @@
       }
     },
     {
+      "name": "CsS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(CsS)\\b"
+      }
+    },
+    {
       "name": "D-Z0N3",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -212,15 +224,6 @@
       }
     },
     {
-      "name": "LYS1TH3A",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "\\b(LYS1TH3A)\\b"
-      }
-    },
-    {
       "name": "Matsya",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
@@ -245,6 +248,15 @@
       "required": false,
       "fields": {
         "value": "\\[Metal\\]|-Metal\\b"
+      }
+    },
+    {
+      "name": "MTBB",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(MTBB)\\b"
       }
     },
     {
@@ -317,6 +329,15 @@
       "required": false,
       "fields": {
         "value": "\\[Smoke\\]|-Smoke\\b"
+      }
+    },
+    {
+      "name": "Spirale",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Spirale)\\b"
       }
     },
     {
