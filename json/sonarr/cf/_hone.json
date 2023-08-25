@@ -1,0 +1,20 @@
+{
+  "trash_id": "352aa84236f34bee89d8d5730a59522e",
+  "trash_score": 10,
+  "trash_scores": {
+    "default": 10
+  },
+  "name": "HONE",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "HONE Group",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(?:[xh][ ._-]?265|\\bHEVC(\\b|\\d)).+?\\b(Altezza|cYpHer|DiscoD|YOGI|Weasley|HONE)\\b(?:[\\s\\[.-]){0,2}(?:\\bHONE\\b)*(?:\\)|\\]|$|\\.\\w+$)"
+      }
+    }
+  ]
+}
