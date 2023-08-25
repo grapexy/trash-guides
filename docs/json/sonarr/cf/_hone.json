@@ -8,7 +8,7 @@
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
-      "name": "HONE Group (NO AMZN DL)",
+      "name": "HONE Group",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
