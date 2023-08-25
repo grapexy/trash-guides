@@ -49,7 +49,7 @@
       }
     },
     {
-      "name": "TAoE Group (Sans DrainedDay)",
+      "name": "TAoE Group (Sans DrainedDay & jb2049)",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
