@@ -18,7 +18,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "([x][ ._-]?265|(BluRay|BDRip).*?([xh][ ._-]?265|\\bHEVC(\\b|\\d)))"
+        "value": "([x][ ._-]?265|(BluRay|BDRip).*?([xh][ ._-]?265))"
       }
     },
     {
