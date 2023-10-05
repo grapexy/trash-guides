@@ -54,7 +54,7 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(?:[xh][ ._-]?265|\\bHEVC(\\b|\\d)).+?\\b(Goki|JBENT|DNU|DrainedDay|WEM|xtrem3x|Frys|Ainz|Species180|TheSickle|ArcX|bccornfo|r0b0t|HxD|Nostradamus|jb2049)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b|\\bUTR\\b)*(?:\\)|\\]|$|\\.\\w+$)"
+        "value": "(?:[xh][ ._-]?265|\\bHEVC(\\b|\\d)).+?\\b(Goki|JBENT|DNU|DrainedDay|WEM|xtrem3x|Frys|Ainz|Species180|TheSickle|ArcX|bccornfo|r0b0t|HxD|Nostradamus|jb2049|AJJMIN)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b|\\bUTR\\b)*(?:\\)|\\]|$|\\.\\w+$)"
       }
     }
   ]
