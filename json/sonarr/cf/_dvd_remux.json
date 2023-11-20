@@ -1,7 +1,9 @@
 {
   "name": "_DVD REMUX",
   "trash_id": "0dce1d6908cc48a2ac0e21689cd10564",
-  "trash_score": -10000,
+  "trash_scores": {
+    "default": -10000
+  },
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {

@@ -1,6 +1,8 @@
 {
   "trash_id": "8df5ba3f361843b6a4634e49c0926348",
-  "trash_score": "-10000",
+  "trash_scores": {
+    "default": -10000
+  },
   "name": "_LQ",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [

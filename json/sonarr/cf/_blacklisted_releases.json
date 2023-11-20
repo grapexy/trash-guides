@@ -1,6 +1,8 @@
 {
   "trash_id": "2c421e0816704544b01111465d86d580",
-  "trash_score": "-10000",
+  "trash_scores": {
+    "default": -10000
+  },
   "name": "_Blacklisted Releases",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
