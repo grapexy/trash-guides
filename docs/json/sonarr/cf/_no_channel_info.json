@@ -1,6 +1,8 @@
 {
   "trash_id": "f9839dcf08b041b19373383b86eea6c6",
-  "trash_score": "-25",
+  "trash_scores": {
+    "default": -25
+  },
   "name": "_No Channel Info",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [

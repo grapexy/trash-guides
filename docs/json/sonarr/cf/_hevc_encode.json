@@ -1,6 +1,8 @@
 {
   "trash_id": "65ad337769334bedba0718fd3aa630ec",
-  "trash_score": "30",
+  "trash_scores": {
+    "default": 30
+  },
   "name": "_HEVC Encode",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
