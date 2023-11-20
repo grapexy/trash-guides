@@ -227,6 +227,26 @@ Add this to your `Preferred (3)` with a score of [50]
 /\b(ovid)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
 ```
 
+```bash
+/\b(fod)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
+```bash
+/\b(tver)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
+```bash
+/\b(u-next)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
+```bash
+/\b(ALL4)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
+```bash
+/\b(4OD)\b(?=[ ._-]web[ ._-]?(dl|rip)\b)/i
+```
+
 !!! danger "Caution"
     Don't forget to click on `SAVE` after you've added everything you want to the release profile :bangbang:
 
@@ -560,7 +580,7 @@ Add this to your `Must not contain (2)`
 Add this to your `Must not contain (2)`
 
 ```bash
-/^(?!.*(web[ ]dl|-deflate|-inflate))(?=.*([_. ]WEB[_. ])(?!DL)\b)|\b(-CAKES|-GGEZ|-GGWP|-GLHF|-GOSSIP|-NAISU|-KOGI|-PECULATE|-SLOT|-EDITH|-ETHEL|-ELEANOR|-B2B|-SPAMnEGGS|-FTP|-DiRT|-SYNCOPY|-BAE|-SuccessfulCrab).*/i
+/^(?!.*(web[ ]dl|-deflate|-inflate))(?=.*([_. ]WEB[_. ])(?!DL)\b)|\b(-CAKES|-GGEZ|-GGWP|-GLHF|-GOSSIP|-NAISU|-KOGI|-PECULATE|-SLOT|-EDITH|-ETHEL|-ELEANOR|-B2B|-SPAMnEGGS|-FTP|-DiRT|-SYNCOPY|-BAE|-SuccessfulCrab|-NHTFS).*/i
 
 ```
 

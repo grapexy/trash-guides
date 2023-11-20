@@ -1,6 +1,5 @@
 {
   "trash_id": "90a6f9a284dff5103f6346090e6280c8",
-  "trash_score": -10000,
   "trash_scores": {
     "default": -10000
   },
@@ -86,15 +85,6 @@
       "required": false,
       "fields": {
         "value": "^(beAst)$"
-      }
-    },
-    {
-      "name": "BiTOR",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(BiTOR)$"
       }
     },
     {
@@ -185,6 +175,15 @@
       "required": false,
       "fields": {
         "value": "^(DDR)$"
+      }
+    },
+    {
+      "name": "DepraveD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(DepraveD)$"
       }
     },
     {
@@ -620,15 +619,6 @@
       }
     },
     {
-      "name": "SLOT",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(SLOT)$"
-      }
-    },
-    {
       "name": "STUTTERSHIT",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -644,6 +634,15 @@
       "required": false,
       "fields": {
         "value": "^(SWTYBLZ)$"
+      }
+    },
+    {
+      "name": "tarunk9c",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(tarunk9c)$"
       }
     },
     {

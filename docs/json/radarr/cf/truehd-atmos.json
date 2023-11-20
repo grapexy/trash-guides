@@ -1,6 +1,5 @@
 {
   "trash_id": "496f355514737f7d83bf7aa4d24f8169",
-  "trash_score": 5000,
   "trash_scores": {
     "default": 5000,
     "sqp-1-1080p": -10000,
@@ -15,7 +14,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "True[ .-]?HD"
+        "value": "True[ .-]?HD|W4NK3R|HQMUX"
       }
     },
     {
@@ -24,7 +23,7 @@
       "negate": false,
       "required": true,
       "fields": {
-        "value": "\\bATMOS(\\b|\\d)"
+        "value": "\\b(ATMOS|CtrlHD|W4NK3R|DON)(\\b|\\d)"
       }
     },
     {

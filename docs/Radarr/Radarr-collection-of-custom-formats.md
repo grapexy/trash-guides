@@ -47,25 +47,28 @@ I also made 3 guides related to this one.
 
 ------
 
-| Movie Versions                                | Unwanted              | HQ Release Groups                         | Streaming Services         |
-| --------------------------------------------- | --------------------- | ----------------------------------------- | -------------------------- |
-| [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)   | [Remux Tier 01](#remux-tier-01)           | [Amazon](#amzn)            |
-| [Remaster](#remaster)                         | [LQ](#lq)             | [Remux Tier 02](#remux-tier-02)           | [Apple TV+](#atvp)         |
-| [4K Remaster](#4k-remaster)                   | [3D](#3d)             | [Remux Tier 03](#remux-tier-03)           | [Criterion Channel](#crit) |
-| [Special Edition](#special-edition)           | [x265 (HD)](#x265-hd) | [UHD Bluray Tier 01](#uhd-bluray-tier-01) | [Disney+](#dsnp)           |
-| [Criterion Collection](#criterion-collection) | [Upscaled](#upscaled) | [UHD Bluray Tier 02](#uhd-bluray-tier-02) | [HBO](#hbo)                |
-| [Masters of Cinema](#masters-of-cinema)       | [Extras](#extras)     | [UHD Bluray Tier 03](#uhd-bluray-tier-03) | [HBO Max](#hmax)           |
-| [Vinegar Syndrome](#vinegar-syndrome)         |                       | [HD Bluray Tier 01](#hd-bluray-tier-01)   | [Max](#max)                |
-| [Theatrical Cut](#theatrical-cut)             |                       | [HD Bluray Tier 02](#hd-bluray-tier-02)   | [Hulu](#hulu)              |
-| [IMAX](#imax)                                 |                       | [HD Bluray Tier 03](#hd-bluray-tier-03)   | [Netflix](#nf)             |
-| [IMAX Enhanced](#imax-enhanced)               |                       | [WEB Tier 01](#web-tier-01)               | [Peacock TV](#pcok)        |
-| [Open Matte](#open-matte)                     |                       | [WEB Tier 02](#web-tier-02)               | [Paramount+](#pmtp)        |
-|                                               |                       | [WEB Tier 03](#web-tier-03)               | [Movies Anywhere](#ma)     |
-|                                               |                       |                                           | [Pathe Thuis](#pathe)      |
-|                                               |                       |                                           | [Bravia Core](#bcore)      |
-|                                               |                       |                                           | [Stan](#stan)              |
-|                                               |                       |                                           | [Crave](#crav)             |
-|                                               |                       |                                           | [OViD](#ovid)              |
+| Movie Versions                                | Unwanted                                | HQ Release Groups                         | Streaming Services         |
+| --------------------------------------------- | --------------------------------------- | ----------------------------------------- | -------------------------- |
+| [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                     | [Remux Tier 01](#remux-tier-01)           | [Amazon](#amzn)            |
+| [Remaster](#remaster)                         | [LQ](#lq)                               | [Remux Tier 02](#remux-tier-02)           | [Apple TV+](#atvp)         |
+| [4K Remaster](#4k-remaster)                   | [LQ (Release Title)](#lq-release-title) | [Remux Tier 03](#remux-tier-03)           | [Criterion Channel](#crit) |
+| [Special Edition](#special-edition)           | [3D](#3d)                               | [UHD Bluray Tier 01](#uhd-bluray-tier-01) | [Disney+](#dsnp)           |
+| [Criterion Collection](#criterion-collection) | [x265 (HD)](#x265-hd)                   | [UHD Bluray Tier 02](#uhd-bluray-tier-02) | [HBO](#hbo)                |
+| [Masters of Cinema](#masters-of-cinema)       | [Upscaled](#upscaled)                   | [UHD Bluray Tier 03](#uhd-bluray-tier-03) | [HBO Max](#hmax)           |
+| [Vinegar Syndrome](#vinegar-syndrome)         | [Extras](#extras)                       | [HD Bluray Tier 01](#hd-bluray-tier-01)   | [Max](#max)                |
+| [Theatrical Cut](#theatrical-cut)             |                                         | [HD Bluray Tier 02](#hd-bluray-tier-02)   | [Hulu](#hulu)              |
+| [IMAX](#imax)                                 |                                         | [HD Bluray Tier 03](#hd-bluray-tier-03)   | [Netflix](#nf)             |
+| [IMAX Enhanced](#imax-enhanced)               |                                         | [WEB Tier 01](#web-tier-01)               | [Peacock TV](#pcok)        |
+| [Open Matte](#open-matte)                     |                                         | [WEB Tier 02](#web-tier-02)               | [Paramount+](#pmtp)        |
+|                                               |                                         | [WEB Tier 03](#web-tier-03)               | [Movies Anywhere](#ma)     |
+|                                               |                                         |                                           | [Pathe Thuis](#pathe)      |
+|                                               |                                         |                                           | [Bravia Core](#bcore)      |
+|                                               |                                         |                                           | [Stan](#stan)              |
+|                                               |                                         |                                           | [Crave](#crav)             |
+|                                               |                                         |                                           | [OViD](#ovid)              |
+|                                               |                                         |                                           | [FOD](#fod)                |
+|                                               |                                         |                                           | [TVer](#tver)              |
+|                                               |                                         |                                           | [U-NEXT](#u-next)          |
 
 ------
 
@@ -79,9 +82,10 @@ I also made 3 guides related to this one.
 | [MPEG2](#mpeg2)                | [Obfuscated](#obfuscated)           | [VFI](#vfi)                   | [FR HD Bluray Tier 02](#fr-hd-bluray-tier-02)   |
 | [Dutch Groups](#dutch-groups)  | [Retags](#retags)                   | [VF2](#vf2)                   | [FR WEB Tier 01](#fr-web-tier-01)               |
 | [FreeLeech](#freeleech)        | [Scene](#scene)                     | [VFQ](#vfq)                   | [FR WEB Tier 02](#fr-web-tier-02)               |
-|                                | [x265 (no HDR/DV)](#x265-no-hdrdv)  | [VQ](#vq)                     | [FR Scene Groups](#fr-scene-groups)             |
-|                                | [AV1](#av1)                         | [VFB](#vfb)                   | [FR LQ](#fr-lq)                                 |
-|                                | [SDR](#sdr)                         | [VOSTFR](#vostfr)             |                                                 |
+|                                | [x265 (no HDR/DV)](#x265-no-hdrdv)  | [VOQ](#voq)                   | [FR Scene Groups](#fr-scene-groups)             |
+|                                | [AV1](#av1)                         | [VQ](#vq)                     | [FR LQ](#fr-lq)                                 |
+|                                | [SDR](#sdr)                         | [VFB](#vfb)                   |                                                 |
+|                                | [SDR (no WEBDL)](#sdr-no-webdl)     | [VOSTFR](#vostfr)             |                                                 |
 |                                | [DV (FEL)](#dv-fel)                 | [FanSUB](#fansub)             |                                                 |
 |                                | [Line/Mic Dubbed](#linemic-dubbed)  | [FastSUB](#fastsub)           |                                                 |
 |                                | [HFR](#hfr)                         |                               |                                                 |
@@ -959,6 +963,24 @@ I also made 3 guides related to this one.
 
 ------
 
+### LQ (Release Title)
+
+<sub>Low Quality Releases = LQ</sub>
+
+??? question "LQ (Release Title)- [Click to show/hide]"
+
+    A collection of terms seen in the titles of Low Quality releases that are not captured by using a release group name.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/lq-release-title.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
 ### 3D
 
 ??? question "3D - [Click to show/hide]"
@@ -1248,12 +1270,28 @@ I also made 3 guides related to this one.
 
 ??? question "SDR - [Click to show/hide]"
 
-    - This will help to prevent to grab UHD/4k releases without HDR Formats.
+    - This will prevent grabbing UHD/4k releases without HDR Formats.
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/sdr.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### SDR (no WEBDL)
+
+??? question "SDR (no WEBDL) - [Click to show/hide]"
+
+    - This will prevent grabbing UHD/4k Remux and Bluray encode releases without HDR Formats - i.e., SDR WEB releases will still be allowed. 4K SDR WEB releases can look better than the 1080p version, owing to improved bitrates.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/sdr-no-webdl.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -1954,6 +1992,64 @@ I also made 3 guides related to this one.
 
 ------
 
+### FOD
+
+<sub>FOD</sub>
+
+??? question "FOD - [Click to show/hide]"
+
+    - Fuji Television On Demand
+    - [From Wikipedia, the free encyclopedia](https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%B8%E3%83%86%E3%83%AC%E3%83%93%E3%82%AA%E3%83%B3%E3%83%87%E3%83%9E%E3%83%B3%E3%83%89){:target="_blank" rel="noopener noreferrer"}
+    - [FOD Website](https://fod-sp.fujitv.co.jp){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/fod.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### TVer
+
+<sub>TVer</sub>
+
+??? question "TVer - [Click to show/hide]"
+
+    - [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/TVer_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
+    - [TVer Website](https://tver.jp){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/tver.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### U-NEXT
+
+<sub>U-NEXT</sub>
+
+??? question "U-NEXT - [Click to show/hide]"
+
+    - [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/U-Next){:target="_blank" rel="noopener noreferrer"}
+    - [U-NEXT Website](https://video.unext.jp){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/u-next.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
 ## Anime
 
 ------
@@ -2474,6 +2570,22 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-vfq.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### VOQ
+
+??? question "VOQ - [Click to show/hide]"
+
+    Quebec Original Version.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/french-voq.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>

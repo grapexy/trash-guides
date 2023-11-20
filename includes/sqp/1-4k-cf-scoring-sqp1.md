@@ -23,6 +23,19 @@
     !!! danger "The CF with `0` you can choose to add with a score of `0` or just don't add them.<br>The reason why we score them this low is to prevent transcoding as much as possible.<br>The reason why `DTS` and `DTS-ES` have a score of `0` is to make sure that you don't limit yourself too much."
 
 ??? abstract "All HDR Formats + DV (WEBDL) - [Click to show/hide]"
+
+    **Why would I choose All HDR formats + add `DV (WEBDL)` with a score of `-10000`?**
+
+    - Because you want maximum compatibility across all devices.
+    - You must add **ALL** the HDR formats - don't leave any of them out!
+    - You must add DV-WEBDL with a score if `-10000`!
+
+    {! include-markdown "../../includes/cf/dv-limitations-atv.md" !}
+
+    {! include-markdown "../../includes/cf/dv-info-green-purple.md" !}
+
+    {! include-markdown "../../includes/cf/dv-info-profiles.md" !}
+
     | Custom Format                                                                                             |                             Score                              | Trash ID                                        |
     | --------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------: | ----------------------------------------------- |
     | [{{ radarr['cf']['dv-hdr10']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-hdr10)           |   {{ radarr['cf']['dv-hdr10']['trash_scores']['default'] }}    | {{ radarr['cf']['dv-hdr10']['trash_id'] }}      |
@@ -56,15 +69,18 @@
         !!! danger "Adding `IMAX`/`IMAX Enhanced` will replace the BHDStudio release in most cases :warning:"
 
 ??? abstract "HQ Release Groups - [Click to show/hide]"
-    | Custom Format                                                                                                                        |                                           Score                                            | Trash ID                                            |
-    | ------------------------------------------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------: | --------------------------------------------------- |
-    | [{{ radarr['cf']['bhdstudio']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/bhdstudio.json) |                 {{ radarr['cf']['bhdstudio']['trash_scores']['default'] }}                 | {{ radarr['cf']['bhdstudio']['trash_id'] }}         |
-    | [{{ radarr['cf']['web-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#web-tier-01)                                |                {{ radarr['cf']['web-tier-01']['trash_scores']['default'] }}                | {{ radarr['cf']['web-tier-01']['trash_id'] }}       |
-    | [{{ radarr['cf']['web-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#web-tier-02)                                |                {{ radarr['cf']['web-tier-02']['trash_scores']['default'] }}                | {{ radarr['cf']['web-tier-02']['trash_id'] }}       |
-    | [{{ radarr['cf']['web-tier-03']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#web-tier-03)                                |                {{ radarr['cf']['web-tier-03']['trash_scores']['default'] }}                | {{ radarr['cf']['web-tier-03']['trash_id'] }}       |
-    | [{{ radarr['cf']['hd-bluray-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-01)                    | :warning: {{ radarr['cf']['hd-bluray-tier-01']['trash_scores']['sqp-1-2160p'] }} :warning: | {{ radarr['cf']['hd-bluray-tier-01']['trash_id'] }} |
-    | [{{ radarr['cf']['hd-bluray-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-02)                    | :warning: {{ radarr['cf']['hd-bluray-tier-02']['trash_scores']['sqp-1-2160p'] }} :warning: | {{ radarr['cf']['hd-bluray-tier-02']['trash_id'] }} |
-    | [{{ radarr['cf']['hd-bluray-tier-03']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-03)                    | :warning: {{ radarr['cf']['hd-bluray-tier-03']['trash_scores']['sqp-1-2160p'] }} :warning: | {{ radarr['cf']['hd-bluray-tier-03']['trash_id'] }} |
+    | Custom Format                                                                                                                        |                                            Score                                            | Trash ID                                             |
+    | ------------------------------------------------------------------------------------------------------------------------------------ | :-----------------------------------------------------------------------------------------: | ---------------------------------------------------- |
+    | [{{ radarr['cf']['bhdstudio']['name'] }}](https://raw.githubusercontent.com/TRaSH-/Guides/master/docs/json/radarr/cf/bhdstudio.json) |                 {{ radarr['cf']['bhdstudio']['trash_scores']['default'] }}                  | {{ radarr['cf']['bhdstudio']['trash_id'] }}          |
+    | [{{ radarr['cf']['web-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#web-tier-01)                                |                {{ radarr['cf']['web-tier-01']['trash_scores']['default'] }}                 | {{ radarr['cf']['web-tier-01']['trash_id'] }}        |
+    | [{{ radarr['cf']['web-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#web-tier-02)                                |                {{ radarr['cf']['web-tier-02']['trash_scores']['default'] }}                 | {{ radarr['cf']['web-tier-02']['trash_id'] }}        |
+    | [{{ radarr['cf']['web-tier-03']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#web-tier-03)                                |                {{ radarr['cf']['web-tier-03']['trash_scores']['default'] }}                 | {{ radarr['cf']['web-tier-03']['trash_id'] }}        |
+    | [{{ radarr['cf']['hd-bluray-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-01)                    | :warning: {{ radarr['cf']['hd-bluray-tier-01']['trash_scores']['sqp-1-2160p'] }} :warning:  | {{ radarr['cf']['hd-bluray-tier-01']['trash_id'] }}  |
+    | [{{ radarr['cf']['hd-bluray-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-02)                    | :warning: {{ radarr['cf']['hd-bluray-tier-02']['trash_scores']['sqp-1-2160p'] }} :warning:  | {{ radarr['cf']['hd-bluray-tier-02']['trash_id'] }}  |
+    | [{{ radarr['cf']['hd-bluray-tier-03']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hd-bluray-tier-03)                    | :warning: {{ radarr['cf']['hd-bluray-tier-03']['trash_scores']['sqp-1-2160p'] }} :warning:  | {{ radarr['cf']['hd-bluray-tier-03']['trash_id'] }}  |
+    | [{{ radarr['cf']['uhd-bluray-tier-01']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#uhd-bluray-tier-01)                  | :warning: {{ radarr['cf']['uhd-bluray-tier-01']['trash_scores']['sqp-1-2160p'] }} :warning: | {{ radarr['cf']['uhd-bluray-tier-01']['trash_id'] }} |
+    | [{{ radarr['cf']['uhd-bluray-tier-02']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#uhd-bluray-tier-02)                  | :warning: {{ radarr['cf']['uhd-bluray-tier-02']['trash_scores']['sqp-1-2160p'] }} :warning: | {{ radarr['cf']['uhd-bluray-tier-02']['trash_id'] }} |
+    | [{{ radarr['cf']['uhd-bluray-tier-03']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#uhd-bluray-tier-03)                  | :warning: {{ radarr['cf']['uhd-bluray-tier-03']['trash_scores']['sqp-1-2160p'] }} :warning: | {{ radarr['cf']['uhd-bluray-tier-03']['trash_id'] }} |
 
     !!! warning "Scores marked with a :warning: warning :warning: are different to those used in the main public guide"
 
@@ -125,4 +141,4 @@
 
 {! include-markdown "../../includes/sqp/hd-radarr-resolution.md" !}
 
-{! include-markdown "../../includes/cf/radarr-streaming-services.md" !}
+{! include-markdown "../../includes/sqp/1-4k-streaming-services.md" !}

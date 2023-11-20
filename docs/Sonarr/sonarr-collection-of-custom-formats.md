@@ -45,34 +45,39 @@ I also made 3 guides related to this one.
 
 ------
 
-| Series Versions       | Unwanted              | HQ Source Groups                        | Streaming Services                          |
-| --------------------- | --------------------- | --------------------------------------- | ------------------------------------------- |
-| [Hybrid](#hybrid)     | [BR-DISK](#br-disk)   | [Remux Tier 01](#remux-tier-01)         | [Amazon](#amzn)                             |
-| [Remaster](#remaster) | [LQ](#lq)             | [Remux Tier 02](#remux-tier-02)         | [Apple TV+](#atvp)                          |
-|                       | [x265 (HD)](#x265-hd) | [HD Bluray Tier 01](#hd-bluray-tier-01) | [DC Universe](#dcu)                         |
-|                       | [Extras](#extras)     | [HD Bluray Tier 02](#hd-bluray-tier-02) | [Disney+](#dsnp)                            |
-|                       |                       | [WEB Tier 01](#web-tier-01)             | [HBO Max](#hmax)                            |
-|                       |                       | [WEB Tier 02](#web-tier-02)             | [HBO](#hbo)                                 |
-|                       |                       | [WEB Tier 03](#web-tier-03)             | [Max](#max)                                 |
-|                       |                       | [WEB Scene](#web-scene)                 | [Hulu](#hulu)                               |
-|                       |                       |                                         | [NLZiet](#nlz)                              |
-|                       |                       |                                         | [Netflix](#nf)                              |
-|                       |                       |                                         | [Paramount+](#pmtp)                         |
-|                       |                       |                                         | [Peacock TV](#pcok)                         |
-|                       |                       |                                         | [Quibi](#qibi)                              |
-|                       |                       |                                         | [SHOWTIME](#sho)                            |
-|                       |                       |                                         | [Stan](#stan)                               |
-|                       |                       |                                         | [Videoland](#vdl)                           |
-|                       |                       |                                         | [YouTube Red](#red)                         |
-|                       |                       |                                         | [iTunes](#it)                               |
-|                       |                       |                                         | [CANAL+](#canalplus)                        |
-|                       |                       |                                         | [SALTO](#salto)                             |
-|                       |                       |                                         | [RTBF](#rtbf)                               |
-|                       |                       |                                         | [Comedy Central](#cc)                       |
-|                       |                       |                                         | [Crave](#crav)                              |
-|                       |                       |                                         | [OViD](#ovid)                               |
-|                       |                       |                                         | [UHD Streaming Boost](#uhd-streaming-boost) |
-|                       |                       |                                         | [UHD Streaming Cut](#uhd-streaming-cut)     |
+| Series Versions       | Unwanted                                | HQ Source Groups                        | Streaming Services                          |
+| --------------------- | --------------------------------------- | --------------------------------------- | ------------------------------------------- |
+| [Hybrid](#hybrid)     | [BR-DISK](#br-disk)                     | [Remux Tier 01](#remux-tier-01)         | [Amazon](#amzn)                             |
+| [Remaster](#remaster) | [LQ](#lq)                               | [Remux Tier 02](#remux-tier-02)         | [Apple TV+](#atvp)                          |
+|                       | [LQ (Release Title)](#lq-release-title) | [HD Bluray Tier 01](#hd-bluray-tier-01) | [DC Universe](#dcu)                         |
+|                       | [x265 (HD)](#x265-hd)                   | [HD Bluray Tier 02](#hd-bluray-tier-02) | [Disney+](#dsnp)                            |
+|                       | [Extras](#extras)                       | [WEB Tier 01](#web-tier-01)             | [HBO Max](#hmax)                            |
+|                       |                                         | [WEB Tier 02](#web-tier-02)             | [HBO](#hbo)                                 |
+|                       |                                         | [WEB Tier 03](#web-tier-03)             | [Max](#max)                                 |
+|                       |                                         | [WEB Scene](#web-scene)                 | [Hulu](#hulu)                               |
+|                       |                                         |                                         | [NLZiet](#nlz)                              |
+|                       |                                         |                                         | [Netflix](#nf)                              |
+|                       |                                         |                                         | [Paramount+](#pmtp)                         |
+|                       |                                         |                                         | [Peacock TV](#pcok)                         |
+|                       |                                         |                                         | [Quibi](#qibi)                              |
+|                       |                                         |                                         | [SHOWTIME](#sho)                            |
+|                       |                                         |                                         | [Stan](#stan)                               |
+|                       |                                         |                                         | [Videoland](#vdl)                           |
+|                       |                                         |                                         | [YouTube Red](#red)                         |
+|                       |                                         |                                         | [iTunes](#it)                               |
+|                       |                                         |                                         | [CANAL+](#canalplus)                        |
+|                       |                                         |                                         | [SALTO](#salto)                             |
+|                       |                                         |                                         | [RTBF](#rtbf)                               |
+|                       |                                         |                                         | [Comedy Central](#cc)                       |
+|                       |                                         |                                         | [Crave](#crav)                              |
+|                       |                                         |                                         | [OViD](#ovid)                               |
+|                       |                                         |                                         | [FOD](#fod)                                 |
+|                       |                                         |                                         | [TVer](#tver)                               |
+|                       |                                         |                                         | [U-NEXT](#u-next)                           |
+|                       |                                         |                                         | [ALL4](#all4)                               |
+|                       |                                         |                                         | [4OD](#4od)                                 |
+|                       |                                         |                                         | [UHD Streaming Boost](#uhd-streaming-boost) |
+|                       |                                         |                                         | [UHD Streaming Cut](#uhd-streaming-cut)     |
 
 ------
 
@@ -86,9 +91,10 @@ I also made 3 guides related to this one.
 | [x264](#x264)                  | [Retags](#retags)                   | [VFI](#vfi)                   | [FR Anime Tier 01](#fr-anime-tier-01)         |
 | [x265](#x265)                  | [Scene](#scene)                     | [VF2](#vf2)                   | [FR Anime Tier 02](#fr-anime-tier-02)         |
 |                                | [Season Packs](#season-pack)        | [VFQ](#vfq)                   | [FR Anime Tier 03](#fr-anime-tier-03)         |
-|                                | [x265 (no HDR/DV)](#x265-no-hdrdv)  | [VQ](#vq)                     | [FR Anime FanSub](#fr-anime-fansub)           |
-|                                | [AV1](#av1)                         | [VFB](#vfb)                   | [FR Scene Groups](#fr-scene-groups)           |
-|                                | [SDR](#sdr)                         | [VOSTFR](#vostfr)             | [FR LQ](#fr-lq)                               |
+|                                | [x265 (no HDR/DV)](#x265-no-hdrdv)  | [VOQ](#voq)                   | [FR Anime FanSub](#fr-anime-fansub)           |
+|                                | [AV1](#av1)                         | [VQ](#vq)                     | [FR Scene Groups](#fr-scene-groups)           |
+|                                | [SDR](#sdr)                         | [VFB](#vfb)                   | [FR LQ](#fr-lq)                               |
+|                                | [SDR (no WEBDL)](#sdr-no-webdl)     | [VOSTFR](#vostfr)             |                                               |
 |                                | [DV (FEL)](#dv-fel)                 | [FanSUB](#fansub)             |                                               |
 |                                | [HFR](#hfr)                         | [FastSUB](#fastsub)           |                                               |
 |                                | [VP9](#vp9)                         |                               |                                               |
@@ -811,6 +817,24 @@ I also made 3 guides related to this one.
 
 ------
 
+### LQ (Release Title)
+
+<sub>Low Quality Releases = LQ</sub>
+
+??? question "LQ (Release Title)- [Click to show/hide]"
+
+    A collection of terms seen in the titles of Low Quality releases that are not captured by using a release group name.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/lq-release-title.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
 ### x265 (HD)
 
 <sub>720/1080p no x265 = x265 (720/1080p) = x265 (HD)</sub>
@@ -1180,6 +1204,22 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/sdr.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### SDR (no WEBDL)
+
+??? question "SDR (no WEBDL) - [Click to show/hide]"
+
+    - This will prevent grabbing UHD/4k Remux and Bluray encode releases without HDR Formats - i.e., SDR WEB releases will still be allowed. 4K SDR WEB releases can look better than the 1080p version, owing to improved bitrates.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/sdr-no-webdl.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -1787,6 +1827,102 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/ovid.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### FOD
+
+<sub>FOD</sub>
+
+??? question "FOD - [Click to show/hide]"
+
+    - Fuji Television On Demand
+    - [From Wikipedia, the free encyclopedia](https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%B8%E3%83%86%E3%83%AC%E3%83%93%E3%82%AA%E3%83%B3%E3%83%87%E3%83%9E%E3%83%B3%E3%83%89){:target="_blank" rel="noopener noreferrer"}
+    - [FOD Website](https://fod-sp.fujitv.co.jp){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/fod.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### TVer
+
+<sub>TVer</sub>
+
+??? question "TVer - [Click to show/hide]"
+
+    - [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/TVer_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
+    - [TVer Website](https://tver.jp){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/tver.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### U-NEXT
+
+<sub>U-NEXT</sub>
+
+??? question "U-NEXT - [Click to show/hide]"
+
+    - [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/U-Next){:target="_blank" rel="noopener noreferrer"}
+    - [U-NEXT Website](https://video.unext.jp){:target="_blank" rel="noopener noreferrer"}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/u-next.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### ALL4
+
+<sub>ALL4</sub>
+
+??? question "ALL4 - [Click to show/hide]"
+
+    - [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Channel_4_(VoD_service)){:target="_blank" rel="noopener noreferrer"}
+    - ALL4 is a previous name for the UK's Channel4 VOD service. Releases are usually identified with either 'ALL4' or '4OD', not 'Channel4'.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/all4.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### 4OD
+
+<sub>4OD</sub>
+
+??? question "4OD - [Click to show/hide]"
+
+    - [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Channel_4_(VoD_service)){:target="_blank" rel="noopener noreferrer"}
+    - 4OD is a previous name for the UK's Channel4 VOD service. Releases are usually identified with either 'ALL4' or '4OD', not 'Channel4'.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/4od.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -2460,6 +2596,22 @@ I also made 3 guides related to this one.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-vfq.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+------
+
+### VOQ
+
+??? question "VOQ - [Click to show/hide]"
+
+    Quebec Original Version.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/sonarr/cf/french-voq.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
