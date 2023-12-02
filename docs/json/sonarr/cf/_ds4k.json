@@ -1,0 +1,46 @@
+{
+  "trash_id": "3f0389f2522941d1a26451cb2ef7af93",
+  "trash_scores": {
+    "default": 15
+  },
+  "name": "_DS4K",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "DS4K",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "\\bDS4K\\b"
+      }
+    },
+    {
+      "name": "1080p",
+      "implementation": "ResolutionSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 1080
+      }
+    },
+        {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 4
+      }
+    }
+  ]
+}
