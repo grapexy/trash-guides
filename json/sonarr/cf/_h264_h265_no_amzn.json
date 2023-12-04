@@ -16,15 +16,6 @@
       }
     },
     {
-      "name": "NOT x265 OR HEVC Bluray",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": "([x][ ._-]?265|(BluRay|BDRip).*?([xh][ ._-]?265|\\bHEVC(\\b|\\d)))"
-      }
-    },
-    {
       "name": "NOT Amazon",
       "implementation": "ReleaseTitleSpecification",
       "negate": true,
