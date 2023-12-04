@@ -9,7 +9,7 @@
     {
       "name": "DS4K",
       "implementation": "ReleaseTitleSpecification",
-      "negate": true,
+      "negate": false,
       "required": true,
       "fields": {
         "value": "\\bDS4K\\b"
