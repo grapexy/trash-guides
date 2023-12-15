@@ -38,15 +38,6 @@
       "fields": {
         "value": "^(?=.*\\bAMZN.*?[xh][ ._-]?265\\b).*?\\b(SiGMA|SiGLA)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b|\\bUTR\\b)*(?:\\)|\\]|$|\\.\\w+$)"
       }
-    },
-    {
-      "name": "HONE Group (AMZN DL)",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(?=.*\\bAMZN.*?[h][ ._-]?265\\b).*?\\b(Altezza|cYpHer|DiscoD|YOGI|Weasley|HONE)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b|\\bUTR\\b)*(?:\\)|\\]|$|\\.\\w+$)"
-      }
     }
   ]
 }
