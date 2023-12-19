@@ -1,0 +1,19 @@
+{
+  "trash_id": "55bea96bfa7849dba924aa9c9527736e",
+  "trash_scores": {
+    "default": 230
+  },
+  "name": "HONE",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "HONE Group",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(?:[xh][ ._-]?265|\\bHEVC(\\b|\\d)).+?\\b(HONE)\\b(?:[\\s\\[.-]){0,2}(?:\\)|\\]|$|\\.\\w+$)"
+      }
+    }
+  ]
+}
