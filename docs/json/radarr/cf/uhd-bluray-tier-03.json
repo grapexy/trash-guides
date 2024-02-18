@@ -55,15 +55,6 @@
       }
     },
     {
-      "name": "HONE",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(HONE)$"
-      }
-    },
-    {
       "name": "SPHD",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
