@@ -1,112 +1,132 @@
 # Collection of Custom Formats
 
-Here I will try to list a collection of the most needed and commonly used Custom Formats.
-These have been collected from either discussions on Discord or that I created with help from others.
-Special thanks to [rg9400](https://github.com/rg9400), [bakerboy448](https://github.com/bakerboy448) and Team Radarr.
+Below is a collection of what we've come to regard as the most needed and commonly used Custom Formats.
+These CFs have been collected from discussions on Discord or created with help from others.
 
-With Radarr V3, Custom Formats are much more advanced/powerful than with v0.2, although this also means a Custom Format is much more complicated to setup.
+Special thanks to everyone that has helped in the creation and testing of these Custom Formats, my team at TRaSH guides, Team Radarr, and the community.
 
-After requesting it at Team Radarr, we now have the option to import/export the Custom Formats in a JSON format. This makes it easier to share the Custom Formats.
+With Radarr V3, Custom Formats are much more advanced/powerful than with V2, although this also means a Custom Format can require more knowledge to set up or create.
 
-I also made 3 guides related to this one.
+After requesting with Team Radarr, we now have the option to import/export the Custom Formats in a JSON format. This provides everyone with an easy way to share and use Custom Formats.
 
-- [How to import Custom Formats](/Radarr/Radarr-import-custom-formats){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to import the Custom Formats.
-- [How to upgrade Custom Formats](/Radarr/Radarr-how-to-update-custom-formats){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to upgrade your existing Custom Formats.
-- [How to setup Quality Profiles](/Radarr/radarr-setup-quality-profiles){:target="_blank" rel="noopener noreferrer"}. Where I will try to explain how to make the most use of Custom Formats to help you to setup your quality profiles for your personal needs.
+We've made 3 guides related to this.
+
+- [How to import Custom Formats](/Radarr/Radarr-import-custom-formats){:target="_blank" rel="noopener noreferrer"} - Explains how to import the Custom Formats.
+- [How to upgrade Custom Formats](/Radarr/Radarr-how-to-update-custom-formats){:target="_blank" rel="noopener noreferrer"} - Explains how to upgrade your existing Custom Formats.
+- [How to set up Quality Profiles](/Radarr/radarr-setup-quality-profiles){:target="_blank" rel="noopener noreferrer"} - Explains how to make the most use of Custom Formats and shows some specifics of my configuration. You can use these examples to get an idea of how to set up your preferences.
 
 !!! tip
 
-    I also suggest to change the Propers and Repacks settings in Radarr
+    It also is recommended to change the Propers and Repacks settings in Radarr's `Settings`.
 
     `Media Management` => `File Management` to `Do Not Prefer` and use the [Repack/Proper](#repackproper) Custom Format.
 
     ![!cf-mm-propers-repacks-disable](images/cf-mm-propers-repacks-disable.png)
 
-    This way you make sure the Custom Format preferences will be used instead.
+    This way you make sure the Custom Format scoring and preferences will be fully utilized.
 
 --8<-- "includes/support.md"
 
-------
+---
 
 ## INDEX
 
-------
+---
 
 | Audio Advanced #1                     | Audio Advanced #2         | Audio Channels               | HDR Formats                       |
 | ------------------------------------- | ------------------------- | ---------------------------- | --------------------------------- |
-| [TrueHD ATMOS](#truehd-atmos)         | [FLAC](#flac)             | [1.0 Mono](#10-mono)         | [DV HDR10](#dv-hdr10)             |
-| [DTS X](#dts-x)                       | [PCM](#pcm)               | [2.0 Stereo](#20-stereo)     | [DV](#dv)                         |
-| [ATMOS (undefined)](#atmos-undefined) | [DTS-HD HRA](#dts-hd-hra) | [3.0 Sound](#30-sound)       | [DV HLG](#dv-hlg)                 |
-| [DD+ ATMOS](#ddplus-atmos)            | [AAC](#aac)               | [4.0 Sound](#40-sound)       | [DV SDR](#dv-sdr)                 |
-| [TrueHD](#truehd)                     | [DD](#dd)                 | [5.1 Surround](#51-surround) | [HDR10+](#hdr10plus)              |
-| [DTS-HD MA](#dts-hd-ma)               | [MP3](#mp3)               | [6.1 Surround](#61-surround) | [HDR10](#hdr10)                   |
-| [DD+](#ddplus)                        | [Opus](#opus)             | [7.1 Surround](#71-surround) | [HDR](#hdr)                       |
-| [DTS-ES](#dts-es)                     |                           | [9.1 Surround](#91-surround) | [HDR (undefined)](#hdr-undefined) |
-| [DTS](#dts)                           |                           |                              | [PQ](#pq)                         |
+| [TrueHD ATMOS](#truehd-atmos)         | [FLAC](#flac)             | [1.0 Mono](#10-mono)         | [DV HDR10+](#dv-hdr10plus)        |
+| [DTS X](#dts-x)                       | [PCM](#pcm)               | [2.0 Stereo](#20-stereo)     | [DV HDR10](#dv-hdr10)             |
+| [ATMOS (undefined)](#atmos-undefined) | [DTS-HD HRA](#dts-hd-hra) | [3.0 Sound](#30-sound)       | [DV](#dv)                         |
+| [DD+ ATMOS](#ddplus-atmos)            | [AAC](#aac)               | [4.0 Sound](#40-sound)       | [DV HLG](#dv-hlg)                 |
+| [TrueHD](#truehd)                     | [DD](#dd)                 | [5.1 Surround](#51-surround) | [DV SDR](#dv-sdr)                 |
+| [DTS-HD MA](#dts-hd-ma)               | [MP3](#mp3)               | [6.1 Surround](#61-surround) | [HDR10+](#hdr10plus)              |
+| [DD+](#ddplus)                        | [Opus](#opus)             | [7.1 Surround](#71-surround) | [HDR10](#hdr10)                   |
+| [DTS-ES](#dts-es)                     |                           | [9.1 Surround](#91-surround) | [HDR](#hdr)                       |
+| [DTS](#dts)                           |                           |                              | [HDR (undefined)](#hdr-undefined) |
+|                                       |                           |                              | [PQ](#pq)                         |
 |                                       |                           |                              | [HLG](#hlg)                       |
 
-------
+---
 
-| Movie Versions                                | Unwanted                                | HQ Release Groups                         | Streaming Services         |
-| --------------------------------------------- | --------------------------------------- | ----------------------------------------- | -------------------------- |
-| [Hybrid](#hybrid)                             | [BR-DISK](#br-disk)                     | [Remux Tier 01](#remux-tier-01)           | [Amazon](#amzn)            |
-| [Remaster](#remaster)                         | [LQ](#lq)                               | [Remux Tier 02](#remux-tier-02)           | [Apple TV+](#atvp)         |
-| [4K Remaster](#4k-remaster)                   | [LQ (Release Title)](#lq-release-title) | [Remux Tier 03](#remux-tier-03)           | [Criterion Channel](#crit) |
-| [Special Edition](#special-edition)           | [3D](#3d)                               | [UHD Bluray Tier 01](#uhd-bluray-tier-01) | [Disney+](#dsnp)           |
-| [Criterion Collection](#criterion-collection) | [x265 (HD)](#x265-hd)                   | [UHD Bluray Tier 02](#uhd-bluray-tier-02) | [HBO](#hbo)                |
-| [Masters of Cinema](#masters-of-cinema)       | [Upscaled](#upscaled)                   | [UHD Bluray Tier 03](#uhd-bluray-tier-03) | [HBO Max](#hmax)           |
-| [Vinegar Syndrome](#vinegar-syndrome)         | [Extras](#extras)                       | [HD Bluray Tier 01](#hd-bluray-tier-01)   | [Max](#max)                |
-| [Theatrical Cut](#theatrical-cut)             |                                         | [HD Bluray Tier 02](#hd-bluray-tier-02)   | [Hulu](#hulu)              |
-| [IMAX](#imax)                                 |                                         | [HD Bluray Tier 03](#hd-bluray-tier-03)   | [Netflix](#nf)             |
-| [IMAX Enhanced](#imax-enhanced)               |                                         | [WEB Tier 01](#web-tier-01)               | [Peacock TV](#pcok)        |
-| [Open Matte](#open-matte)                     |                                         | [WEB Tier 02](#web-tier-02)               | [Paramount+](#pmtp)        |
-|                                               |                                         | [WEB Tier 03](#web-tier-03)               | [Movies Anywhere](#ma)     |
-|                                               |                                         |                                           | [Pathe Thuis](#pathe)      |
-|                                               |                                         |                                           | [Bravia Core](#bcore)      |
-|                                               |                                         |                                           | [Stan](#stan)              |
-|                                               |                                         |                                           | [Crave](#crav)             |
-|                                               |                                         |                                           | [OViD](#ovid)              |
-|                                               |                                         |                                           | [FOD](#fod)                |
-|                                               |                                         |                                           | [TVer](#tver)              |
-|                                               |                                         |                                           | [U-NEXT](#u-next)          |
+| Movie Versions                                | Unwanted                                | HQ Release Groups                         |
+| --------------------------------------------- | --------------------------------------- | ----------------------------------------- |
+| [4K Remaster](#4k-remaster)                   | [3D](#3d)                               | [Remux Tier 01](#remux-tier-01)           |
+| [Criterion Collection](#criterion-collection) | [BR-DISK](#br-disk)                     | [Remux Tier 02](#remux-tier-02)           |
+| [Hybrid](#hybrid)                             | [Extras](#extras)                       | [Remux Tier 03](#remux-tier-03)           |
+| [IMAX Enhanced](#imax-enhanced)               | [LQ](#lq)                               | [UHD Bluray Tier 01](#uhd-bluray-tier-01) |
+| [IMAX](#imax)                                 | [LQ (Release Title)](#lq-release-title) | [UHD Bluray Tier 02](#uhd-bluray-tier-02) |
+| [Masters of Cinema](#masters-of-cinema)       | [Upscaled](#upscaled)                   | [UHD Bluray Tier 03](#uhd-bluray-tier-03) |
+| [Open Matte](#open-matte)                     | [x265 (HD)](#x265-hd)                   | [HD Bluray Tier 01](#hd-bluray-tier-01)   |
+| [Remaster](#remaster)                         |                                         | [HD Bluray Tier 02](#hd-bluray-tier-02)   |
+| [Special Edition](#special-edition)           |                                         | [HD Bluray Tier 03](#hd-bluray-tier-03)   |
+| [Theatrical Cut](#theatrical-cut)             |                                         | [WEB Tier 01](#web-tier-01)               |
+| [Vinegar Syndrome](#vinegar-syndrome)         |                                         | [WEB Tier 02](#web-tier-02)               |
+|                                               |                                         | [WEB Tier 03](#web-tier-03)               |
 
-------
+---
 
-| Misc                           | Optional                            | French Audio Version          | French Source Groups                            |
-| ------------------------------ | ----------------------------------- | ----------------------------- | ----------------------------------------------- |
-| [Repack/Proper](#repackproper) | [Bad Dual Groups](#bad-dual-groups) | [Multi-French](#multi-french) | [FR Remux Tier 01](#fr-remux-tier-01)           |
-| [Repack2](#repack2)            | [DV (WEBDL)](#dv-webdl)             | [Multi-Audio](#multi-audio)   | [FR Remux Tier 02](#fr-remux-tier-02)           |
-| [Multi](#multi)                | [EVO (no WEBDL)](#evo-no-webdl)     | [French Audio](#french-audio) | [FR UHD Bluray Tier 01](#fr-uhd-bluray-tier-01) |
-| [x264](#x264)                  | [HDR10+ Boost](#hdr10plus-boost)    | [VFF](#vff)                   | [FR UHD Bluray Tier 02](#fr-uhd-bluray-tier-02) |
-| [x265](#x265)                  | [No-RlsGroup](#no-rlsgroup)         | [VOF](#vof)                   | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01)   |
-| [MPEG2](#mpeg2)                | [Obfuscated](#obfuscated)           | [VFI](#vfi)                   | [FR HD Bluray Tier 02](#fr-hd-bluray-tier-02)   |
-| [Dutch Groups](#dutch-groups)  | [Retags](#retags)                   | [VF2](#vf2)                   | [FR WEB Tier 01](#fr-web-tier-01)               |
-| [FreeLeech](#freeleech)        | [Scene](#scene)                     | [VFQ](#vfq)                   | [FR WEB Tier 02](#fr-web-tier-02)               |
-|                                | [x265 (no HDR/DV)](#x265-no-hdrdv)  | [VOQ](#voq)                   | [FR Scene Groups](#fr-scene-groups)             |
-|                                | [AV1](#av1)                         | [VQ](#vq)                     | [FR LQ](#fr-lq)                                 |
-|                                | [SDR](#sdr)                         | [VFB](#vfb)                   |                                                 |
-|                                | [SDR (no WEBDL)](#sdr-no-webdl)     | [VOSTFR](#vostfr)             |                                                 |
-|                                | [DV (FEL)](#dv-fel)                 | [FanSUB](#fansub)             |                                                 |
-|                                | [Line/Mic Dubbed](#linemic-dubbed)  | [FastSUB](#fastsub)           |                                                 |
-|                                | [HFR](#hfr)                         |                               |                                                 |
-|                                | [VP9](#vp9)                         |                               |                                                 |
+| General Streaming Services | Asian Streaming Services | Dutch Streaming Services |
+| -------------------------- | ------------------------ | ------------------------ |
+| [Amazon](#amzn)            | [FOD](#fod)              | [Pathe Thuis](#pathe)    |
+| [Apple TV+](#atvp)         | [Disney+ Hotstar](#htsr) | [Videoland](#vdl)        |
+| [Bravia Core](#bcore)      | [TVer](#tver)            |                          |
+| [Criterion Channel](#crit) | [U-NEXT](#u-next)        |                          |
+| [Disney+](#dsnp)           | [VIU](#viu)              |                          |
+| [HBO](#hbo)                |                          |                          |
+| [HBO Max](#hmax)           |                          |                          |
+| [Hulu](#hulu)              |                          |                          |
+| [Max](#max)                |                          |                          |
+| [Movies Anywhere](#ma)     |                          |                          |
+| [Netflix](#nf)             |                          |                          |
+| [Peacock TV](#pcok)        |                          |                          |
+| [Paramount+](#pmtp)        |                          |                          |
+| [Stan](#stan)              |                          |                          |
 
-------
+| UK Streaming Services | Misc Streaming Services | Anime Streaming Services |
+| --------------------- | ----------------------- | ------------------------ |
+| [BBC iPlayer](#ip)    | [Crave](#crav)          | [VRV](#vrv)              |
+| [ITVX](#itvx)         | [OViD](#ovid)           |                          |
 
-| Anime                                                                       | Anime                                                                 | Anime       | Anime Optional                        |
-| --------------------------------------------------------------------------- | --------------------------------------------------------------------- | ----------- | ------------------------------------- |
-| [Anime BD Tier 01 (Top SeaDex Muxers)](#anime-bd-tier-01-top-seadex-muxers) | [Anime Web Tier 01 (Muxers)](#anime-web-tier-01-muxers)               | [v0](#v0)   | [Uncensored](#uncensored)             |
-| [Anime BD Tier 02 (SeaDex Muxers)](#anime-bd-tier-02-seadex-muxers)         | [Anime Web Tier 02 (Top FanSubs)](#anime-web-tier-02-top-fansubs)     | [v1](#v1)   | [10bit](#10bit)                       |
-| [Anime BD Tier 03 (SeaDex Muxers)](#anime-bd-tier-03-seadex-muxers)         | [Anime Web Tier 03 (Official Subs)](#anime-web-tier-03-official-subs) | [v2](#v2)   | [Anime Dual Audio](#anime-dual-audio) |
-| [Anime BD Tier 04 (SeaDex Muxers)](#anime-bd-tier-04-seadex-muxers)         | [Anime Web Tier 04 (Official Subs)](#anime-web-tier-04-official-subs) | [v3](#v3)   | [Dubs Only](#dubs-only)               |
-| [Anime BD Tier 05 (Remuxes)](#anime-bd-tier-05-remuxes)                     | [Anime Web Tier 05 (FanSubs)](#anime-web-tier-05-fansubs)             | [v4](#v4)   |                                       |
-| [Anime BD Tier 06 (FanSubs)](#anime-bd-tier-06-fansubs)                     | [Anime Web Tier 06 (FanSubs)](#anime-web-tier-06-fansubs)             | [VRV](#vrv) |                                       |
-| [Anime BD Tier 07 (P2P/Scene)](#anime-bd-tier-07-p2pscene)                  | [Anime Raws](#anime-raws)                                             |             |                                       |
-| [Anime BD Tier 08 (Mini Encodes)](#anime-bd-tier-08-mini-encodes)           | [Anime LQ Groups](#anime-lq-groups)                                   |             |                                       |
+---
+
+| Misc                           | Optional                               | French Audio Version          | French Source Groups                            |
+| ------------------------------ | -------------------------------------- | ----------------------------- | ----------------------------------------------- |
+| [Dutch Groups](#dutch-groups)  | [AV1](#av1)                            | [Multi-French](#multi-french) | [FR Remux Tier 01](#fr-remux-tier-01)           |
+| [FreeLeech](#freeleech)        | [Bad Dual Groups](#bad-dual-groups)    | [Multi-Audio](#multi-audio)   | [FR Remux Tier 02](#fr-remux-tier-02)           |
+| [MPEG2](#mpeg2)                | [DV (Disk)](#dv-disk)                  | [French Audio](#french-audio) | [FR UHD Bluray Tier 01](#fr-uhd-bluray-tier-01) |
+| [Multi](#multi)                | [DV (WEBDL)](#dv-webdl)                | [VFF](#vff)                   | [FR UHD Bluray Tier 02](#fr-uhd-bluray-tier-02) |
+| [Repack/Proper](#repackproper) | [DV HDR10+ Boost](#dv-hdr10plus-boost) | [VOF](#vof)                   | [FR HD Bluray Tier 01](#fr-hd-bluray-tier-01)   |
+| [Repack2](#repack2)            | [EVO (no WEBDL)](#evo-no-webdl)        | [VFI](#vfi)                   | [FR HD Bluray Tier 02](#fr-hd-bluray-tier-02)   |
+| [x264](#x264)                  | [HDR10+ Boost](#hdr10plus-boost)       | [VF2](#vf2)                   | [FR WEB Tier 01](#fr-web-tier-01)               |
+| [x265](#x265)                  | [HFR](#hfr)                            | [VFQ](#vfq)                   | [FR WEB Tier 02](#fr-web-tier-02)               |
+|                                | [Internal](#internal)                  | [VOQ](#voq)                   | [FR Scene Groups](#fr-scene-groups)             |
+|                                | [Line/Mic Dubbed](#linemic-dubbed)     | [VQ](#vq)                     | [FR LQ](#fr-lq)                                 |
+|                                | [No-RlsGroup](#no-rlsgroup)            | [VFB](#vfb)                   |                                                 |
+|                                | [Obfuscated](#obfuscated)              | [VOSTFR](#vostfr)             |                                                 |
+|                                | [Retags](#retags)                      | [FanSUB](#fansub)             |                                                 |
+|                                | [Scene](#scene)                        | [FastSUB](#fastsub)           |                                                 |
+|                                | [SDR (no WEBDL)](#sdr-no-webdl)        |                               |                                                 |
+|                                | [SDR](#sdr)                            |                               |                                                 |
+|                                | [VP9](#vp9)                            |                               |                                                 |
+|                                | [x265 (no HDR/DV)](#x265-no-hdrdv)     |                               |                                                 |
+
+---
+
+| Anime                                                                       | Anime                                                                 | Anime     | Anime Optional                        |
+| --------------------------------------------------------------------------- | --------------------------------------------------------------------- | --------- | ------------------------------------- |
+| [Anime BD Tier 01 (Top SeaDex Muxers)](#anime-bd-tier-01-top-seadex-muxers) | [Anime Web Tier 01 (Muxers)](#anime-web-tier-01-muxers)               | [v0](#v0) | [Uncensored](#uncensored)             |
+| [Anime BD Tier 02 (SeaDex Muxers)](#anime-bd-tier-02-seadex-muxers)         | [Anime Web Tier 02 (Top FanSubs)](#anime-web-tier-02-top-fansubs)     | [v1](#v1) | [10bit](#10bit)                       |
+| [Anime BD Tier 03 (SeaDex Muxers)](#anime-bd-tier-03-seadex-muxers)         | [Anime Web Tier 03 (Official Subs)](#anime-web-tier-03-official-subs) | [v2](#v2) | [Anime Dual Audio](#anime-dual-audio) |
+| [Anime BD Tier 04 (SeaDex Muxers)](#anime-bd-tier-04-seadex-muxers)         | [Anime Web Tier 04 (Official Subs)](#anime-web-tier-04-official-subs) | [v3](#v3) | [Dubs Only](#dubs-only)               |
+| [Anime BD Tier 05 (Remuxes)](#anime-bd-tier-05-remuxes)                     | [Anime Web Tier 05 (FanSubs)](#anime-web-tier-05-fansubs)             | [v4](#v4) |                                       |
+| [Anime BD Tier 06 (FanSubs)](#anime-bd-tier-06-fansubs)                     | [Anime Web Tier 06 (FanSubs)](#anime-web-tier-06-fansubs)             |           |                                       |
+| [Anime BD Tier 07 (P2P/Scene)](#anime-bd-tier-07-p2pscene)                  | [Anime Raws](#anime-raws)                                             |           |                                       |
+| [Anime BD Tier 08 (Mini Encodes)](#anime-bd-tier-08-mini-encodes)           | [Anime LQ Groups](#anime-lq-groups)                                   |           |                                       |
 
 ## Audio Advanced
 
-------
+---
 
 ### TrueHD ATMOS
 
@@ -124,7 +144,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DTS X
 
@@ -142,7 +162,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### ATMOS (undefined)
 
@@ -161,7 +181,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DDPlus ATMOS
 
@@ -177,7 +197,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### TrueHD
 
@@ -195,7 +215,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DTS-HD MA
 
@@ -213,7 +233,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FLAC
 
@@ -229,7 +249,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### PCM
 
@@ -245,7 +265,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DTS-HD HRA
 
@@ -276,7 +296,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DDPlus
 
@@ -296,7 +316,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DTS-ES
 
@@ -312,7 +332,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DTS
 
@@ -329,7 +349,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### AAC
 
@@ -348,7 +368,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DD
 
@@ -368,7 +388,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### MP3
 
@@ -383,7 +403,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Opus
 
@@ -401,11 +421,11 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ## Audio Channels
 
-------
+---
 
 ### 1.0 Mono
 
@@ -417,7 +437,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### 2.0 Stereo
 
@@ -429,7 +449,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### 3.0 Sound
 
@@ -441,7 +461,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### 4.0 Sound
 
@@ -453,7 +473,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### 5.1 Surround
 
@@ -465,7 +485,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### 6.1 Surround
 
@@ -477,7 +497,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### 7.1 Surround
 
@@ -489,7 +509,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### 9.1 Surround
 
@@ -501,21 +521,38 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ## HDR Formats
 
-------
+---
+
+### DV HDR10Plus
+
+<sub>DV = DoVi = Dolby Vision</sub><br>
+<sub>HDR10+ = HDR10P = HDR10Plus</sub>
+
+??? question "DV HDR10+ - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/dv-hdr10plus.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dv-hdr10plus.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
 
 ### DV HDR10
 
-<sub>Dolby Vision = DoVi = DV</sub>
+<sub>DV = DoVi = Dolby Vision</sub>
 
 ??? question "DV HDR10 - [Click to show/hide]"
 
-    Dolby Vision is a content mastering and delivery format similar to the HDR10 media profile.
-
-    Dolby Vision is a proprietary, dynamic HDR format developed by Dolby Labs. By adjusting the picture on a scene-by-scene (and even frame-by-frame) basis, it lets you see more detail with better color accuracy. It is constantly making adjustments so that each image on the screen is optimized.
+    {! include-markdown "../../includes/cf-descriptions/dv-hdr10.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -525,17 +562,17 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DV
 
-<sub>Dolby Vision = DoVi = DV</sub>
+<sub>DV = DoVi = Dolby Vision</sub>
 
 ??? question "DV - [Click to show/hide]"
 
-    Dolby Vision is a content mastering and delivery format similar to the HDR10 media profile.
+    --8<-- "includes/cf-descriptions/dv.md"
 
-    Dolby Vision is a proprietary, dynamic HDR format developed by Dolby Labs. By adjusting the picture on a scene-by-scene (and even frame-by-frame) basis, it lets you see more detail with better color accuracy. It is constantly making adjustments so that each image on the screen is optimized.
+<! -- the reason why we didn't use here `include-markdown` is because all the headers when using `include-markdown` will be looking in `/includes` and not the current markdown file, in this case the pointer to `#dv-webdl` in `includes/dv.md` -->
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -545,17 +582,15 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DV HLG
 
-<sub>Dolby Vision = DoVi = DV</sub>
+<sub>DV = DoVi = Dolby Vision</sub>
 
 ??? question "DV HLG - [Click to show/hide]"
 
-    Dolby Vision is a content mastering and delivery format similar to the HDR10 media profile.
-
-    Dolby Vision is a proprietary, dynamic HDR format developed by Dolby Labs. By adjusting the picture on a scene-by-scene (and even frame-by-frame) basis, it lets you see more detail with better color accuracy. It is constantly making adjustments so that each image on the screen is optimized.
+    {! include-markdown "../../includes/cf-descriptions/dv-hlg.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -565,17 +600,15 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DV SDR
 
-<sub>Dolby Vision = DoVi = DV</sub>
+<sub>DV = DoVi = Dolby Vision</sub>
 
 ??? question "DV SDR - [Click to show/hide]"
 
-    Dolby Vision is a content mastering and delivery format similar to the HDR10 media profile.
-
-    Dolby Vision is a proprietary, dynamic HDR format developed by Dolby Labs. By adjusting the picture on a scene-by-scene (and even frame-by-frame) basis, it lets you see more detail with better color accuracy. It is constantly making adjustments so that each image on the screen is optimized.
+    {! include-markdown "../../includes/cf-descriptions/dv-sdr.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -585,19 +618,15 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### HDR10Plus
 
-<sub>HDR10Plus = HDR10+</sub>
+<sub>HDR10+ = HDR10P = HDR10Plus</sub>
 
 ??? question "HDR10+ - [Click to show/hide]"
 
-    **HDR10+ enhances upon a pre-existing HDR10 base layer allowing backwards compatibility with HDR10 devices. It adds dynamic metadata for the devices that support it.**
-
-    [From Wikipedia, the free encyclopedia](https://en.m.wikipedia.org/wiki/High-dynamic-range_video){:target="_blank" rel="noopener noreferrer"}
-
-    HDR10+, also known as HDR10 Plus, is an HDR video format, announced on 20 April 2017. It is the same as HDR10 but with the addition of a system of dynamic metadata developed by Samsung. It is free to use for content creators and has a maximum $10,000 annual license for some manufacturers. It has been positioned as an alternative to Dolby Vision without the same expenses.
+    {! include-markdown "../../includes/cf-descriptions/hdr10plus.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -607,7 +636,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### HDR10
 
@@ -615,13 +644,7 @@ I also made 3 guides related to this one.
 
 ??? question "HDR10 - [Click to show/hide]"
 
-    **HDR10 is the most basic HDR format used in consumer media and is supported by all HDR-supported devices. It adds static metadata upon the PQ10 format.**
-
-    [From Wikipedia, the free encyclopedia](https://en.m.wikipedia.org/wiki/High-dynamic-range_video){:target="_blank" rel="noopener noreferrer"}
-
-    HDR10 Media Profile, more commonly known as HDR10, is an open HDR standard announced on 27 August 2015 by the Consumer Technology Association. It is the most widespread of the HDR formats. It is not backward compatible with SDR displays. It is technically limited to a maximum of 10,000 nits peak brightness; however, HDR10 content is commonly mastered with a peak brightness between 1000 and 4000 nits.
-
-    HDR10 lacks dynamic metadata. On HDR10 displays that have lower color volume than the HDR10 content (e.g. lower peak brightness capability), the HDR10 metadata provides information to help the display adjust to the video. The metadata, however, is static and constant with respect to each individual video and doesn't inform the display exactly how the content should be adjusted. The interaction between display capabilities, video metadata, and the ultimate output (i.e. the presentation of the video) is mediated by the display, with the result that the original producer's intent may not be preserved.
+    {! include-markdown "../../includes/cf-descriptions/hdr10.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -631,7 +654,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### HDR
 
@@ -639,9 +662,7 @@ I also made 3 guides related to this one.
 
 ??? question "HDR - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.m.wikipedia.org/wiki/High-dynamic-range_video){:target="_blank" rel="noopener noreferrer"}
-
-    High-dynamic-range video (HDR video) is video having a dynamic range greater than that of standard-dynamic-range video (SDR video).HDR video involves capture, production, content/encoding, and display. HDR capture and displays are capable of brighter whites and deeper blacks. To accommodate this, HDR encoding standards allow for a higher maximum luminance and use at least a 10-bit dynamic range (color depth, compared to 8-bit for non-professional and 10-bit for professional SDR video) in order to maintain precision across this extended range.
+    {! include-markdown "../../includes/cf-descriptions/hdr.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -651,15 +672,13 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### HDR (undefined)
 
 ??? question "HDR (undefined) - [Click to show/hide]"
 
-    Some groups don't add HDR to their 4K release name so I suggest to add this Custom Format at the same score as you add one of your HDR Custom Formats.
-
-    For now it's only FraMeSToR/HQMUX that doesn't add HDR to their release name but in the feature we can add more to it if needed.
+    {! include-markdown "../../includes/cf-descriptions/hdr-undefined.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -669,7 +688,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### PQ
 
@@ -677,11 +696,7 @@ I also made 3 guides related to this one.
 
 ??? question "PQ - [Click to show/hide]"
 
-    **PQ10 is the most basic HDR format which all other common formats are based upon. It is the barebones SMPTE 2084 specification and has no metadata.**
-
-    [From Wikipedia, the free encyclopedia](https://en.m.wikipedia.org/wiki/High-dynamic-range_video){:target="_blank" rel="noopener noreferrer"}
-
-    PQ10, sometimes simply referred as the PQ format, is an HDR format that can be used for both video and still images. It is the same as the HDR10 format without any metadata. It uses the PQ transfer function, Rec. 2020 color primaries and a bit depth of 10-bits. It is not backward compatible with SDR.
+    {! include-markdown "../../includes/cf-descriptions/pq.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -691,7 +706,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### HLG
 
@@ -699,11 +714,7 @@ I also made 3 guides related to this one.
 
 ??? question "HLG - [Click to show/hide]"
 
-    **HLG does not use dynamic metadata and is backwards compatible with SDR devices. It is mostly used in broadcasting.**
-
-    [From Wikipedia, the free encyclopedia](https://en.m.wikipedia.org/wiki/High-dynamic-range_video){:target="_blank" rel="noopener noreferrer"}
-
-    HLG10, commonly simply referred as the HLG format, is an HDR format that can be used for both video and still images. It uses the HLG transfer function, Rec. 2020 color primaries, and a bit depth of 10 bits. The format is backwards compatible with SDR UHDTV but not with older SDR displays that do not implement the Rec. 2020 color standards. It doesn't use metadata and is royalty free.
+    {! include-markdown "../../includes/cf-descriptions/hlg.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -713,11 +724,11 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ## Movie Versions
 
-------
+---
 
 ### Hybrid
 
@@ -733,7 +744,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Remaster
 
@@ -752,7 +763,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### 4K Remaster
 
@@ -772,7 +783,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Criterion Collection
 
@@ -788,7 +799,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Masters of Cinema
 
@@ -804,7 +815,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Vinegar Syndrome
 
@@ -820,7 +831,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Theatrical Cut
 
@@ -836,7 +847,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Special Edition
 
@@ -855,7 +866,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### IMAX
 
@@ -870,7 +881,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### IMAX Enhanced
 
@@ -897,7 +908,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Open Matte
 
@@ -913,11 +924,11 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ## Unwanted
 
-------
+---
 
 ### BR-DISK
 
@@ -930,7 +941,7 @@ I also made 3 guides related to this one.
     !!! note
 
         Depending on your renaming scheme it could happen that Radarr will match renamed files after they are downloaded and imported as `BR-DISK`,
-        This is a cosmetic annoyance until I come up with another way to solve this,
+        This is a cosmetic annoyance until we come up with another way to solve this,
         being that this Custom Format is used to not download BR-DISK it does its purpose as intended.
         Several reasons why this is happening:
 
@@ -945,7 +956,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### LQ
 
@@ -953,7 +964,8 @@ I also made 3 guides related to this one.
 
 ??? question "LQ - [Click to show/hide]"
 
-    A collection of known Low Quality groups that are often banned from the the top trackers because their lack of quality, Banned release groups, dishonest release groups or Rips from Scene and quick-to-release P2P groups while adequate, are not considered high quality.
+    - A collection of known low quality groups (often banned from the top trackers due to their lack of quality), banned or dishonest release groups, or rips/encodes from scene and quick-to-release P2P groups that, while adequate, are usually not considered high quality.
+    - Release Groups that break the Starr apps automation because their bad naming could potentially cause download loops, even if their overall quality is perfect.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -963,7 +975,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### LQ (Release Title)
 
@@ -981,7 +993,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### 3D
 
@@ -999,7 +1011,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### x265 (HD)
 
@@ -1024,7 +1036,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Upscaled
 
@@ -1040,7 +1052,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Extras
 
@@ -1056,17 +1068,17 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ## Optional
 
-------
+---
 
 ### Bad Dual Groups
 
 ??? question "Bad dual groups - [Click to show/hide]"
-    These groups take the original release, then they add their own preferred language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as first.
-    Also they often even rename the release name in to Portuguese.
+    These groups take the original release and add their own language (ex. Portuguese) as the main audio track (AAC 2.0), What results after renaming and FFprobe is that the media file will be recognized as Portuguese AAC audio. It's a common rule that you add the best audio as the first track.
+    Also they often even translate/rename the release name to Portuguese.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1076,20 +1088,20 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### DV (WEBDL)
 
-<sub>Dolby Vision = DoVi = DV</sub>
+<sub>DV = DoVi = Dolby Vision</sub>
 
 ??? question "DV (WEBDL) - [Click to show/hide]"
-    This is a special Custom Format that block WEBDLs **with** Dolby Vision but **without** HDR10 fallback.
+    This is a special Custom Format that blocks WEBDLs **with** Dolby Vision but **without** HDR10 fallback.
 
-    You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-10000`.
+    You will need to add the following as a new Custom Format, and when created adjust the scoring in your Quality Profile (`Setting` => `Profiles`) to `-10000`.
 
-    This Custom Format works together with the normal [DV](#dv) Custom Format that you can use to prefer Dolby Vision.
+    This Custom Format works together with the normal [DV](#dv) Custom Format that you would use to prefer Dolby Vision.
 
-    Most WEBDL from Streaming Services don't have the fallback to HDR10, What can results in playback issues like weird colors (typically a green hue) if you want to play it on a not Dolby Vision compatible setup.
+    Most WEBDL from Streaming Services don't have the fallback to HDR10. What can result during playback is issues with weird colors (typically a green hue) when you attempt to play it on a non Dolby Vision compatible setup.
 
     Remuxes and Bluray have a fallback to HDR10.
 
@@ -1101,15 +1113,15 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### EVO (no WEBDL)
 
 ??? question "EVO (no WEBDL) - [Click to show/hide]"
 
-    This group is often banned for the low quality Blu-ray releases, but their WEB-DLs are okay.
+    This group is often banned for the low-quality Blu-ray releases, but their WEB-DLs are okay.
 
-    You will need to add the following to your new Custom Format when created in your Quality Profile (`Setting` => `Profiles`) and then set the score to `-10000`.
+    You will need to add the following as a new Custom Format, and when created adjust the scoring in your Quality Profile (`Setting` => `Profiles`) to `-10000`.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1119,13 +1131,13 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### HDR10Plus Boost
 
 ??? question "HDR10+ Boost - [Click to show/hide]"
 
-    Optional (use this one only if you have a (Samsung) TV that supports HDR10+ and you don't have a Setup that supports DV or you prefer HDR10+.
+    Optional. Use this one only if you have a (Samsung) TV that supports HDR10+ and you don't have a Setup that supports DV or you prefer HDR10+.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1135,14 +1147,30 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
+
+### DV HDR10Plus Boost
+
+??? question "DV HDR10+ Boost - [Click to show/hide]"
+
+    Optional: use this one if you want to upgrade from DV HDR10 to DV HDR10+ to support the best of both worlds.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dv-hdr10plus-boost.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
 
 ### No-RlsGroup
 
 ??? question "No-RlsGroup - [Click to show/hide]"
 
     Some indexers strip out the release group which could result in LQ groups getting a higher score.
-    For example a lot of EVO releases end up stripping the group name, so they appear as "upgrades", and they end up getting a decent score if other things match
+    For example, a lot of EVO releases end up stripped of the group name so they appear as "upgrades" and they end up getting a decent score if other things match
 
     !!! warning
 
@@ -1156,7 +1184,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Obfuscated
 
@@ -1172,7 +1200,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Retags
 
@@ -1188,13 +1216,13 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Scene
 
 ??? question "Scene - [Click to show/hide]"
 
-    This Custom Format will try to recognize so called Scene releases, depending on your preferences you can give it a negative score `-10000` or a positive score or just don't add it all.
+    This Custom Format will try to recognize so-called "scene releases". Depending on your preferences, you can give it a negative score `-10000`, a positive score, or just skip adding it altogether.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1204,7 +1232,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### x265 (no HDR/DV)
 
@@ -1228,7 +1256,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### AV1
 
@@ -1247,7 +1275,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### VP9
 
@@ -1266,7 +1294,24 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
+
+### Internal
+
+??? question "Internal - [Click to show/hide]"
+
+    - For those that prefer scene releases may want to boost internals as they generally have higher settings that may not conform to ruleset.
+    - In some rare cases P2P use also INTERNAL.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/internal.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
 
 ### SDR
 
@@ -1282,7 +1327,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### SDR (no WEBDL)
 
@@ -1298,23 +1343,23 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
-### DV FEL
+### DV (Disk)
 
-??? question "DV (FEL) - [Click to show/hide]"
+??? question "DV (Disk) - [Click to show/hide]"
 
     - This will boost the score for Dolby Vision Releases using the original full quality Dolby Vision layer from the disc release to replace the old WEBDL HYBRID release.
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dv-fel.json' %]][[% endfilter %]]
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dv-disk.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Line/Mic Dubbed
 
@@ -1332,7 +1377,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### HFR
 
@@ -1348,11 +1393,11 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ## Misc
 
-------
+---
 
 ### Repack/Proper
 
@@ -1364,7 +1409,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Repack2
 
@@ -1376,7 +1421,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### x264
 
@@ -1394,7 +1439,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### x265
 
@@ -1414,7 +1459,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FreeLeech
 
@@ -1433,7 +1478,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Dutch Groups
 
@@ -1449,7 +1494,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### MPEG2
 
@@ -1461,7 +1506,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Multi
 
@@ -1473,17 +1518,21 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ## HQ Release Groups
 
-------
+---
 
 ### Remux Tier 01
 
 ??? question "Remux Tier 01 - [Click to show/hide]"
 
-    - Groups doing remuxes with multiple sources(discs) mixing what's best.
+    Groups that:
+
+    - Have established themselves as consistently delivering high-quality releases.
+    - Produce remuxes from multiple sources (discs) and combine them to produce the best end result.
+    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1493,14 +1542,17 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Remux Tier 02
 
 ??? question "Remux Tier 02 - [Click to show/hide]"
 
-    - Groups that haven't released much. (yet)
-    - Groups doing remuxes with multiple sources(discs) mixing what's best.
+    Groups that:
+
+    - Haven't released much. (yet)
+    - Produce remuxes from multiple sources (discs) and combine them to produce the best end result.
+    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1510,17 +1562,20 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Remux Tier 03
 
 ??? question "Remux Tier 03 - [Click to show/hide]"
 
-    - Groups that only use one source.(So called one disc wonders.)
-    - Groups that use use a fully automated way without checking.
-    - Groups that don't check their stuff.
-    - Groups that haven't released much. (yet)
-    - Groups that retired and don't have the best quality by todays standards
+    Groups that:
+
+    - Only use one source (poetically dubbed "one disc wonders").
+    - Use a fully automated method without double-checking.
+    - Don't check/review their releases prior to uploading.
+    - Haven't released much. (yet)
+    - Have retired and don't have the best quality by today's standards
+    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1530,15 +1585,19 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### UHD Bluray Tier 01
 
 ??? question "UHD Bluray Tier 01 - [Click to show/hide]"
 
-    - Groups that created encodes from the remuxes without micro-sizing them.
-    - HDR/DoVi (Depending what's offered and often both)
-    - HD Audio (Atmos, TrueHD etc...)
+    Groups that:
+
+    - Have established themselves as consistently delivering high-quality releases.
+    - Use remuxes as their source without micro-sizing them.
+    - HDR/DoVi (Depending on what's offered and often both).
+    - Use Lossless Audio (TrueHD, DTS-X, DTS-HD, etc).
+    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1548,15 +1607,18 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### UHD Bluray Tier 02
 
 ??? question "UHD Bluray Tier 02 - [Click to show/hide]"
 
-    - Groups that created encodes from the remuxes without micro-sizing them.
-    - HDR/DoVi (Depending what's offered and often both)
-    - HD Audio (Atmos, TrueHD etc...)
+    Groups that:
+
+    - Use remuxes as their source without micro-sizing them.
+    - HDR/DoVi (Depending on what's offered and often both).
+    - Use Lossless Audio (TrueHD, DTS-X, DTS-HD, etc).
+    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1566,15 +1628,19 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### UHD Bluray Tier 03
 
 ??? question "UHD Bluray Tier 03 - [Click to show/hide]"
 
-    - Groups that created encodes from the remuxes without micro-sizing them.
-    - HDR/DoVi (Depending what's offered and often both)
-    - HD Audio (Atmos, TrueHD etc...)
+    Groups that:
+
+    - Use remuxes as their source without micro-sizing them.
+    - HDR/DoVi (Depending on what's offered and often both).
+    - Use Lossless Audio (TrueHD, DTS-X, DTS-HD, etc) or Lossy audio formats (DD, DD+, etc).
+    - That are added for a specific reason for other guides quality profiles.
+    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1584,14 +1650,18 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### HD Bluray Tier 01
 
 ??? question "HD Bluray Tier 01 - [Click to show/hide]"
 
-    - Groups that created encodes from the remuxes without micro-sizing them.
-    - Groups that have a minimum of GP releases.(best encode in it's class  1080p and lower)
+    Groups that:
+
+    - Have established themselves as consistently delivering high-quality releases.
+    - Use remuxes as their source without micro-sizing them.
+    - Have a minimum of GP releases. (best encode in it's class  1080p and lower)
+    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1601,13 +1671,16 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### HD Bluray Tier 02
 
 ??? question "HD Bluray Tier 02 - [Click to show/hide]"
 
-    - Groups that created encodes from the remuxes without micro-sizing them.
+    Groups that:
+
+    - Use remuxes as their source without micro-sizing them.
+    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1617,13 +1690,17 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### HD Bluray Tier 03
 
 ??? question "HD Bluray Tier 03 - [Click to show/hide]"
 
-    - placeholder
+    Groups that:
+
+    - Use remuxes as their source without micro-sizing them.
+    - That are added for a specific reason for other guides quality profiles.
+    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1633,14 +1710,17 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### WEB Tier 01
 
 ??? question "WEB Tier 01 - [Click to show/hide]"
 
-    - Groups that create hybrids.
-    - Groups that sign up for the gentleman list on a certain private tracker.
+    Groups that:
+
+    - Have established themselves as consistently delivering high-quality releases.
+    - Create hybrids.
+    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1650,13 +1730,16 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### WEB Tier 02
 
 ??? question "WEB Tier 02 - [Click to show/hide]"
 
-    - placeholder
+    Groups that:
+
+    - Only have done a few releases
+    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1666,13 +1749,16 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### WEB Tier 03
 
 ??? question "WEB Tier 03 - [Click to show/hide]"
 
-    - placeholder
+    Groups that:
+
+    - That are added for a specific reason for other guides quality profiles.
+    - Follow the [Contributing General Guidelines](https://github.com/TRaSH-Guides/Guides/blob/master/CONTRIBUTING.md#general-guidelines){:target="_blank" rel="noopener noreferrer"}.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1682,19 +1768,21 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ## Streaming Services
 
-------
+---
 
-### AMZN
+### General Streaming Services
 
-<sub>Amazon</sub>
+#### AMZN
 
-??? question "Amazon - [Click to show/hide]"
+<sub>Amazon Prime Video</sub>
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Amazon_Prime_Video){:target="_blank" rel="noopener noreferrer"}
+??? question "Amazon Prime Video - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/amzn.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1704,15 +1792,15 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
-### ATVP
+#### ATVP
 
 <sub>Apple TV+</sub>
 
 ??? question "Apple TV+ - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Apple_TV%2B){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/atvp.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1722,213 +1810,15 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
-### CRiT
-
-<sub>Criterion Channel</sub>
-
-??? question "Criterion Channel - [Click to show/hide]"
-
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/The_Criterion_Collection#Streaming_as_The_Criterion_Channel){:target="_blank" rel="noopener noreferrer"}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/crit.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### DSNP
-
-<sub>Disney+</sub>
-
-??? question "Disney+ - [Click to show/hide]"
-
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Disney%2B){:target="_blank" rel="noopener noreferrer"}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dsnp.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### HBO
-
-<sub>HBO</sub>
-
-??? question "HBO - [Click to show/hide]"
-
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/HBO){:target="_blank" rel="noopener noreferrer"}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hbo.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### HMAX
-
-<sub>HBO Max</sub>
-
-??? question "HBO Max - [Click to show/hide]"
-
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/HBO_Max){:target="_blank" rel="noopener noreferrer"}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hmax.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### Max
-
-<sub>Max</sub>
-
-??? question "Max - [Click to show/hide]"
-
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Max_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/max.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### Hulu
-
-<sub>Hulu</sub>
-
-??? question "Hulu - [Click to show/hide]"
-
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Hulu){:target="_blank" rel="noopener noreferrer"}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hulu.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### NF
-
-<sub>Netflix</sub>
-
-??? question "Netflix - [Click to show/hide]"
-
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Netflix){:target="_blank" rel="noopener noreferrer"}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/nf.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### PCOK
-
-<sub>Peacock TV</sub>
-
-??? question "Peacock TV - [Click to show/hide]"
-
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Peacock_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/pcok.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### PMTP
-
-<sub>Paramount+</sub>
-
-??? question "Paramount+ - [Click to show/hide]"
-
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Paramount%2B){:target="_blank" rel="noopener noreferrer"}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/pmtp.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### MA
-
-<sub>Movies Anywhere</sub>
-
-??? question "Movies Anywhere - [Click to show/hide]"
-
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Movies_Anywhere){:target="_blank" rel="noopener noreferrer"}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/ma.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### Pathe
-
-<sub>Pathé Thuis</sub>
-
-??? question "Pathé Thuis - [Click to show/hide]"
-
-    [From Wikipedia, the free encyclopedia](https://nl.wikipedia.org/wiki/Path%C3%A9_Thuis){:target="_blank" rel="noopener noreferrer"}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/pathe.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### BCORE
+#### BCORE
 
 <sub>Bravia Core</sub>
 
 ??? question "Bravia Core - [Click to show/hide]"
 
-    [From Sony, no wiki link available](https://electronics.sony.com/bravia-core){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/bcore.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1938,15 +1828,195 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
-### STAN
+#### CRiT
+
+<sub>Criterion Channel</sub>
+
+??? question "Criterion Channel - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/crit.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/crit.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+#### DSNP
+
+<sub>Disney+</sub>
+
+??? question "Disney+ - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/dsnp.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dsnp.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+#### HBO
+
+<sub>HBO</sub>
+
+??? question "HBO - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/hbo.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hbo.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+#### HMAX
+
+<sub>HBO Max</sub>
+
+??? question "Max (streaming service) aka HBO Max - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/hmax.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hmax.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+#### Hulu
+
+<sub>Hulu</sub>
+
+??? question "Hulu - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/hulu.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hulu.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+#### Max
+
+<sub>Max (streaming service)</sub>
+
+??? question "Max (streaming service) - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/hmax.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/max.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+#### MA
+
+<sub>Movies Anywhere</sub>
+
+??? question "Movies Anywhere - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/ma.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/ma.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+#### NF
+
+<sub>Netflix</sub>
+
+??? question "Netflix - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/nf.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/nf.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+#### PCOK
+
+<sub>Peacock TV</sub>
+
+??? question "Peacock TV - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/pcok.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/pcok.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+#### PMTP
+
+<sub>Paramount+</sub>
+
+??? question "Paramount+ - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/pmtp.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/pmtp.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+#### STAN
 
 <sub>Stan</sub>
 
 ??? question "STAN - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Stan_(service)){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/stan.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1956,53 +2026,19 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
-### Crav
+### Asian Streaming Services
 
-<sub>Crave</sub>
+---
 
-??? question "CRAVE - [Click to show/hide]"
+#### FOD
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Crave_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
+<sub>FOD = Fuji Television On Demand</sub>
 
-??? example "JSON - [Click to show/hide]"
+??? question "Fuji Television On Demand - [Click to show/hide]"
 
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/crav.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### OViD
-
-<sub>OViD</sub>
-
-??? question "OViD - [Click to show/hide]"
-
-    [OViD Website](https://search.ovid.tv/other/about){:target="_blank" rel="noopener noreferrer"}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/ovid.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
-
-### FOD
-
-<sub>FOD</sub>
-
-??? question "FOD - [Click to show/hide]"
-
-    - Fuji Television On Demand
-    - [From Wikipedia, the free encyclopedia](https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%B8%E3%83%86%E3%83%AC%E3%83%93%E3%82%AA%E3%83%B3%E3%83%87%E3%83%9E%E3%83%B3%E3%83%89){:target="_blank" rel="noopener noreferrer"}
-    - [FOD Website](https://fod-sp.fujitv.co.jp){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/fod.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2012,16 +2048,33 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
-### TVer
+#### HTSR
+
+<sub>Disney+ Hotstar</sub>
+
+??? question "Disney+ Hotstar - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/htsr.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/htsr.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+#### TVer
 
 <sub>TVer</sub>
 
 ??? question "TVer - [Click to show/hide]"
 
-    - [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/TVer_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
-    - [TVer Website](https://tver.jp){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/fod.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2031,16 +2084,15 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
-### U-NEXT
+#### U-NEXT
 
 <sub>U-NEXT</sub>
 
 ??? question "U-NEXT - [Click to show/hide]"
 
-    - [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/U-Next){:target="_blank" rel="noopener noreferrer"}
-    - [U-NEXT Website](https://video.unext.jp){:target="_blank" rel="noopener noreferrer"}
+    {! include-markdown "../../includes/cf-descriptions/u-next.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2050,11 +2102,169 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
+
+#### VIU
+
+<sub>VIU</sub>
+
+??? question "VIU - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/viu.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/viu.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+### Dutch Streaming Services
+
+---
+
+#### Pathe
+
+<sub>Pathé Thuis</sub>
+
+??? question "Pathé Thuis - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/pathe.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/pathe.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+#### VDL
+
+<sub>Videoland</sub>
+
+??? question "Videoland - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/vdl.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/vdl.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+### UK Streaming Services
+
+---
+
+#### iP
+
+<sub>BBC iPlayer aka iP</sub>
+
+??? question "BBC iPlayer aka iP - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/ip.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/ip.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+#### ITVX
+
+<sub>ITVX aka ITV</sub>
+
+??? question "ITVX aka ITV - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/itvx.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/itvx.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+### Misc Streaming Services
+
+---
+
+#### Crav
+
+<sub>Crave</sub>
+
+??? question "CRAVE - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/crav.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/crav.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+#### OViD
+
+<sub>OViD</sub>
+
+??? question "OViD - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/ovid.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/ovid.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+### Anime Streaming Services
+
+---
+
+#### VRV
+
+??? question "VRV - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/vrv.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/vrv.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
 
 ## Anime
 
-------
+---
 
 ### Anime BD Tier 01 (Top SeaDex Muxers)
 
@@ -2069,7 +2279,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime BD Tier 02 (SeaDex Muxers)
 
@@ -2084,7 +2294,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime BD Tier 03 (SeaDex Muxers)
 
@@ -2099,7 +2309,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime BD Tier 04 (SeaDex Muxers)
 
@@ -2114,7 +2324,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime BD Tier 05 (Remuxes)
 
@@ -2129,7 +2339,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime BD Tier 06 (FanSubs)
 
@@ -2144,7 +2354,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime BD Tier 07 (P2P/Scene)
 
@@ -2159,7 +2369,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime BD Tier 08 (Mini Encodes)
 
@@ -2174,7 +2384,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime Web Tier 01 (Muxers)
 
@@ -2189,7 +2399,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime Web Tier 02 (Top FanSubs)
 
@@ -2204,7 +2414,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime Web Tier 03 (Official Subs)
 
@@ -2219,7 +2429,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime Web Tier 04 (Official Subs)
 
@@ -2234,7 +2444,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime Web Tier 05 (FanSubs)
 
@@ -2249,7 +2459,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime Web Tier 06 (FanSubs)
 
@@ -2264,7 +2474,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime Raws
 
@@ -2279,7 +2489,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime LQ Groups
 
@@ -2294,7 +2504,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Uncensored
 
@@ -2309,7 +2519,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### v0
 
@@ -2324,7 +2534,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### v1
 
@@ -2339,7 +2549,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### v2
 
@@ -2354,7 +2564,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### v3
 
@@ -2369,7 +2579,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### v4
 
@@ -2384,22 +2594,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
-
-### VRV
-
-??? question "VRV - [Click to show/hide]"
-    [From Wikipedia, the free encyclopedia](https://www.wikiwand.com/en/VRV_(streaming_service)){:target="_blank" rel="noopener noreferrer"}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/vrv.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
-------
+---
 
 ### 10bit
 
@@ -2414,7 +2609,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Anime Dual Audio
 
@@ -2429,7 +2624,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Dubs Only
 
@@ -2444,11 +2639,11 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ## French Audio Version
 
-------
+---
 
 ### Multi-French
 
@@ -2464,7 +2659,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### Multi-Audio
 
@@ -2480,7 +2675,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### French Audio
 
@@ -2496,7 +2691,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### VFF
 
@@ -2512,7 +2707,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### VOF
 
@@ -2528,7 +2723,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### VFI
 
@@ -2544,7 +2739,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### VF2
 
@@ -2560,7 +2755,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### VFQ
 
@@ -2576,7 +2771,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### VOQ
 
@@ -2592,7 +2787,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### VQ
 
@@ -2608,7 +2803,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### VFB
 
@@ -2624,7 +2819,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### VOSTFR
 
@@ -2640,7 +2835,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FanSUB
 
@@ -2656,7 +2851,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FastSUB
 
@@ -2672,19 +2867,19 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ## French HQ Source Groups
 
-------
+---
 
 ### FR Remux Tier 01
 
 ??? question "Remux Tier 01 - [Click to show/hide]"
 
     - WiP
-    - Groups doing remuxes with multiple sources (discs) mixing what's best.
-    - Groups doing remuxes with a groups from Remux Tier 01 or 02 and adding the best French Audio available.
+    - Groups that produce remuxes from multiple sources (discs) and combine them to produce the best end result.
+    - Groups producing remuxes with a group from Remux Tier 01 or 02 adding the best available French Audio.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2694,7 +2889,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FR Remux Tier 02
 
@@ -2702,10 +2897,10 @@ I also made 3 guides related to this one.
 
     - WiP
     - Groups that use an automated way.
-    - Groups active doing remuxes from a single sources (discs).
+    - Groups actively doing remuxes from a single source (disc).
     - Groups that had the best French audio track to an English release.
     - Groups that haven't released much or are not well recognized. (yet)
-    - Groups that retired and don't have the best quality by todays standards.
+    - Groups that retired and don't have the best quality by today's standards.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2715,7 +2910,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FR UHD Bluray Tier 01
 
@@ -2724,7 +2919,7 @@ I also made 3 guides related to this one.
     - WiP
     - Groups that created encodes from the remuxes without micro-sizing them.
     - Groups that add the best French audio track to an English release from Tier 01 or 02.
-    - HDR/DoVi (Depending what's offered and often both).
+    - HDR/DoVi (Depending on what's offered and often both).
     - HD Audio (Atmos, TrueHD etc...).
 
 ??? example "JSON - [Click to show/hide]"
@@ -2735,19 +2930,19 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FR UHD Bluray Tier 02
 
 ??? question "FR UHD Bluray Tier 02 - [Click to show/hide]"
 
     - WiP
-    - Groups that created encodes from the remuxes without micro-sizing them.
+    - Groups that create encodes from a remux without micro-sizing them.
     - Groups that had the best French audio track to an English release.
-    - HDR/DoVi (Depending what's offered and often both).
+    - HDR/DoVi (Depending on what's offered and often both).
     - HD Audio (Atmos, TrueHD etc...).
     - Groups that haven't released much or are not well recognized. (yet)
-    - Groups that retired and don't have the best quality by todays standards.
+    - Groups that retired and don't have the best quality by today's standards.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2757,15 +2952,15 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FR HD Bluray Tier 01
 
 ??? question "FR HD Bluray Tier 01 - [Click to show/hide]"
 
     - WiP
-    - Groups that created encodes from the remuxes without micro-sizing them.
-    - Groups that have a minimum of great releases (best encode in it's class 1080p and lower).
+    - Groups that create encodes from a remux without micro-sizing them.
+    - Groups that have a minimum count of great releases (best encode in its class 1080p and lower).
     - Groups that add the best French audio track to an English release from Tier 01 or 02.
 
 ??? example "JSON - [Click to show/hide]"
@@ -2776,17 +2971,17 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FR HD Bluray Tier 02
 
 ??? question "FR HD Bluray Tier 02 - [Click to show/hide]"
 
     - WiP
-    - Groups that created encodes from the remuxes without micro-sizing them.
-    - Groups that had the best French audio track to an English release.
+    - Groups that create encodes from a remux without micro-sizing them.
+    - Groups that havae the best French audio track to an English release.
     - Groups that haven't released much or are not well recognized. (yet)
-    - Groups that retired and don't have the best quality by todays standards.
+    - Groups that retired and don't have the best quality by today's standards.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2796,7 +2991,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FR WEB Tier 01
 
@@ -2814,7 +3009,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FR WEB Tier 02
 
@@ -2823,7 +3018,7 @@ I also made 3 guides related to this one.
     - WiP
     - Groups that source and add the French audio track from the source to an English release.
     - Groups that haven't released much or are not well recognized. (yet)
-    - Groups that retired and don't have the best quality by todays standards.
+    - Groups that retired and don't have the best quality by today's standards.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -2833,7 +3028,7 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FR Scene Groups
 
@@ -2849,20 +3044,20 @@ I also made 3 guides related to this one.
 
 <sub><sup>[TOP](#index)</sup>
 
-------
+---
 
 ### FR LQ
 
-<sub>French Low Quality Releases = FR LQ</sub>
+<sub>French Low-Quality Releases = FR LQ</sub>
 
 ??? question "FR LQ - [Click to show/hide]"
 
-    A collection of known French Low Quality groups that are often banned from the the top trackers because their lack of quality.
+    A collection of known French Low-Quality groups that are often banned from the top trackers due to their lack of quality.
 
     !!! note
 
-        - Ads/Watermarks = Groups that are know to put ads or watermark in their releases.
-        - Bad/False releases = Groups that are known for lying on the quality, type or the name of their releases.
+        - Ads/Watermarks = Groups that are known to put ads or watermarks in their releases.
+        - Bad/False releases = Groups that are known for lying about their quality, type, or the name of their releases.
         - DeTAG/ReTAG = Detagging or stealing groups.
         - Other reasons = Banned Release Groups.
 

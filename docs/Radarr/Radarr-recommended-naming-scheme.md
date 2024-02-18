@@ -13,6 +13,20 @@ The Tokens not available in the release won't be used/shown.
 
 ------
 
+## Preparation
+
+Go to `Settings` => `Media Management` and make sure that `Show Advanced` at the top is enabled.
+
+![Enable Advanced](images/radarr-show-adavanced.png)
+
+Once you clicked on the button it should look like this and you should see all the advanced options.
+
+![Unhide Advanced](images/unhide-advanced.png)
+
+Finally, enable `Rename Movies` to reveal the movie renaming options.
+
+![Enable Rename Movies](images/radarr-enable-rename.png)
+
 ## Standard Movie Format
 
 This naming scheme is made to be compatible with the [New Plex Agent](https://forums.plex.tv/t/new-plex-media-server-movie-scanner-and-agent-preview/593269/517){:target="_blank" rel="noopener noreferrer"} that now supports IMDb and TMDb IDs in filenames, if you don't need it or want it just remove `{imdb-{ImdbId}}`
@@ -47,15 +61,13 @@ This naming scheme is made to be compatible with the [New Plex Agent](https://fo
 
 ### Emby
 
-!!! warning "Emby is the only one who uses `=` for their ID, which isn't supported by the Starr apps at the moment.<br>Keep a eye on the following [PR#1386](https://github.com/TRaSH-Guides/Guides/pull/1386){:target="_blank" rel="noopener noreferrer"} when it does support it"
-
 ```bash
 {{ radarr['naming']['radarr-naming']['file']['emby'] }}
 ```
 
 ??? abstract "RESULTS: - [Click to show/hide]"
 
-    `The Movie Title (2010) - {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`
+    `The Movie Title (2010) [imdbid-tt0066921] - {edition-Ultimate Extended Edition} [IMAX HYBRID][Bluray-1080p Proper][3D][DV HDR10][DTS 5.1][x264]-EVOLVE`
 
 #### Emby Anime
 
@@ -149,8 +161,6 @@ This naming scheme is made to be compatible with the new [Plex TV Series Scanner
 <small>RESULT:</small> `The Movie Title (2010) {imdb-tt1520211}`
 
 ##### Optional Emby
-
-!!! warning "Emby is the only one who uses `=` for their ID, which isn't supported by the Starr apps at the moment.<br>Keep a eye on the following [PR#1386](https://github.com/TRaSH-Guides/Guides/pull/1386){:target="_blank" rel="noopener noreferrer"} when it does support it"
 
 ```bash
 {{ radarr['naming']['radarr-naming']['folder']['emby'] }}

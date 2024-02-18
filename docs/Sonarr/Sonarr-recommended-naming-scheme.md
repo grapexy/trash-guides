@@ -13,17 +13,25 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
 
 ------
 
+## Preparation
+
+Go to `Settings` => `Media Management` and make sure that `Show Advanced` at the top is enabled.
+
+![Enable Advanced](images/sonarr-show-adavanced.png)
+
+Once you clicked on the button it should look like this and you should see all the advanced options.
+
+![Unhide Advanced](images/unhide-advanced.png)
+
+Finally, enable `Rename Episodes` to reveal the episode renaming options.
+
+![Enable Rename Episodes](images/sonarr-enable-rename.png)
+
 ## Standard Episode Format
 
 ```bash
-{{ sonarr['naming']['sonarr-naming']['episodes']['standard']['default:3'] }}
+{{ sonarr['naming']['sonarr-naming']['episodes']['standard']['default:4'] }}
 ```
-
-!!! warning "Sonarr V4 - Is now using Custom Formats instead of Release Profiles. Use the below naming scheme instead :warning:"
-
-    ```bash
-    {{ sonarr['naming']['sonarr-naming']['episodes']['standard']['default:4'] }}
-    ```
 
 ??? abstract "RESULTS: - [Click to show/hide]"
 
@@ -40,14 +48,8 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
 ## Daily Episode Format
 
 ```bash
-{{ sonarr['naming']['sonarr-naming']['episodes']['daily']['default:3'] }}
+{{ sonarr['naming']['sonarr-naming']['episodes']['daily']['default:4'] }}
 ```
-
-!!! warning "Sonarr V4 - Is now using Custom Formats instead of Release Profiles. Use the below naming scheme instead :warning:"
-
-    ```bash
-    {{ sonarr['naming']['sonarr-naming']['episodes']['daily']['default:4'] }}
-    ```
 
 ??? abstract "RESULTS: - [Click to show/hide]"
 
@@ -58,14 +60,8 @@ it gets imported correctly and isn't incorrectly matched as HDTV or WEB-DL etc.
 ## Anime Episode Format
 
 ```bash
-{{ sonarr['naming']['sonarr-naming']['episodes']['anime']['default:3'] }}
+{{ sonarr['naming']['sonarr-naming']['episodes']['anime']['default:4'] }}
 ```
-
-!!! warning "Sonarr V4 - Is now using Custom Formats instead of Release Profiles. Use the below naming scheme instead :warning:"
-
-    ```bash
-    {{ sonarr['naming']['sonarr-naming']['episodes']['anime']['default:4'] }}
-    ```
 
 ??? abstract "RESULTS: - [Click to show/hide]"
 
@@ -100,8 +96,6 @@ This naming scheme is made to be compatible with the new [Plex TV Series Scanner
 <small>RESULT:</small> `The Series Title! (2010) {imdb-tt1520211}`
 
 ##### Optional Emby
-
-!!! warning "Emby is the only one who uses `=` for their ID, which isn't supported by the Starr apps at the moment.<br>Keep a eye on the following [PR#1386](https://github.com/TRaSH-Guides/Guides/pull/1386){:target="_blank" rel="noopener noreferrer"} when it does support it"
 
 ```bash
 {{ sonarr['naming']['sonarr-naming']['series']['emby'] }}

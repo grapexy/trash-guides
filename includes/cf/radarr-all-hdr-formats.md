@@ -17,6 +17,7 @@
 
     | Custom Format                                                                                             |                             Score                              | Trash ID                                        |
     | --------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------: | ----------------------------------------------- |
+    | [{{ radarr['cf']['dv-hdr10plus']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-hdr10plus)   | {{ radarr['cf']['dv-hdr10plus']['trash_scores']['default'] }}  | {{ radarr['cf']['dv-hdr10plus']['trash_id'] }}  |
     | [{{ radarr['cf']['dv-hdr10']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-hdr10)           |   {{ radarr['cf']['dv-hdr10']['trash_scores']['default'] }}    | {{ radarr['cf']['dv-hdr10']['trash_id'] }}      |
     | [{{ radarr['cf']['dv']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv)                       |      {{ radarr['cf']['dv']['trash_scores']['default'] }}       | {{ radarr['cf']['dv']['trash_id'] }}            |
     | [{{ radarr['cf']['dv-hlg']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-hlg)               |    {{ radarr['cf']['dv-hlg']['trash_scores']['default'] }}     | {{ radarr['cf']['dv-hlg']['trash_id'] }}        |
@@ -38,11 +39,11 @@
 
         <p align="center">![Flowchart](/Radarr/images/flowchart-hdr-dv-webdl.png){ width="20%" height="20%" }
 
-        | Custom Format                                                                                             |                             Score                              | Trash ID                                        |
-        | --------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------: | ----------------------------------------------- |
-        | [{{ radarr['cf']['dv-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-webdl)           |   {{ radarr['cf']['dv-webdl']['trash_scores']['default'] }}    | {{ radarr['cf']['dv-webdl']['trash_id'] }}      |
+        | Custom Format                                                                                   |                           Score                           | Trash ID                                   |
+        | ----------------------------------------------------------------------------------------------- | :-------------------------------------------------------: | ------------------------------------------ |
+        | [{{ radarr['cf']['dv-webdl']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-webdl) | {{ radarr['cf']['dv-webdl']['trash_scores']['default'] }} | {{ radarr['cf']['dv-webdl']['trash_id'] }} |
 
-    ??? abstract "Add Custom Format `HDR10+ Boost` with a score of `901`- [Click to show/hide]"
+    ??? abstract "Add the Custom Formats `DV HDR10+ Boost` and `HDR10+ Boost` - [Click to show/hide]"
 
         **Why would I add this Custom Format?**
 
@@ -53,6 +54,7 @@
 
         !!! warning "If you use this Custom Format then 99% of the time you also need to add the following Custom Format `DV (WEBDL)` with a score of `-10000`"
 
-        | Custom Format                                                                                                 |                              Score                               | Trash ID                                          |
-        | ------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------: | ------------------------------------------------- |
-        | [{{ radarr['cf']['hdr10plus-boost']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hdr10plus-boost) | {{ radarr['cf']['hdr10plus-boost']['trash_scores']['default'] }} | {{ radarr['cf']['hdr10plus-boost']['trash_id'] }} |
+        | Custom Format                                                                                                       |                                Score                                | Trash ID                                             |
+        | ------------------------------------------------------------------------------------------------------------------- | :-----------------------------------------------------------------: | ---------------------------------------------------- |
+        | [{{ radarr['cf']['hdr10plus-boost']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#hdr10plus-boost)       |  {{ radarr['cf']['hdr10plus-boost']['trash_scores']['default'] }}   | {{ radarr['cf']['hdr10plus-boost']['trash_id'] }}    |
+        | [{{ radarr['cf']['dv-hdr10plus-boost']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#dv-hdr10plus-boost) | {{ radarr['cf']['dv-hdr10plus-boost']['trash_scores']['default'] }} | {{ radarr['cf']['dv-hdr10plus-boost']['trash_id'] }} |
