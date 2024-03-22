@@ -44,11 +44,11 @@
     },
     {
       "name": "Telly",
-      "implementation": "ReleaseGroupSpecification",
+      "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(Telly)$"
+        "value": "\\b(Telly)\\b"
       }
     },
     {
