@@ -43,6 +43,15 @@
       }
     },
     {
+      "name": "Telly",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Telly)$"
+      }
+    },
+    {
       "name": "Pahe",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
