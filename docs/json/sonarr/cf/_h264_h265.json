@@ -16,6 +16,15 @@
       }
     },
     {
+      "name": "NOT 'x265 HEVC' in release title",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "[x][ ._-]?265[ ._-]?\\bHEVC\\b"
+      }
+    },
+    {
       "name": "WEBDL",
       "implementation": "SourceSpecification",
       "negate": false,
