@@ -78,15 +78,6 @@
       "fields": {
         "value": 4
       }
-    },
-    {
-      "name": "_NOT x|h265 (HD SDR)",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": true,
-      "required": true,
-      "fields": {
-        "value": "^(?!.*(?:\\bHDR(\\b|\\d)|\\b(dv|dovi|dolby[ .]?vision)\\b|\\b(FraMeSToR|HQMUX|SICFoI)\\b|\\b(PQ)\\b|\\bHLG(\\b|\\d)))(?=.*\\b(720p|1080p)\\b).*?(?:[xh][ ._-]?265|\\bHEVC(\\b|\\d))"
-      }
     }
   ]
 }

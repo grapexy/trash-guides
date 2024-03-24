@@ -1,6 +1,6 @@
 {
   "trash_id": "88bab48eb30145219e9b8f4ba68ba854",
-  "name": "_HEVC WEB HONE Boost (HD)",
+  "name": "_HEVC WEB Base GRP Boost (HD)",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
@@ -40,12 +40,12 @@
       }
     },
     {
-      "name": "HONE Group",
+      "name": "Base Groups Boost",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "(?:[xh][ ._-]?265|\\bHEVC(\\b|\\d)).+?\\b(Altezza|cYpHer|DiscoD|YOGI|Weasley|HONE)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b|\\bUTR\\b)*(?:\\)|\\]|$|\\.\\w+$)"
+        "value": "(?:[xh][ ._-]?265|\\bHEVC(\\b|\\d)).+?\\b(HONE|FLUX|SiGMA|NTb|NTG)\\b(?:[\\s\\[.-]){0,2}(?:\\)|\\]|$|\\.\\w+$)"
       }
     }
   ]
