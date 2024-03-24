@@ -138,7 +138,16 @@
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^Designated.?Survivor.*?(\\DrainedDay\\b)"
+        "value": "^Designated.?Survivor.*?(\\bDrainedDay\\b)"
+      }
+    },
+    {
+      "name": "Person of Interest AMZN (bad audio)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^Person.*?of.*?Interest.*?(\\bAMZN\\b)"
       }
     }
   ]
