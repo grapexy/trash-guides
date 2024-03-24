@@ -31,12 +31,12 @@
       }
     },
     {
-      "name": "SiGMA|SiGLA (ANY AMZN)",
+      "name": "SiGLA (ANY AMZN)",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(?=.*\\bAMZN.*?[xh][ ._-]?265\\b).*?\\b(SiGMA|SiGLA)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b|\\bUTR\\b)*(?:\\)|\\]|$|\\.\\w+$)"
+        "value": "^(?=.*\\bAMZN.*?[xh][ ._-]?265\\b).*?\\b(SiGLA)\\b(?:[\\s\\[.-]){0,2}(?:\\bTAoE\\b|\\bQxR\\b|\\bSEV\\b|\\bUTR\\b)*(?:\\)|\\]|$|\\.\\w+$)"
       }
     }
   ]
