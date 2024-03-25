@@ -149,6 +149,15 @@
       "fields": {
         "value": "^Person.*?of.*?Interest.*?(\\bAMZN\\b)"
       }
+    },
+    {
+      "name": "M*A*S*H AMZN (Oversized releases)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^\\b(MASH|M A S H|M\\*A\\*S\\*H)\\b.*?(\\bAMZN\\b)"
+      }
     }
   ]
 }
