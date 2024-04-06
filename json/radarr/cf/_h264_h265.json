@@ -1,0 +1,46 @@
+{
+  "trash_id": "f8a46576a10a4dbfa898d7d1a04d7876",
+  "trash_scores": {
+    "default": 110
+  },
+  "name": "_DL",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "h264|h265",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "([h][ ._-]?(264|265)|\\bHEVC(\\b|\\d)|\\bAVC(\\b|\\d))"
+      }
+    },
+    {
+      "name": "NOT 'x265 HEVC' in release title",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": "[x][ ._-]?265[ ._-]?\\bHEVC\\b"
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 8
+      }
+    }
+  ]
+}
