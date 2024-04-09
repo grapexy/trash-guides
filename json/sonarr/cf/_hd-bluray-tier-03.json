@@ -68,6 +68,15 @@
       "fields": {
         "value": "^(SHORTBREHD)$"
       }
+    },
+    {
+      "name": "ROVERS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(ROVERS)$"
+      }
     }
   ]
 }
