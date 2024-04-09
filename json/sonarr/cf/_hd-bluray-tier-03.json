@@ -95,6 +95,15 @@
       "fields": {
         "value": "^(decibeL)$"
       }
+    },
+    {
+      "name": "YELLOWBiRD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(YELLOWBiRD)$"
+      }
     }
   ]
 }
