@@ -77,6 +77,15 @@
       "fields": {
         "value": "^(ROVERS)$"
       }
+    },
+    {
+      "name": "DEiMOS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(DEiMOS)$"
+      }
     }
   ]
 }
