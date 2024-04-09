@@ -1,6 +1,6 @@
 {
-  "name": "_Bluray (FHD x264)",
-  "trash_id": "b5c3051f3f514752a14b0d8e4ef675a0",
+  "name": "_Bluray (FHD)",
+  "trash_id": "676f110ebfae4a6fbaf4c08655fc011e",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
@@ -10,15 +10,6 @@
       "required": false,
       "fields": {
         "value": 1080
-      }
-    },
-    {
-      "name": "x|h264",
-      "implementation": "ReleaseTitleSpecification",
-      "negate": false,
-      "required": true,
-      "fields": {
-        "value": "[xh][ ._-]?264|\\bAVC(\\b|\\d)"
       }
     },
     {
