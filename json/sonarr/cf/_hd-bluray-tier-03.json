@@ -59,6 +59,15 @@
       "fields": {
         "value": "^(FilmHD)$"
       }
+    },
+    {
+      "name": "SHORTBREHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SHORTBREHD)$"
+      }
     }
   ]
 }
