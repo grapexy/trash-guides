@@ -131,6 +131,15 @@
       "fields": {
         "value": "^(BHDStudio)$"
       }
+    },
+    {
+      "name": "REWARD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(REWARD)$"
+      }
     }
   ]
 }
