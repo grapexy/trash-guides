@@ -140,6 +140,15 @@
       "fields": {
         "value": "^(REWARD)$"
       }
+    },
+    {
+      "name": "HDMI",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HDMI)$"
+      }
     }
   ]
 }
