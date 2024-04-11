@@ -104,6 +104,24 @@
       "fields": {
         "value": "^(YELLOWBiRD)$"
       }
+    },
+    {
+      "name": "P0W4HD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(P0W4HD)$"
+      }
+    },
+    {
+      "name": "MiTY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MiTY)$"
+      }
     }
   ]
 }
