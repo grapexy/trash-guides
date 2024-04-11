@@ -1,0 +1,38 @@
+{
+  "trash_id": "8663f80ebb1144aeaa5e1704c3ac1c5d",
+  "trash_scores": {
+    "default": 1550,
+    "anime-sonarr": 100
+  },
+  "name": "_WEB Tier 04",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "herkz",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(herkz)$"
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 4
+      }
+    }
+  ]
+}
