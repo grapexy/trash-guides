@@ -149,6 +149,15 @@
       "fields": {
         "value": "^(HDMI)$"
       }
+    },
+    {
+      "name": "GreenBlade",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(GreenBlade)$"
+      }
     }
   ]
 }
