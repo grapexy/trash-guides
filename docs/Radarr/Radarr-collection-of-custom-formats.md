@@ -71,9 +71,9 @@ We've made 3 guides related to this.
 | [Amazon](#amzn)            | [FOD](#fod)              | [Pathe Thuis](#pathe)    |
 | [Apple TV+](#atvp)         | [Disney+ Hotstar](#htsr) | [Videoland](#vdl)        |
 | [Bravia Core](#bcore)      | [TVer](#tver)            |                          |
-| [Criterion Channel](#crit) | [U-NEXT](#u-next)        |                          |
-| [Disney+](#dsnp)           | [VIU](#viu)              |                          |
-| [HBO](#hbo)                |                          |                          |
+| [Criterion Channel](#crit) | [TVING](#tving)          |                          |
+| [Disney+](#dsnp)           | [U-NEXT](#u-next)        |                          |
+| [HBO](#hbo)                | [VIU](#viu)              |                          |
 | [HBO Max](#hmax)           |                          |                          |
 | [Hulu](#hulu)              |                          |                          |
 | [Max](#max)                |                          |                          |
@@ -87,6 +87,7 @@ We've made 3 guides related to this.
 | --------------------- | ----------------------- | ------------------------ |
 | [BBC iPlayer](#ip)    | [Crave](#crav)          | [VRV](#vrv)              |
 | [ITVX](#itvx)         | [OViD](#ovid)           |                          |
+| [NOW](#now)           | [Star+](#strp)          |                          |
 
 ---
 
@@ -100,7 +101,7 @@ We've made 3 guides related to this.
 | [Repack2](#repack2)            | [EVO (no WEBDL)](#evo-no-webdl)        | [VFI](#vfi)                   | [FR HD Bluray Tier 02](#fr-hd-bluray-tier-02)   |
 | [x264](#x264)                  | [HDR10+ Boost](#hdr10plus-boost)       | [VF2](#vf2)                   | [FR WEB Tier 01](#fr-web-tier-01)               |
 | [x265](#x265)                  | [HFR](#hfr)                            | [VFQ](#vfq)                   | [FR WEB Tier 02](#fr-web-tier-02)               |
-|                                | [Internal](#internal)                  | [VOQ](#voq)                   | [FR Scene Groups](#fr-scene-groups)             |
+| [x266](#x266)                  | [Internal](#internal)                  | [VOQ](#voq)                   | [FR Scene Groups](#fr-scene-groups)             |
 |                                | [Line/Mic Dubbed](#linemic-dubbed)     | [VQ](#vq)                     | [FR LQ](#fr-lq)                                 |
 |                                | [No-RlsGroup](#no-rlsgroup)            | [VFB](#vfb)                   |                                                 |
 |                                | [Obfuscated](#obfuscated)              | [VOSTFR](#vostfr)             |                                                 |
@@ -132,9 +133,7 @@ We've made 3 guides related to this.
 
 ??? question "TrueHD ATMOS - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dolby_Atmos){:target="_blank" rel="noopener noreferrer"}
-
-    Dolby Atmos is a surround sound technology developed by Dolby Laboratories. It expands on existing surround sound systems by adding height channels, allowing sounds to be interpreted as three-dimensional objects.
+    {! include-markdown "../../includes/cf-descriptions/truehd-atmos.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -150,9 +149,7 @@ We've made 3 guides related to this.
 
 ??? question "DTS:X - [Click to show/hide]"
 
-    [DTS:X is an object-based audio codec](https://www.whathifi.com/advice/dtsx-what-it-how-can-you-get-it), which aims to create a multi-dimensional sound that “moves around you like it would in real life”.
-    You may think that sounds a lot like Dolby Atmos, and you’d be right. But where DTS:X differs lies in the required speaker configuration. While Dolby Atmos requires you to add extra overhead channels to your 5.1 or 7.1 setup, DTS:X works with standard surround speaker setups – just like the one you might already have at home. It can support up to 32 speaker locations and up to an 11.2-channel system.
-    DTS:X like other higher quality DTS formats (e.g. DTS-HD MA) is lossless.
+    {! include-markdown "../../includes/cf-descriptions/dts-x.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -168,10 +165,7 @@ We've made 3 guides related to this.
 
 ??? question "ATMOS (undefined) - [Click to show/hide]"
 
-    Handles cases where only Atmos is specified in title but not DD+ or TrueHD (Where it is not specified if it is Lossy or Lossless)
-
-    !!! note
-        Give this the same score as Lossy Atmos, and then on import, it will get changed to either lossy or lossless based on mediainfo.
+    {! include-markdown "../../includes/cf-descriptions/atmos-undefined.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -187,7 +181,7 @@ We've made 3 guides related to this.
 
 ??? question "DD+ ATMOS - [Click to show/hide]"
 
-    Atmos via UHD Blu-ray will be lossless, or lossy via streaming services so in this case it will be lossy + Atmos
+    {! include-markdown "../../includes/cf-descriptions/ddplus-atmos.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -203,9 +197,7 @@ We've made 3 guides related to this.
 
 ??? question "TrueHD - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dolby_TrueHD){:target="_blank" rel="noopener noreferrer"}
-
-    Dolby TrueHD is a lossless, multi-channel audio codec developed by Dolby Laboratories for home video, used principally in Blu-ray Disc and compatible hardware.
+    {! include-markdown "../../includes/cf-descriptions/truehd.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -221,9 +213,7 @@ We've made 3 guides related to this.
 
 ??? question "DTS-HD MA - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/DTS-HD_Master_Audio){:target="_blank" rel="noopener noreferrer"}
-
-    DTS-HD Master Audio is a multi-channel, lossless audio codec developed by DTS as an extension of the lossy DTS Coherent Acoustics codec (DTS CA; usually itself referred to as just DTS). Rather than being an entirely new coding mechanism, DTS-HD MA encodes an audio master in lossy DTS first, then stores a concurrent stream of supplementary data representing whatever the DTS encoder discarded. This gives DTS-HD MA a lossy "core" able to be played back by devices that cannot decode the more complex lossless audio. DTS-HD MA's primary application is audio storage and playback for Blu-ray Disc media.
+    {! include-markdown "../../includes/cf-descriptions/dts-hd-ma.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -239,7 +229,7 @@ We've made 3 guides related to this.
 
 ??? question "FLAC - [Click to show/hide]"
 
-    FLAC stands for Free Lossless Audio Codec, an audio format similar to MP3, but lossless, meaning that audio is compressed in FLAC without any loss in quality. This is similar to how Zip works, except with FLAC you will get much better compression because it is designed specifically for audio
+    {! include-markdown "../../includes/cf-descriptions/flac.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -255,7 +245,7 @@ We've made 3 guides related to this.
 
 ??? question "PCM - [Click to show/hide]"
 
-    PCM is the method of encoding typically used for uncompressed digital audio
+    {! include-markdown "../../includes/cf-descriptions/pcm.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -271,22 +261,7 @@ We've made 3 guides related to this.
 
 ??? question "DTS-HD HRA - [Click to show/hide]"
 
-    [Technical Whitepaper](https://www.opusproductions.com/pdfs/DTS_HD_WhitePaper.pdf){:target="_blank" rel="noopener noreferrer"}
-
-    | Codec      | Page   | Paragraph |
-    | ---------- | ------ | --------- |
-    | DTS-HD MA  | Page 6 | 5.1.1     |
-    | DTS-HD HRA | Page 7 | 5.1.2     |
-
-    DTS-HD HRA is the lossy version of DTS-HD MA.
-
-    | Codec          | DTS-HRA          | DTS-MA            |
-    | -------------- | ---------------- | ----------------- |
-    | Lossy/lossless | Lossy            | Lossless          |
-    | Data rate      | 1.5 - 6.0 Mbit/s | VBR - 24.5 Mbit/s |
-    | Channels       | Up to 7.1 ch     | Up to 7.1 ch      |
-    | Sampling Freq. | 96 kHz           | 192 kHz           |
-    | Resolution     | -                | Up to 24-bit      |
+    {! include-markdown "../../includes/cf-descriptions/dts-hd-hra.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -304,9 +279,7 @@ We've made 3 guides related to this.
 
 ??? question "DD+ - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dolby_Digital_Plus){:target="_blank" rel="noopener noreferrer"}
-
-    Dolby Digital Plus, also known as Enhanced AC-3 (and commonly abbreviated as DD+ or E-AC-3, or EC-3) is a digital audio compression scheme developed by Dolby Labs for transport and storage of multi-channel digital audio. It is a successor to Dolby Digital (AC-3).
+    {! include-markdown "../../includes/cf-descriptions/ddplus.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -322,7 +295,7 @@ We've made 3 guides related to this.
 
 ??? question "DTS-ES - [Click to show/hide]"
 
-    DTS-ES (DTS Extended Surround) includes two variants, DTS-ES Discrete 6.1, and DTS-ES Matrix 5.1, depending on how the sound was originally mastered and stored.
+    {! include-markdown "../../includes/cf-descriptions/dts-es.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -339,7 +312,8 @@ We've made 3 guides related to this.
 <sub>DTS = Basic DTS</sub>
 
 ??? question "DTS - [Click to show/hide]"
-    Description placeholder
+
+    {! include-markdown "../../includes/cf-descriptions/dts.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -355,10 +329,7 @@ We've made 3 guides related to this.
 
 ??? question "AAC - [Click to show/hide]"
 
-    Advanced Audio Coding
-
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Advanced_Audio_Coding){:target="_blank" rel="noopener noreferrer"}
-    Advanced Audio Coding (AAC) is an audio coding standard for lossy digital audio compression. Designed to be the successor of the MP3 format, AAC generally achieves higher sound quality than MP3 at the same bit rate.
+    {! include-markdown "../../includes/cf-descriptions/aac.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -376,9 +347,7 @@ We've made 3 guides related to this.
 
 ??? question "DD - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Dolby_Digital){:target="_blank" rel="noopener noreferrer"}
-
-    Dolby Digital, also known as Dolby AC-3, the audio compression is lossy.
+    {! include-markdown "../../includes/cf-descriptions/dd.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -393,7 +362,8 @@ We've made 3 guides related to this.
 ### MP3
 
 ??? question "MP3 - [Click to show/hide]"
-    Description placeholder
+
+    {! include-markdown "../../includes/cf-descriptions/mp3.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -409,9 +379,7 @@ We've made 3 guides related to this.
 
 ??? question "Opus - [Click to show/hide]"
 
-    [From Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Opus_(audio_format)){:target="_blank" rel="noopener noreferrer"}
-
-    Opus is a lossy audio coding format developed by the Xiph.Org Foundation and standardized by the Internet Engineering Task Force, designed to efficiently code speech and general audio in a single format, while remaining low-latency enough for real-time interactive communication and low-complexity enough for low-end embedded processors.Opus replaces both Vorbis and Speex for new applications, and several blind listening tests have ranked it higher-quality than any other standard audio format at any given bitrate until transparency is reached, including MP3, AAC, and HE-AAC
+    {! include-markdown "../../includes/cf-descriptions/opus.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -871,7 +839,10 @@ We've made 3 guides related to this.
 ### IMAX
 
 ??? question "IMAX - [Click to show/hide]"
-    Description placeholder
+
+    [From In Depth Cine](https://www.indepthcine.com/videos/imax){:target="_blank" rel="noopener noreferrer"}
+
+    IMAX films are shot in tall aspect ratios, typically 1.9:1 or sometimes 1.43:1. Most IMAX film releases also have scenes shot at wider aspect ratios and, as a result, the aspect ratio will change throughout. Because they are shot on large format cameras, there is often less film grain present. This results in a clearer picture.
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -886,9 +857,14 @@ We've made 3 guides related to this.
 ### IMAX Enhanced
 
 ??? question "IMAX Enhanced - [Click to show/hide]"
-    IMAX Enhanced: Get More Picture Instead of Black Bars
 
-    IMAX Enhanced exclusive expanded aspect ratio is 1:90:1, which offers up to 26% more picture for select sequences, meaning more of the action is visible on screen.
+    **Get more picture and less black bars (letterboxing).**
+
+    [From Wired](https://www.wired.com/story/what-is-imax-enhanced/){:target="_blank" rel="noopener noreferrer"}
+
+    IMAX Enhanced is a standard for digital releases. It features scenes shot on IMAX cameras and produced in HDR10 DV. IMAX Enhanced releases are often higher bitrate than other WEB options and are encoded into various formats, including SDR conversions.
+
+    As a result of the higher bitrate and implied picture quality improvement, it is recommended to enable the IMAX Enhanced custom format on WEB profiles, especially for those seeking 'The IMAX Experience' - including less "black bars" or letterboxing.
 
     ![!Imax Enhanced Example](images/imax-e/imax-e.1.png)
 
@@ -1190,7 +1166,7 @@ We've made 3 guides related to this.
 
 ??? question "Obfuscated - [Click to show/hide]"
 
-    Optional (use these only if you dislike renamed releases)
+    {! include-markdown "../../includes/cf-descriptions/obfuscated.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1206,7 +1182,7 @@ We've made 3 guides related to this.
 
 ??? question "Retags - [Click to show/hide]"
 
-    Optional (use these only if you dislike retagged releases)
+    {! include-markdown "../../includes/cf-descriptions/retags.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1317,7 +1293,7 @@ We've made 3 guides related to this.
 
 ??? question "SDR - [Click to show/hide]"
 
-    - This will prevent grabbing UHD/4k releases without HDR Formats.
+    {! include-markdown "../../includes/cf-descriptions/sdr.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1333,7 +1309,7 @@ We've made 3 guides related to this.
 
 ??? question "SDR (no WEBDL) - [Click to show/hide]"
 
-    - This will prevent grabbing UHD/4k Remux and Bluray encode releases without HDR Formats - i.e., SDR WEB releases will still be allowed. 4K SDR WEB releases can look better than the 1080p version, owing to improved bitrates.
+    {! include-markdown "../../includes/cf-descriptions/sdr-no-webdl.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
@@ -1446,7 +1422,8 @@ We've made 3 guides related to this.
 ??? question "x265 - [Click to show/hide]"
 
     x265 is a *free software library* and *application* for encoding video streams into the [H.265/MPEG-H HEVC](http://en.wikipedia.org/wiki/H.265){:target="_blank" rel="noopener noreferrer"} compression format, and is released under the terms of the [GNU GPL](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html){:target="_blank" rel="noopener noreferrer"}.
-    This applies to all releases that are x265/HEVC that are not Remux.
+
+    This applies to all x265/HEVC releases that are not Remux.
 
     !!! failure ""
         Please don't forget to read the following [Microsized & Wrong Source](#microsized-wrong-source)
@@ -1455,6 +1432,24 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/x265.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+### x266
+
+??? question "x266 - [Click to show/hide]"
+
+    Versatile Video Coding (VVC), also known as H.266, ISO/IEC 23090-3, and MPEG-I Part 3, is a video compression standard finalized on 6 July 2020. [Wikipedia](https://en.wikipedia.org/wiki/Versatile_Video_Coding){:target="_blank" rel="noopener noreferrer"}.
+
+    This applies to all x266/VVC releases that are not Remux.
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/x266.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -2074,12 +2069,30 @@ We've made 3 guides related to this.
 
 ??? question "TVer - [Click to show/hide]"
 
-    {! include-markdown "../../includes/cf-descriptions/fod.md" !}
+    {! include-markdown "../../includes/cf-descriptions/tver.md" !}
 
 ??? example "JSON - [Click to show/hide]"
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/tver.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+#### TVING
+
+<sub>TVING</sub>
+
+??? question "TVING - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/tving.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/tving.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
@@ -2202,6 +2215,24 @@ We've made 3 guides related to this.
 
 ---
 
+#### NOW
+
+<sub>NOW</sub>
+
+??? question "NOW - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/now.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/now.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
 ### Misc Streaming Services
 
 ---
@@ -2236,6 +2267,24 @@ We've made 3 guides related to this.
 
     ```json
     [[% filter indent(width=4) %]][[% include 'json/radarr/cf/ovid.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+#### STRP
+
+<sub>Star+</sub>
+
+??? question "Star+ - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/strp.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/strp.json' %]][[% endfilter %]]
     ```
 
 <sub><sup>[TOP](#index)</sup>
