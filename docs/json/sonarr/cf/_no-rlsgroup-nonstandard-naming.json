@@ -21,7 +21,7 @@
       "negate": true,
       "required": true,
       "fields": {
-        "value": "(?:[hx][ ._-]?(264|265)|English|[^0-9][1-9][ .][0-1]|-)\\s?(?!(?:NOGRP|NOGROUP))(\\b\\w+\\b)\\s?(\\b\\w+\\b)?\\)\\s?(\\[\\b\\w+\\b\\])?($|\\s?REPACK\\d?$|\\.\\b\\w+\\b$)"
+        "value": "\\s?(?!(?:NOGRP|NOGROUP))(\\b\\w+\\b)\\s?(\\b\\w+\\b)?\\)\\s?(\\[\\b\\w+\\b\\])?($|\\s?REPACK\\d?$|\\.\\b\\w+\\b$)"
       }
     },
     {
