@@ -158,6 +158,15 @@
       "fields": {
         "value": "^\\b(MASH|M A S H|M\\*A\\*S\\*H)\\b.*?(\\bAMZN\\b)"
       }
+    },
+    {
+      "name": "Lupin - XEBEC (Missing episodes)",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^Lupin.S02.1080p.NF.WEB-DL.DUAL.DDP5.1.Atmos.HDR.H.265-XEBEC"
+      }
     }
   ]
 }
