@@ -169,15 +169,6 @@
       }
     },
     {
-      "name": "HONE",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(HONE)$"
-      }
-    },
-    {
       "name": "TEPES",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
