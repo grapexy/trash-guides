@@ -176,6 +176,15 @@
       "fields": {
         "value": "^(HONE)$"
       }
+    },
+    {
+      "name": "TEPES",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TEPES)$"
+      }
     }
   ]
 }
