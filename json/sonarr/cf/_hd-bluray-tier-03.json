@@ -167,6 +167,15 @@
       "fields": {
         "value": "^(EA)$"
       }
+    },
+    {
+      "name": "HONE",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HONE)$"
+      }
     }
   ]
 }
