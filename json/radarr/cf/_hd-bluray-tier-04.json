@@ -56,6 +56,15 @@
       "fields": {
         "value": "^(GHOULS)$"
       }
+    },
+    {
+      "name": "FLAME",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FLAME)$"
+      }
     }
   ]
 }
