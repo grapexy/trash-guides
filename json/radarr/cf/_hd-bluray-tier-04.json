@@ -83,6 +83,15 @@
       "fields": {
         "value": "^(SpaceHD)$"
       }
+    },
+    {
+      "name": "FoRM",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FoRM)$"
+      }
     }
   ]
 }
