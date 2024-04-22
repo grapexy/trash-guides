@@ -70,6 +70,15 @@
       "fields": {
         "value": "^(SPHD)$"
       }
+    },
+    {
+      "name": "_hallowed",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(hallowed)$"
+      }
     }
   ]
 }
