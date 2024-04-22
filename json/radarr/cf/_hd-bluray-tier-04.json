@@ -47,6 +47,15 @@
       "fields": {
         "value": "^(BV)$"
       }
+    },
+    {
+      "name": "GHOULS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(GHOULS)$"
+      }
     }
   ]
 }
