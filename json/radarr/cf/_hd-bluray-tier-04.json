@@ -38,6 +38,15 @@
       "fields": {
         "value": "^(dkore)$"
       }
+    },
+    {
+      "name": "BV",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BV)$"
+      }
     }
   ]
 }
