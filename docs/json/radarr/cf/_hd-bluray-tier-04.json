@@ -74,6 +74,15 @@
       "fields": {
         "value": "^(HDMaNiAcS)$"
       }
+    },
+    {
+      "name": "SpaceHD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(SpaceHD)$"
+      }
     }
   ]
 }
