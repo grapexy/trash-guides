@@ -65,6 +65,15 @@
       "fields": {
         "value": "^(FLAME)$"
       }
+    },
+    {
+      "name": "HDMaNiAcS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HDMaNiAcS)$"
+      }
     }
   ]
 }
