@@ -1,9 +1,9 @@
 {
-  "trash_id": "c0bc424a21cb4ff4bbca7f0a0801f7b6",
+  "trash_id": "ffe10a1f2b9f4fae9a466ebe1a3cdac9",
   "trash_scores": {
     "default": 0
   },
-  "name": "_HD Bluray Tier 03",
+  "name": "_HD Bluray Scene",
   "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
@@ -34,57 +34,102 @@
       }
     },
     {
-      "name": "BTN",
+      "name": "BORDURE",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(BTN)$"
+        "value": "^(BORDURE)$"
       }
     },
     {
-      "name": "decibeL",
+      "name": "FilmHD",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(decibeL)$"
+        "value": "^(FilmHD)$"
       }
     },
     {
-      "name": "BHDStudio",
+      "name": "SHORTBREHD",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(BHDStudio)$"
+        "value": "^(SHORTBREHD)$"
       }
     },
     {
-      "name": "EA",
+      "name": "ROVERS",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(EA)$"
+        "value": "^(ROVERS)$"
       }
     },
     {
-      "name": "TEPES",
+      "name": "DEiMOS",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(TEPES)$"
+        "value": "^(DEiMOS)$"
       }
     },
     {
-      "name": "HDChina",
+      "name": "YELLOWBiRD",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
-        "value": "^(HDChina)$"
+        "value": "^(YELLOWBiRD)$"
+      }
+    },
+    {
+      "name": "P0W4HD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(P0W4HD)$"
+      }
+    },
+    {
+      "name": "MiTY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(MiTY)$"
+      }
+    },
+    {
+      "name": "REWARD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(REWARD)$"
+      }
+    },
+    {
+      "name": "HDMI",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(HDMI)$"
+      }
+    },
+    {
+      "name": "GreenBlade",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(GreenBlade)$"
       }
     }
   ]
