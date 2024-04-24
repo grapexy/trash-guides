@@ -131,6 +131,15 @@
       "fields": {
         "value": "^(GreenBlade)$"
       }
+    },
+    {
+      "name": "iNGOT",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(iNGOT)$"
+      }
     }
   ]
 }
