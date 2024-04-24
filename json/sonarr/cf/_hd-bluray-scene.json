@@ -149,6 +149,15 @@
       "fields": {
         "value": "^(KiMSTeR)$"
       }
+    },
+    {
+      "name": "TENEIGHTY",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TENEIGHTY)$"
+      }
     }
   ]
 }
