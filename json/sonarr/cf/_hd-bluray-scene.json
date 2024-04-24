@@ -140,6 +140,15 @@
       "fields": {
         "value": "^(iNGOT)$"
       }
+    },
+    {
+      "name": "KiMSTeR",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(KiMSTeR)$"
+      }
     }
   ]
 }
