@@ -104,6 +104,15 @@
       "fields": {
         "value": "^(beAst)$"
       }
+    },
+    {
+      "name": "TayTO",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(TayTO)$"
+      }
     }
   ]
 }
