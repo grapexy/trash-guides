@@ -95,6 +95,15 @@
       "fields": {
         "value": "^(CJ)$"
       }
+    },
+    {
+      "name": "beAst",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(beAst)$"
+      }
     }
   ]
 }
