@@ -158,6 +158,15 @@
       "fields": {
         "value": "^(TENEIGHTY)$"
       }
+    },
+    {
+      "name": "GHOULS",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(GHOULS)$"
+      }
     }
   ]
 }
