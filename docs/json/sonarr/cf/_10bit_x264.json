@@ -19,7 +19,7 @@
       "name": "10bit|hi10p",
       "implementation": "ReleaseTitleSpecification",
       "negate": false,
-      "required": false,
+      "required": true,
       "fields": {
         "value": "(10[.-]?bit|hi10p)"
       }
