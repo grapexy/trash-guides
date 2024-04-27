@@ -1,0 +1,28 @@
+{
+  "trash_id": "cbd15fe11b7f4078bf50f22c969f9da3",
+  "trash_scores": {
+    "default": -10000
+  },
+  "name": "10bit x264",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "x|h264",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": "[xh][ ._-]?264|\\bAVC(\\b|\\d)"
+      }
+    },
+    {
+      "name": "10bit|hi10p",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(10[.-]?bit|hi10p)"
+      }
+    }
+  ]
+}
